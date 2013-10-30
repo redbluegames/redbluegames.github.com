@@ -11,7 +11,7 @@
 // Navbar =====================================================================
 
 .navbar {
-    border-bottom: 4px solid @brand-primary;
+    border-bottom: 2px solid @brand-primary;
     font-size: 14px;
     font-family: @font-family-sans-serif;
     font-weight: @headings-font-weight;
@@ -93,10 +93,34 @@ h1, h2, h3, h4, h5, h6 {
 // Containers =================================================================
 
 .jumbotron {
-    margin-top: 30px;
     h1, h2, h3, h4, h5, h6 {
         font-family: @font-family-sans-serif;
         font-weight: @headings-font-weight;
         color: #000;
     }
+}
+
+// Sticky Footer =================================================================
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -@footer-height;
+}
+
+/* Set the fixed height of the footer here */
+.footer {
+  border-top: 2px solid @brand-primary;
+  line-height: @footer-height;
+  height: @footer-height;
+  background-color: @gray-dark;
 }
