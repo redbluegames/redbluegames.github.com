@@ -2,7 +2,7 @@
 // Bootswatch
 // -----------------------------------------------------
 
-@import url("//fonts.googleapis.com/css?family=News+Cycle:400,700");
+//@import url("//fonts.googleapis.com/css?family=News+Cycle:400,700");
 @import "../_bootstrap/less/bootstrap.less";
 @import "custom-variables.less";
 @import "custom-other.less";
@@ -11,12 +11,13 @@
 // Navbar =====================================================================
 
 .navbar {
-    border-bottom: 4px solid @brand-secondary;
-    font-size: 18px;
+    border-bottom: 4px solid @brand-primary;
+    font-size: 14px;
     font-family: @font-family-sans-serif;
     font-weight: @headings-font-weight;
     color: #000;
-    background-color: lighten(@brand-primary, 20%);
+    background-color: @gray-lighter;//lighten(@brand-primary, 20%);
+    text-transform: uppercase;
 }
 
 .navbar-brand {
