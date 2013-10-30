@@ -1,4 +1,4 @@
-// Readable 3.0.0
+// Journal 3.0.0
 // Variables
 // --------------------------------------------------
 
@@ -11,40 +11,40 @@
 
 @gray-darker:            lighten(#000, 13.5%); // #222
 @gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
+@gray:                   #777;
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
 // Brand colors
 // -------------------------
 
-@brand-primary:         #428bca;
-@brand-success:         #5cb85c;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
-@brand-info:            #5bc0de;
+@brand-primary:         #EB6864;
+@brand-success:         #22B24C;
+@brand-warning:         #F5E625;
+@brand-danger:          #F57A00;
+@brand-info:            #369;
 
 // Scaffolding
 // -------------------------
 
-@body-bg:               #f9f9f9;
-@text-color:            @gray-dark;
+@body-bg:               #fff;
+@text-color:            @gray;
 
 // Links
 // -------------------------
 
 @link-color:            @brand-primary;
-@link-hover-color:      @link-color;
+@link-hover-color:      darken(@link-color, 15%);
 
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       "Lora", Georgia, "Times New Roman", Times, serif;
+@font-family-sans-serif:  "News Cycle", "Arial Narrow Bold", sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-serif;
 
-@font-size-base:          17px;
+@font-size-base:          15px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
@@ -107,7 +107,7 @@
 @btn-font-weight:                normal;
 
 @btn-default-color:              #fff;
-@btn-default-bg:                 @text-color;
+@btn-default-bg:                 @gray-light;
 @btn-default-border:             @btn-default-bg;
 
 @btn-primary-color:              @btn-default-color;
@@ -236,22 +236,22 @@
 // -------------------------
 
 // Basics of a navbar
-@navbar-height:                    50px;
+@navbar-height:                    60px;
 @navbar-margin-bottom:             @line-height-computed;
-@navbar-default-color:             @gray;
-@navbar-default-bg:                @body-bg;
+@navbar-default-color:             #000;
+@navbar-default-bg:                #fff;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
 // Navbar links
-@navbar-default-link-color:                @navbar-default-color;
-@navbar-default-link-hover-color:          @gray-dark;
+@navbar-default-link-color:                #000;
+@navbar-default-link-hover-color:          #000;
 @navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         @navbar-default-link-hover-color;
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 10%);
-@navbar-default-link-disabled-color:       #333;
+@navbar-default-link-active-color:         #000;
+@navbar-default-link-active-bg:            transparent;
+@navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
 // Navbar brand label
@@ -268,17 +268,17 @@
 // Inverted navbar
 //
 // Reset inverted navbar basics
-@navbar-inverse-color:                      @gray-light;
-@navbar-inverse-bg:                         @text-color;
+@navbar-inverse-color:                      #fff;
+@navbar-inverse-bg:                         @brand-primary;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 @gray-light;
+@navbar-inverse-link-color:                 #fff;
 @navbar-inverse-link-hover-color:           #fff;
 @navbar-inverse-link-hover-bg:              transparent;
-@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
-@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
-@navbar-inverse-link-disabled-color:        #ccc;
+@navbar-inverse-link-active-color:          #fff;
+@navbar-inverse-link-active-bg:             transparent;
+@navbar-inverse-link-disabled-color:        #444;
 @navbar-inverse-link-disabled-bg:           transparent;
 
 // Inverted navbar brand label
@@ -294,9 +294,9 @@
 @navbar-inverse-search-placeholder-color:   #ccc;
 
 // Inverted navbar toggle
-@navbar-inverse-toggle-hover-bg:            #333;
+@navbar-inverse-toggle-hover-bg:            darken(@navbar-inverse-bg, 10%);
 @navbar-inverse-toggle-icon-bar-bg:         #fff;
-@navbar-inverse-toggle-border-color:        #333;
+@navbar-inverse-toggle-border-color:        darken(@navbar-inverse-bg, 10%);
 
 
 // Navs
@@ -354,7 +354,7 @@
 
 @jumbotron-padding:              30px;
 @jumbotron-color:                inherit;
-@jumbotron-bg:                   darken(@body-bg, 3%);
+@jumbotron-bg:                   @gray-lighter;
 
 @jumbotron-heading-color:        inherit;
 
@@ -531,7 +531,7 @@
 
 // Wells
 // -------------------------
-@well-bg:                     darken(@body-bg, 3%);
+@well-bg:                     #f5f5f5;
 
 
 // Badges
