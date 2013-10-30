@@ -100,7 +100,35 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-// Sticky Footer =================================================================
+.jumbotron.home {
+    background: lighten(@brand-primary, 30%);
+}
+
+.jumbotron.buzzwords {
+    padding: 15px;
+    background-color: @gray-dark;
+    border-bottom: 2px solid black;
+}
+
+.jumbotron img {
+   .center-block();
+    max-height: 250px;
+}
+
+// Carousels ==================================================================
+
+#bwCarousel {
+    .center-block();
+    margin-top: 30px;
+    border: 4px solid black;
+    max-width: 350px;
+
+    > .right {
+        padding-right: 80px;
+    }
+}
+
+// Sticky Footer ==============================================================
 
 html,
 body {
@@ -123,4 +151,10 @@ body {
   line-height: @footer-height;
   height: @footer-height;
   background-color: @gray-dark;
+}
+
+// Miscellaneous Tweaks
+
+html {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
