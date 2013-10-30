@@ -1,0 +1,1317 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"list-s",
+				"list-style-type"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"MA",
+				"MAX_FILE_ATTRIBUTES"
+			],
+			[
+				"TYP",
+				"TYPE_FILE"
+			],
+			[
+				"TYPE",
+				"TYPE_CLI"
+			],
+			[
+				"prin",
+				"printf	printf …"
+			],
+			[
+				"inclu",
+				"includes_cmd"
+			],
+			[
+				"M",
+				"MAX_SUMRY"
+			],
+			[
+				"su",
+				"summary"
+			],
+			[
+				"list",
+				"list_reverse_cmd"
+			],
+			[
+				"print",
+				"print_item"
+			],
+			[
+				"LIS",
+				"LISTREVERSE"
+			],
+			[
+				"diff",
+				"diffresult"
+			],
+			[
+				"test",
+				"testnum"
+			],
+			[
+				"ex",
+				"exitcode"
+			],
+			[
+				"inc",
+				"includes_cmd"
+			],
+			[
+				"par",
+				"parse_and_insert"
+			],
+			[
+				"IN",
+				"INSERT"
+			],
+			[
+				"MAX",
+				"MAX_CMD"
+			],
+			[
+				"sc",
+				"scanf"
+			],
+			[
+				"EXI",
+				"EXIT_INVALID_ARGS"
+			],
+			[
+				"EX",
+				"EXIT_INVALID_ARGS"
+			],
+			[
+				"sca",
+				"scanf_rslt"
+			],
+			[
+				"file",
+				"file_nm"
+			],
+			[
+				"new",
+				"new_item"
+			],
+			[
+				"free",
+				"free_item"
+			],
+			[
+				"to",
+				"to_free"
+			],
+			[
+				"nam",
+				"name_len"
+			],
+			[
+				"id",
+				"item_id"
+			],
+			[
+				"item",
+				"item_id"
+			],
+			[
+				"supp",
+				"supply_item"
+			],
+			[
+				"S",
+				"STUB_CHAR"
+			],
+			[
+				"get",
+				"getchar"
+			],
+			[
+				"wpt",
+				"wptr_idx"
+			],
+			[
+				"word",
+				"word_len"
+			],
+			[
+				"num",
+				"numwords"
+			],
+			[
+				"read",
+				"readnumwords"
+			],
+			[
+				"EOF",
+				"EOF_REACHED"
+			],
+			[
+				"in",
+				"inchar"
+			],
+			[
+				"lin",
+				"linelen"
+			],
+			[
+				"k",
+				"k"
+			],
+			[
+				"key",
+				"keylen"
+			],
+			[
+				"vol",
+				"volume1"
+			],
+			[
+				"de",
+				"depth"
+			],
+			[
+				"ana",
+				"anagram_len"
+			],
+			[
+				"PLAY",
+				"PLAY_MODE"
+			],
+			[
+				"get_",
+				"get_anagram_key"
+			],
+			[
+				"SKI",
+				"SKIP_TIME"
+			],
+			[
+				"play",
+				"play_mode"
+			],
+			[
+				"NUM",
+				"NUM_BUTTONS"
+			],
+			[
+				"Buzz",
+				"BuzzwordsAnagrams"
+			],
+			[
+				"anag",
+				"anagram_len"
+			],
+			[
+				"PL",
+				"PLAY_NUM"
+			],
+			[
+				"en",
+				"ENDC"
+			],
+			[
+				"SK",
+				"SKIP_STR"
+			],
+			[
+				"E",
+				"ENDC"
+			],
+			[
+				"PLA",
+				"PLAY_STR"
+			],
+			[
+				"TR",
+				"TRAIN_STR"
+			],
+			[
+				"rel",
+				"related_cnt"
+			],
+			[
+				"time",
+				"time_taken"
+			],
+			[
+				"cur",
+				"cur_hp"
+			],
+			[
+				"ne",
+				"next_move"
+			],
+			[
+				"fin",
+				"find_target_flagstone"
+			],
+			[
+				"mo",
+				"move_dir"
+			],
+			[
+				"L",
+				"LOG_D"
+			],
+			[
+				"neigh",
+				"neighbor_fs"
+			],
+			[
+				"food",
+				"food_found"
+			],
+			[
+				"fl",
+				"flagstones"
+			],
+			[
+				"sou",
+				"south_flagstone"
+			],
+			[
+				"east",
+				"east_flagstone"
+			],
+			[
+				"west",
+				"west_flagstone"
+			],
+			[
+				"cur_",
+				"cur_hp"
+			],
+			[
+				"EXIT",
+				"EXIT_INVALID_HP"
+			],
+			[
+				"MIN",
+				"MIN_STARTING_HP"
+			],
+			[
+				"EXIT_INVAL",
+				"EXIT_INVALID_COL"
+			],
+			[
+				"pr",
+				"previous_cell"
+			],
+			[
+				"start",
+				"start_flagstone"
+			],
+			[
+				"home",
+				"home_row"
+			],
+			[
+				"FLA",
+				"FLAG_OFF"
+			],
+			[
+				"exi",
+				"EXIT_INVALID_SIZE"
+			],
+			[
+				"DEB",
+				"DEBUG_MODE"
+			],
+			[
+				"CHA",
+				"CHAR_SIZE"
+			],
+			[
+				"CH",
+				"CHARS_IN_LONG"
+			],
+			[
+				"TH",
+				"XOR_THRESHOLD"
+			],
+			[
+				"righ",
+				"right_shifts"
+			],
+			[
+				"FIR",
+				"FIRST_BIT_ONLY"
+			],
+			[
+				"lef",
+				"left_shifts"
+			],
+			[
+				"CONTR",
+				"CONTROL2_BIT_ONLY"
+			],
+			[
+				"wri",
+				"write64"
+			],
+			[
+				"CHAR",
+				"CHARS_IN_LONG"
+			],
+			[
+				"shif",
+				"shiftAmt"
+			],
+			[
+				"nex",
+				"nextline"
+			],
+			[
+				"con",
+				"control2"
+			],
+			[
+				"prev",
+				"prevline"
+			],
+			[
+				"pre",
+				"prevline"
+			],
+			[
+				"simple",
+				"simpleencode"
+			],
+			[
+				"CON",
+				"CONTROLBIT_1"
+			],
+			[
+				"last",
+				"last_bit"
+			],
+			[
+				"Ex",
+				"EXIT_LINE_SIZE_WRONG"
+			],
+			[
+				"dif",
+				"diffcode"
+			],
+			[
+				"f",
+				"failure"
+			],
+			[
+				"SIM",
+				"SIMPLE_ENCODE_IN"
+			],
+			[
+				"run",
+				"run_tests"
+			],
+			[
+				"MID",
+				"MIDDLE_THIRD"
+			],
+			[
+				"TOP",
+				"TOP_THIRD"
+			],
+			[
+				"d_",
+				"d_mask"
+			],
+			[
+				"c_",
+				"c_mask"
+			],
+			[
+				"RETU",
+				"RETURN_POSITIVE"
+			],
+			[
+				"RE",
+				"RETURN_NEGATIVE"
+			],
+			[
+				"GUES",
+				"GUESS_THRESHOLD"
+			],
+			[
+				"EXIT_DIS",
+				"EXIT_DISCRIMINATE_ZERO"
+			],
+			[
+				"exit",
+				"EXIT_DISCRIMINATE_NEGATIVE"
+			],
+			[
+				"my",
+				"myabs"
+			],
+			[
+				"ch",
+				"char_count"
+			],
+			[
+				"new_d",
+				"new_decimal"
+			],
+			[
+				"dec",
+				"decimal_count"
+			],
+			[
+				"asc",
+				"ascii2"
+			],
+			[
+				"char",
+				"char2"
+			],
+			[
+				"cha",
+				"char1"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/make-tests.sublime-build",
+	"command_palette":
+	{
+		"height": 93.0,
+		"selected_items":
+		[
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"previ",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"preiv",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"previe",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"ss xml",
+				"Set Syntax: XML"
+			],
+			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"emac",
+				"Package Control: Remove Package"
+			],
+			[
+				"remv",
+				"Package Control: Remove Package"
+			],
+			[
+				"mark",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"whi",
+				"Highlight Whitespaces: Toggle"
+			],
+			[
+				"white",
+				"Highlight Whitespaces: Toggle"
+			],
+			[
+				"high",
+				"Highlight Whitespaces: Toggle"
+			],
+			[
+				"d",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"preview",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"list p",
+				"Package Control: List Packages"
+			],
+			[
+				"lint",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"tmp",
+				"View: Toggle Minimap"
+			],
+			[
+				"reove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"Snippet: fprintf …"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 633.0
+	},
+	"console":
+	{
+		"height": 228.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/lucas/Google Drive/Notes/# Heading 1",
+		"/Users/lucas/Documents/projects/personal/configurations/,",
+		"/Users/lucas/.buzzbackconfig",
+		"/Users/lucas/Documents/projects/siramix/buzzbackend/buzzbackend.sublime-",
+		"/Users/lucas/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/lucas/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/lucas/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/lucas/Library/Application Support/Sublime Text 2/Packages/Markdown Preview/sample.md",
+		"/Users/lucas/Documents/projects/configurations/README.md",
+		"/Users/lucas/Documents/projects/siramix.github.com/_layouts/page.html",
+		"/Users/lucas/Documents/projects/siramix.github.com/_config.yml",
+		"/Users/lucas/Documents/projects/siramix.github.com/_layouts/post.html",
+		"/Users/lucas/Documents/projects/siramix.github.com/about.html",
+		"/Users/lucas/Documents/projects/siramix.github.com/index.html",
+		"/Users/lucas/Documents/projects/siramix.github.com/blog/blog.html",
+		"/Users/lucas/Documents/projects/siramix.github.com/assets/js/jquery-2.0.0.min.js",
+		"/Users/lucas/Documents/projects/siramix.github.com/assets/css/style.css",
+		"/Users/lucas/Documents/projects/siramix.github.com/apps/buzzwords.html",
+		"/Users/lucas/Documents/projects/siramix.github.com/_layouts/default.html",
+		"/Users/lucas/Documents/projects/siramix.github.com/README.md",
+		"/Users/lucas/Library/Application Support/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/lucas/Documents/projects/siramix.github.com/assets/images/sitelogo_sml_white.png",
+		"/Users/lucas/Documents/projects/siramix.github.com/_includes/JB/posts_collate",
+		"/Users/lucas/Documents/projects/siramix.github.com/assets/bootstrap/js/bootstrap.js",
+		"/Users/lucas/Documents/projects/siramix.github.com/assets/js/script.js",
+		"/Users/lucas/Documents/projects/siramix.github.com/assets/js/subnav.js",
+		"/Users/lucas/Documents/projects/siramix.github.com/assets/bootstrap/css/bootstrap1.4.css",
+		"/Users/lucas/Documents/projects/siramix.github.com/_includes/blocks/appgrid.html",
+		"/Users/lucas/Documents/projects/siramix.github.com/assets/css/grid.css",
+		"/Users/lucas/Documents/projects/siramix.github.com/_includes/JB/setup",
+		"/Users/lucas/Documents/projects/siramix.github.com/assets/images/buzzwords_lite_mini_banner.png",
+		"/Users/lucas/Documents/projects/siramix.github.com/_theme_packages/twitter/manifest.yml",
+		"/Users/lucas/Documents/projects/siramix.github.com/.gitignore",
+		"/Users/lucas/Documents/projects/buzzbackend/test.py",
+		"/Users/lucas/Documents/projects/buzzbackend/gsclient.py",
+		"/Users/lucas/Desktop/packs.json",
+		"/Users/lucas/Documents/projects/buzzbackend/delinter.py",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test17/inventory17_start.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test16/i_in16",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test16/i_eout16",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test16/inventory16_start.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/inventory.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test16/inventory16_expected.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test16/inventory16.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/Makefile",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test17/inventory17_expected.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test17/i_eout17",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test17/i_in17",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test07/inventory07.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test17/inventory16_start.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test16/i_eout17",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test12/inventory12.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test09/inventory09.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test15/inventory15.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test17/inventory17.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test08/i_in08",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test05/i_in05",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test15/i_aout15",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test02/inventory02.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test15/i_eout15",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test01/inventory01.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test15/i_in15",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test.py",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test01/i_in01",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5/mygrep.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5/textgen.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/test.py",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test02/i_in02",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test03/i_in03",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test04/i_in04",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test01/i_eout01",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/aout.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5_bak_final/mygrep.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5_bak/mygrep.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test02/i_eout02",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5_bak/textgen",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_6/test07/inventory07_expected.txt",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_4/walking_ant.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5/iotextgen/in5",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5_bak/iotextgen/in3",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5/iotextgen/in7",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5/iotextgen/eout7",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5/iotextgen/eout5",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5/iotextgen/eout1",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5/iotextgen/in1",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5/iotextgen/in3",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5/trivial.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5/iomygrep/in1",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_4/test.sh",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5/iomygrep/in2",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_2/in_1",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_5/mygrep-template.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/exercises/struct_ptrs.c",
+		"/Users/lucas/Documents/projects/pokenyms/pokenyms.py",
+		"/Users/lucas/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/README.md",
+		"/Users/lucas/Documents/projects/pokenyms/README.md",
+		"/Users/lucas/Documents/projects/pokenyms/play.py",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_4/walking_ant",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_4/test10/wa_in_10",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_4/tmp",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_2/roots.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_4/tmplucas",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_4/test01/wa_aout_01",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_4/test01/wa_eout_01",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_4_bak/walking_ant.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_4/test01/wa_in_01",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_4/lucas1",
+		"/Users/lucas/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/lucas/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.py",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/simpledecode.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/exercises/10.05.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/csc230.sublime-workspace",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/simpleencode.c",
+		"/Users/lucas/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/exercises/09.03.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/advdecode.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/adv_ascii_2",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/adv_ascii_3",
+		"/Users/lucas/Desktop/snippet",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/advencode.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/testreadwrite.c",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/simpleencode_in_4",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/simpleencode_in_3",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/test.sh",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/adv_binary_1",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/simpledecode_in_1",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/hw_3/simpleencode_in_1",
+		"/Users/lucas/Google Drive/School/ncsu_csc230_ctools/exercies/05.04.c"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"selection",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"zoom",
+			"readable",
+			".min.map",
+			".map",
+			"get_pack",
+			"table",
+			"tab",
+			"ctrl+shift",
+			"super+left",
+			"super+",
+			"leftb",
+			"leftbracket",
+			"ctrl+",
+			"ctrl+le",
+			"car",
+			"crous",
+			"badge",
+			"span2",
+			"hover",
+			".css",
+			"carousel",
+			"title",
+			"archive",
+			":",
+			"nav",
+			"spy",
+			"height:",
+			"bw-how",
+			"navbar",
+			".nav",
+			"'active'",
+			"bw-lite",
+			"'active'",
+			"active",
+			"bw-faq",
+			"bw-open",
+			".js",
+			"scrollspy",
+			"affix-bottom",
+			"affix",
+			"affix-top",
+			"affix",
+			"document",
+			"h3",
+			"content",
+			"box-shadow",
+			"brand",
+			"jumbotron",
+			"twitter",
+			"getpass",
+			"Printfeed",
+			"print_feed",
+			"getconnected",
+			"ping(",
+			"socksendbytes",
+			"record",
+			"negative",
+			"count",
+			"_TOKE",
+			"_ATTRIBUTES",
+			"exit(",
+			"DUPLICATE RECORD:",
+			"16",
+			"exit(",
+			"includes_cmd",
+			"parse_and_insert",
+			"parse_and_ins",
+			"INVALID_ARGS",
+			"test16",
+			"Small Another long name f that can hold fewer than 10 pag",
+			"Paper Clips",
+			"Sticky notes",
+			"Postit Notes",
+			"free_item",
+			"FALSE",
+			"TRUE",
+			"print_item",
+			" remove_count(",
+			" add(",
+			" delete(",
+			" insert(",
+			" list(",
+			"exit(",
+			"LIST",
+			"remove_item(",
+			"remove(",
+			"%2d",
+			"struct ",
+			"ssize",
+			"calloc",
+			"name_len",
+			"arg",
+			"inserted",
+			"remove",
+			"list(",
+			"print_supply_list",
+			"_free_list",
+			"exit",
+			"MAX_SUMMARY",
+			"lloc",
+			"zone",
+			"summary",
+			"printf",
+			"println",
+			"UNSET",
+			"readnumwords",
+			"UNSET",
+			"parse_",
+			"word_idx",
+			"[",
+			"MyType",
+			"debug",
+			"numwords",
+			"helper",
+			"time",
+			"once",
+			"skip",
+			"assert",
+			"PLAY_MODE",
+			"play_mode",
+			"]badwords' ",
+			"{'title' [",
+			"', ]",
+			"' '",
+			": '",
+			"''",
+			",",
+			"\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			": ",
+			"h1",
+			"_TOKENS",
+			"input_type",
+			"test17",
+			"summary goes here",
+			"Another long name f",
+			"normal description",
+			"Name longer than tw",
+			" remove_cmd(",
+			" add_cmd(",
+			" delete_cmd(",
+			" insert_cmd(",
+			" list_cmd(",
+			"remove_count(",
+			"remove_item(",
+			"%02d",
+			"list",
+			"MAX_SUMRY",
+			"readnumber",
+			"wptr_idx",
+			"char",
+			"PLAY_MODE",
+			", ",
+			"self.ANAGRAMS[i] = Anagram(",
+			"']",
+			"]",
+			"['",
+			"'",
+			"', '",
+			"'",
+			"color",
+			"clr",
+			"cur_pos[COL]",
+			"cur_pos[ROW]",
+			"cur_pos[COL_IDX]",
+			"cur_pos[ROW_IDX]",
+			"grid",
+			"grid[",
+			"grid",
+			"cur_pos",
+			"neighbor_fs",
+			"neighbor_FS",
+			"nearby_flagstones",
+			"dir",
+			"clockwise",
+			"clockwise_dir",
+			"entry_direction",
+			"READ_DIMENSIONS",
+			"home_flag",
+			"start_flag",
+			"#",
+			" ",
+			"#",
+			"",
+			"CONTROL1_BIT_ONLY",
+			"CONTROL2_BIT_ONLY",
+			"CONTROL2_BIT_ON",
+			"bits_avail",
+			"bits_avial",
+			"cur_char",
+			"curchar",
+			"decimal_pl",
+			"new_digit",
+			"tmp",
+			"return_double",
+			"new_decimal_digit",
+			"num_decimal_places",
+			"decimal_digits_seen",
+			"discriminant"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"jquery",
+				"/Users/lucas/Documents/projects/siramix.github.com/assets/js/jquery-2.0.0.min.js"
+			],
+			[
+				"boot",
+				"assets/bootstrap/js/bootstrap.js"
+			],
+			[
+				"buzz",
+				"apps/buzzwords.html"
+			],
+			[
+				"defa",
+				"_layouts/default.html"
+			],
+			[
+				"",
+				".gitignore"
+			],
+			[
+				"hw_6make",
+				"hw_6/Makefile"
+			],
+			[
+				"i_in08",
+				"hw_6/test08/i_in08"
+			],
+			[
+				"in15",
+				"hw_6/test15/i_in15"
+			],
+			[
+				"test15/inventory15.txt",
+				"hw_6/test15/inventory15.txt"
+			],
+			[
+				"inventory01",
+				"hw_6/test01/inventory01.txt"
+			],
+			[
+				"i_in01",
+				"hw_6/test01/i_in01"
+			],
+			[
+				"aout15",
+				"hw_6/test15/i_aout15"
+			],
+			[
+				"i_05",
+				"hw_6/test05/i_in05"
+			],
+			[
+				"i_in05",
+				"hw_6/test05/i_in05"
+			],
+			[
+				"i_in04",
+				"hw_6/test04/i_in04"
+			],
+			[
+				"i_in03",
+				"hw_6/test03/i_in03"
+			],
+			[
+				"mygre",
+				"hw_5/mygrep.c"
+			],
+			[
+				"test02/i_",
+				"hw_6/test02/i_in02"
+			],
+			[
+				"aout.t",
+				"hw_6/aout.txt"
+			],
+			[
+				"i_eou",
+				"hw_6/test01/i_eout01"
+			],
+			[
+				"invento",
+				"hw_6/test01/inventory01.txt"
+			],
+			[
+				"hw_6eou",
+				"hw_6/test02/i_eout02"
+			],
+			[
+				"hw_6expe",
+				"hw_6/test07/inventory07_expected.txt"
+			],
+			[
+				"textgen.c",
+				"hw_5/textgen.c"
+			],
+			[
+				"in7",
+				"hw_5/iotextgen/in7"
+			],
+			[
+				"eout7",
+				"hw_5/iotextgen/eout7"
+			],
+			[
+				"hw5in3",
+				"hw_5_bak/iotextgen/in3"
+			],
+			[
+				"eout5",
+				"hw_5/iotextgen/eout5"
+			],
+			[
+				"in5",
+				"hw_5/iotextgen/in5"
+			],
+			[
+				"hw_5in1",
+				"hw_5/iotextgen/in1"
+			],
+			[
+				"eou",
+				"hw_5/iotextgen/eout1"
+			],
+			[
+				"in3",
+				"hw_5/iotextgen/in3"
+			],
+			[
+				"iotextgen/in1",
+				"hw_5/iotextgen/in1"
+			],
+			[
+				"iomygrep/in2",
+				"hw_5/iomygrep/in2"
+			],
+			[
+				"in1",
+				"hw_5/iomygrep/in1"
+			],
+			[
+				"test.",
+				"hw_4/test.sh"
+			],
+			[
+				"hw_4.c",
+				"hw_4/walking_ant.c"
+			],
+			[
+				"grep",
+				"hw_5/mygrep-template.c"
+			],
+			[
+				"test.p",
+				"hw_3/test.py"
+			],
+			[
+				".py",
+				"hw_3/test.py"
+			],
+			[
+				"walk",
+				"hw_4/walking_ant.c"
+			],
+			[
+				"wa_ao",
+				"hw_4/test01/wa_aout_01"
+			],
+			[
+				"wa_e",
+				"hw_4/test01/wa_eout_01"
+			],
+			[
+				"tmpl",
+				"hw_4/tmplucas"
+			],
+			[
+				"lu",
+				"hw_4/lucas1"
+			],
+			[
+				"wa_eout",
+				"hw_4/test01/wa_eout_01"
+			],
+			[
+				"wa_in_01",
+				"hw_4/test01/wa_in_01"
+			],
+			[
+				"tmp",
+				"hw_4/tmp"
+			],
+			[
+				"root",
+				"hw_2/roots.c"
+			],
+			[
+				"simpleencode.",
+				"hw_3/simpleencode.c"
+			],
+			[
+				"adv_binary",
+				"hw_3/adv_binary_1"
+			],
+			[
+				"simpl",
+				"hw_3/simpledecode.c"
+			],
+			[
+				"advde",
+				"hw_3/advdecode.c"
+			],
+			[
+				"simpledeco",
+				"hw_3/simpledecode_in_1"
+			],
+			[
+				"simpleenc",
+				"hw_3/simpleencode_in_1"
+			],
+			[
+				"simplede",
+				"hw_3/simpledecode.c"
+			],
+			[
+				"simp",
+				"hw_3/simpleencode.c"
+			],
+			[
+				"simpleencode_in_4",
+				"hw_3/simpleencode_in_4"
+			],
+			[
+				"simpleend",
+				"hw_3/simpleencode_expected_1"
+			],
+			[
+				"out",
+				"hw_3/out_1_actual"
+			],
+			[
+				"make",
+				"hw_3/Makefile"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/lucas/Documents/projects/siramix/siramix.github.com/siramix.github.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 233.0,
+	"status_bar_visible": true
+}
