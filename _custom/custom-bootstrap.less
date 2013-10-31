@@ -2,7 +2,7 @@
 // Bootswatch
 // -----------------------------------------------------
 
-//@import url("//fonts.googleapis.com/css?family=News+Cycle:400,700");
+@import url("//fonts.googleapis.com/css?family=News+Cycle:400,700");
 @import "../_bootstrap/less/bootstrap.less";
 @import "custom-variables.less";
 @import "custom-other.less";
@@ -12,7 +12,7 @@
 
 .navbar {
     border-bottom: 2px solid @brand-primary;
-    font-size: 12px;
+    font-size: 14px;
     font-family: @font-family-sans-serif;
     font-weight: @headings-font-weight;
     color: #000;
@@ -20,12 +20,16 @@
 }
 
 .navbar-brand {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: @headings-font-weight;
     text-transform: uppercase;
 }
 
 // Buttons ====================================================================
+
+.btn-app-store img{
+    max-width: @btn-app-width;
+}
 
 // Typography =================================================================
 
@@ -33,6 +37,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: @font-family-sans-serif;
     font-weight: @headings-font-weight;
     color: #000;
+}
+
+.lead {
+    font-size: @font-size-large;
+}
+
+strong {
+    color: @gray-dark;
 }
 
 // Tables =====================================================================
@@ -91,6 +103,8 @@ h1, h2, h3, h4, h5, h6 {
 
 // Containers =================================================================
 
+// Jumbotron ==================================================================
+
 .jumbotron {
     margin-top: @navbar-height;
     h1, h2, h3, h4, h5, h6 {
@@ -98,6 +112,17 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: @headings-font-weight;
         color: #000;
     }
+    img {
+        .center-block();
+        max-height: 250px;
+    }
+}
+
+.jumbotron-text {
+    text-align: center;
+    font-size: 30px;
+    color: #ddd;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
 }
 
 .jumbotron.home {
@@ -105,14 +130,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jumbotron.buzzwords {
+    background: url(../assets/patterns/crossed_stripes.png) repeat 0 0;
     padding: 15px;
     background-color: @gray-dark;
     border-bottom: 2px solid black;
-}
-
-.jumbotron img {
-   .center-block();
-    max-height: 250px;
 }
 
 // Carousels ==================================================================
@@ -125,6 +146,11 @@ h1, h2, h3, h4, h5, h6 {
 
     > .right {
         padding-right: 80px;
+    }
+
+    > ol {
+        margin-top: 80px;
+        margin-bottom: 0px;
     }
 }
 
@@ -153,6 +179,9 @@ body {
   background-color: @gray-dark;
 }
 
+.bottom {
+  padding-bottom: 100px;
+}
 // Miscellaneous Tweaks
 
 html {
