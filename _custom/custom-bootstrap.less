@@ -196,7 +196,7 @@ body {
 .copyright {
   border-top: 2px solid @brand-secondary;
   font-size: @font-size-small;
-  color: @gray-lighter;
+  color: darken(@gray-lighter, 15%);
   padding-left: 30px;
   line-height: @copyright-height;
   background-color: @gray-dark;
@@ -213,11 +213,16 @@ body {
 }
 
 .tiny-bios {
-  font-size: @font-size-small;
+  font-size: @font-size-small - 2px;
 
   h5 {
+    font-size: @font-size-small;
     padding: 0px;
     line-height: 0px;
+  }
+
+  .media {
+    margin-top: 0px;
   }
 }
 
