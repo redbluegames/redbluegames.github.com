@@ -48,6 +48,10 @@ strong {
     color: @gray-dark;
 }
 
+.light-header {
+    color: @gray-lighter;
+}
+
 // Tables =====================================================================
 
 // Forms ======================================================================
@@ -114,13 +118,13 @@ strong {
 }
 
 .tab-pane.buzzwords {
-  padding-top: 15px;
+    padding-top: 15px;
 }
 
 .wide-highlight {
-  background-color: lighten(@gray-light, 37%);
-  border-top: 1px solid @gray-lighter;
-  border-bottom: 1px solid @gray-lighter;
+    background-image: linear-gradient(315deg, rgba(20, 30, 40, 0.40), rgba(10, 50, 100, 0.40) 90%), url(../assets/patterns/crossed_stripes.png);
+    background-attachment: fixed, fixed;
+    border: 1px solid black;
 }
 
 // Jumbotron ==================================================================
@@ -138,6 +142,15 @@ strong {
     }
 }
 
+.jumbotron.buzzwords {
+//    background: url(../assets/patterns/random_grey_variations.png) repeat 0 0;
+    background-image: linear-gradient(315deg, rgba(30, 50, 70, 0.40), rgba(10, 50, 100, 0.40) 90%), url(../assets/patterns/crossed_stripes.png);
+    background-attachment: fixed, fixed;
+    padding: 15px;
+    background-color: @gray-dark;
+    border-bottom: 2px solid black;
+}
+
 .jumbotron-text {
     text-align: center;
     font-size: 30px;
@@ -145,16 +158,6 @@ strong {
     text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
 }
 
-.jumbotron.home {
-    background: lighten(@brand-primary, 30%);
-}
-
-.jumbotron.buzzwords {
-    background: url(../assets/patterns/crossed_stripes.png) repeat 0 0;
-    padding: 15px;
-    background-color: @gray-dark;
-    border-bottom: 2px solid black;
-}
 
 // Carousels ==================================================================
 
@@ -178,63 +181,63 @@ strong {
 
 html,
 body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
 }
 
 /* Wrapper for page content to push down footer */
 #wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 auto -@footer-height;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -@footer-height;
 }
 
 /* Set the fixed height of the footer here */
 .footer {
-  border-top: 1px solid @brand-secondary;
-  font-size: @font-size-small;
-  background: url(../assets/patterns/bg-k10.png) repeat 0 0;
-  background-color: @gray-lighter;
+    border-top: 1px solid @brand-secondary;
+    font-size: @font-size-small;
+    background: url(../assets/patterns/bg-k20.png) repeat 0 0;
+    background-color: @gray-lighter;
 }
 
 // Add enough content so that it never flows into the footer
 .bottom {
-  padding-bottom: 200px;
+    padding-bottom: 200px;
 }
 
 .copyright {
-  border-top: 1px solid @brand-primary;
-  font-size: @font-size-small;
-  color: darken(@gray-lighter, 15%);
-  padding-left: 30px;
-  line-height: @copyright-height;
-  background-color: @gray-dark;
+    border-top: 1px solid @brand-primary;
+    font-size: @font-size-small;
+    color: darken(@gray-lighter, 15%);
+    padding-left: 30px;
+    line-height: @copyright-height;
+    background-color: @gray-dark;
 }
 
 .footer-list {
-  list-style: none;
+    list-style: none;
 }
 
 .tiny-biopic {
-  width: 25px;
-  margin-top: 10px;
-  border: 1px solid @gray-dark;
+    width: 25px;
+    margin-top: 10px;
+    border: 1px solid @gray-dark;
 }
 
 .tiny-bios {
   font-size: @font-size-small - 2px;
 
-  h5 {
-    font-size: @font-size-small;
-    padding: 0px;
-    line-height: 0px;
-  }
+    h5 {
+        font-size: @font-size-small;
+        padding: 0px;
+        line-height: 0px;
+    }
 
-  .media {
-    margin-top: 0px;
-  }
+    .media {
+        margin-top: 0px;
+    }
 }
 
 // Miscellaneous Tweaks
