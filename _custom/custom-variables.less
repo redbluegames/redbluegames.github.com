@@ -52,6 +52,7 @@
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-serif;
+@font-family-buzzwords:   "Anton", "Arial Narrow Bold", sans-serif;
 
 @font-size-base:          16px;
 @font-size-large:         ceil(@font-size-base * 1.15); // ~18px
@@ -610,7 +611,8 @@
 // -------------------------
 
 // Footer
-@footer-height:               50px;
+@footer-height:               100px + @copyright-height;
+@copyright-height:            25px;
 
 // Hr border color
 @hr-border:                   @gray-lighter;

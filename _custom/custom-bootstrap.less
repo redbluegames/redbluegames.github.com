@@ -3,6 +3,7 @@
 // -----------------------------------------------------
 
 @import url("//fonts.googleapis.com/css?family=News+Cycle:400,700");
+@import url("//fonts.googleapis.com/css?family=Anton:400,700");
 @import "../_bootstrap/less/bootstrap.less";
 @import "custom-variables.less";
 @import "custom-other.less";
@@ -183,16 +184,49 @@ body {
 /* Set the fixed height of the footer here */
 .footer {
   border-top: 2px solid @brand-primary;
-  line-height: @footer-height;
-  height: @footer-height;
+  font-size: @font-size-small;
+  background-color: @gray-lighter;
+}
+
+// Add enough content so that it never flows into the footer
+.bottom {
+  padding-bottom: 200px;
+}
+
+.copyright {
+  border-top: 2px solid @brand-secondary;
+  font-size: @font-size-small;
+  color: @gray-lighter;
+  padding-left: 30px;
+  line-height: @copyright-height;
   background-color: @gray-dark;
 }
 
-.bottom {
-  padding-bottom: 100px;
+.footer-list {
+  list-style: none;
 }
+
+.tiny-biopic {
+  width: 25px;
+  margin-top: 10px;
+  border: 1px solid @gray-dark;
+}
+
+.tiny-bios {
+  font-size: @font-size-small;
+
+  h5 {
+    padding: 0px;
+    line-height: 0px;
+  }
+}
+
 // Miscellaneous Tweaks
 
 html {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+.bw-header {
+  font-family: @font-family-buzzwords;
 }
