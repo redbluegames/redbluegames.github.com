@@ -1,4 +1,7 @@
 _site/*
 
+*.sublime-project
+*.sublime-workspace
+
 Thumbs.db
 .DS_Store
