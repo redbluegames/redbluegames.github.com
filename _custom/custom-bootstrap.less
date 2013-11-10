@@ -4,6 +4,7 @@
 
 @import url("//fonts.googleapis.com/css?family=News+Cycle:400,700");
 @import url("//fonts.googleapis.com/css?family=Anton:400,700");
+@import url("//fonts.googleapis.com/css?family=PT+Sans");
 @import "../_bootstrap/less/bootstrap.less";
 @import "custom-variables.less";
 @import "custom-other.less";
@@ -198,10 +199,14 @@ body {
 
 /* Set the fixed height of the footer here */
 .footer {
-    border-top: 1px solid @brand-secondary;
+    border-top: 2px solid @brand-secondary;
     font-size: @font-size-small;
-    background: url(../assets/patterns/bg-k20.png) repeat 0 0;
+    color: @gray-darker;
     background-color: @gray-lighter;
+
+    h4, h5 {
+        color: darken(@gray-darker, 05%);
+    }
 }
 
 // Add enough content so that it never flows into the footer
@@ -210,9 +215,8 @@ body {
 }
 
 .copyright {
-    border-top: 1px solid @brand-primary;
     font-size: @font-size-small;
-    color: darken(@gray-lighter, 15%);
+    color: @gray-footer;
     padding-left: 30px;
     line-height: @copyright-height;
     background-color: @gray-dark;
