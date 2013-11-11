@@ -9,6 +9,7 @@
 @import "custom-variables.less";
 @import "custom-other.less";
 @import "../_bootstrap/less/utilities.less";
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 
 // Navbar =====================================================================
 
@@ -51,6 +52,17 @@ strong {
 
 .light-header {
     color: @gray-lighter;
+}
+
+// Font-Awesome -- figure out how to consolidate this css
+.redblueicon {
+    vertical-align: 0%;
+}
+.redblueicon.red {
+    color: @brand-secondary;
+}
+.redblueicon.blue {
+    color: @brand-primary;
 }
 
 // Tables =====================================================================
@@ -158,8 +170,17 @@ strong {
     text-align: center;
     font-size: 30px;
     color: #ddd;
-    text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+    text-shadow: 3px 0 3px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 1px 0 1px rgba(0, 0, 0, 0.1);
 }
+
+.aboutredblue {
+    background-color: @brand-secondary;
+    text-shadow: darken(@brand-secondary, 20%) 4px 3px 0px, rgba(0, 0, 0, 0.14902) 9px 8px 0px;
+    h1 {
+        color: white;
+    }
+}
+
 
 
 // Carousels ==================================================================
