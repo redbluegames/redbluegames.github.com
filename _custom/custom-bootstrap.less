@@ -28,6 +28,20 @@
     text-transform: uppercase;
 }
 
+// My Mixins ==================================================================
+
+.greyscale {
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+.nogreyscale {
+    filter: none;
+    -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+    .opacity(100);
+}
+
 // Buttons ====================================================================
 
 .btn-app-store img{
@@ -50,19 +64,25 @@ strong {
     color: @gray-dark;
 }
 
+.red {
+    color: @brand-secondary;
+}
+
+.blue {
+    color: @brand-primary;
+}
+
 .light-header {
     color: @gray-lighter;
+}
+
+.text-huge {
+    font-size: @font-size-huge;
 }
 
 // Font-Awesome -- figure out how to consolidate this css
 .redblueicon {
     vertical-align: 0%;
-}
-.redblueicon.red {
-    color: @brand-secondary;
-}
-.redblueicon.blue {
-    color: @brand-primary;
 }
 
 // Tables =====================================================================
@@ -267,7 +287,7 @@ body {
     }
 }
 
-// Miscellaneous Tweaks
+// Miscellaneous Tweaks =======================================================
 
 html {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
@@ -275,4 +295,40 @@ html {
 
 .bw-header {
   font-family: @font-family-buzzwords;
+}
+
+// Company page
+
+.skill-logo {
+    max-width: 100px;
+    text-align: center;
+    .greyscale();
+}
+
+// TODO Refactor this to nest properly under .skill-logo
+.skill-logo:hover {
+    .nogreyscale();
+}
+
+.unity-logo {
+    .opacity (.5);
+}
+
+
+.bio {
+    padding-top: 10px;
+}
+
+.caption {
+}
+
+// TODO Refactor these to nest properly under .bio
+.bio img {
+    .center-block;
+    max-width: 225px;
+    .greyscale;
+}
+
+.bio img:hover {
+    .nogreyscale;
 }
