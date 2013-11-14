@@ -194,8 +194,11 @@ strong {
 }
 
 .aboutredblue {
-    background-color: @brand-secondary;
+    background-image: linear-gradient(315deg, rgba(110, 11, 11, 0.45), rgba(130, 14, 14, 0.55) 100%),
+        url(../assets/patterns/random_grey_variations.png);
+//    background-attachment: fixed;
     text-shadow: darken(@brand-secondary, 20%) 4px 3px 0px, rgba(0, 0, 0, 0.14902) 9px 8px 0px;
+    border-bottom: 1px solid @gray-dark;
     h1 {
         color: white;
     }
