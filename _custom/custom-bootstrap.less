@@ -14,7 +14,7 @@
 // Navbar =====================================================================
 
 .navbar {
-    border-bottom: 2px solid @brand-primary;
+    border-bottom: 1px solid @brand-primary;
     font-size: 14px;
     font-family: @font-family-sans-serif;
     font-weight: @headings-font-weight;
@@ -42,10 +42,35 @@
     .opacity(100);
 }
 
+.slow-fade {
+    text-decoration: none;
+    transition: all .20s;
+    transition-property: all;
+    transition-duration: 0.20s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+    -moz-transition: all .20s;
+    -webkit-transition: all .20s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.20s;
+    -webkit-transition-timing-function: initial;
+    -webkit-transition-delay: initial;
+}
+
 // Buttons ====================================================================
 
 .btn-app-store img{
     max-width: @btn-app-width;
+}
+
+// Links ======================================================================
+
+a {
+    .slow-fade ();
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 // Typography =================================================================
@@ -243,7 +268,7 @@ body {
 
 /* Set the fixed height of the footer here */
 .footer {
-    border-top: 2px solid @brand-secondary;
+    border-top: 1px solid @brand-secondary;
     font-size: @font-size-small;
     color: @gray-darker;
     background-color: @gray-lighter;
