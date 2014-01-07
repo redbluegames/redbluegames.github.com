@@ -1,4 +1,4 @@
-redbluestudios
+redbluegames
 ==============
 
-Website for Red Blue Studios 
+Website for Red Blue Games
