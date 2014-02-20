@@ -2,6 +2,8 @@
 // Bootswatch
 // -----------------------------------------------------
 
+@import url("//fonts.googleapis.com/css?family=Londrina+Solid");
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic");
 @import url("//fonts.googleapis.com/css?family=News+Cycle:400,700");
 @import url("//fonts.googleapis.com/css?family=Anton:400,700");
 @import url("//fonts.googleapis.com/css?family=PT+Sans");
@@ -24,8 +26,9 @@
 
 .navbar-brand {
     font-size: 20px;
+    font-family: @font-family-sans-serif;
     font-weight: @headings-font-weight;
-    text-transform: uppercase;
+//    text-transform: uppercase;
 }
 
 // My Mixins ==================================================================
@@ -76,9 +79,15 @@ a:hover {
 // Typography =================================================================
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: @font-family-sans-serif;
+    font-family: @font-family-headings;
     font-weight: @headings-font-weight;
     color: @gray-dark;
+}
+
+.buzzwords {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: @font-family-buzzwords-headings;
+    }
 }
 
 .lead {
@@ -193,9 +202,11 @@ strong {
 .jumbotron {
     margin-top: @navbar-height;
     h1, h2, h3, h4, h5, h6 {
-        font-family: @font-family-sans-serif;
-        font-weight: @headings-font-weight;
-        color: #000;
+        font-family: "Open Sans",sans-serif;
+        font-size: 64px;
+        text-rendering: optimizeLegibility;
+        font-weight: 700;
+        font-style: normal;
     }
     img {
         .center-block();
