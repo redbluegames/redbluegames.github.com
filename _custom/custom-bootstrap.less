@@ -260,13 +260,41 @@ strong {
 
 // Minigames ==================================================================
 
-.minigame-page {
-    min-height: 1000px;
-    background-color: @mininuts-green;
-    border-bottom: 5px solid @brand-primary;
+.minigame-container {
+  background: url(../assets/images/games-pages/minifish-feature.png) no-repeat  center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: @footer-height + 50px;
+  color: black;
 }
 
-.mininuts {
+.minigame-jumbotron {
+  min-height: 400px;
+  background: transparent;
+}
+
+.minigame-borders {
+  border: solid #cbf1ff 8px;
+  background: rgba(128, 198, 224, 0.90);
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.minigame-video {
+  .center-block ();
+  border: dotted black 5px;
+  max-height: 600px;
+  max-width: 400px;
+  height: 500px;
+}
+
+.badge-icon img{
+  width: 172px;
+  height: 60px;
 }
 
 // Sticky Footer ==============================================================
