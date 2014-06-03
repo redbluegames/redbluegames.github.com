@@ -8,11 +8,19 @@ $(document).ready(function() {
   });
 });
 
-
 // Handle flipping the little imagess in the footer
 $(".flipper").mouseenter(function() {
   $(this).transition({
     perspective: '100px',
     rotateY: '180deg'
+  });
+});
+
+/* Minigame Tranisitions */
+$(document).ready(function() {
+  var $containers = $('.minigame-container');
+  $('#but').click(function() {
+    $('.minigame-wrapper.minifish').toggleClass("hidden");
+    $('.minigame-wrapper.mininuts').toggleClass("hidden");
   });
 });

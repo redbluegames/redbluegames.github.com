@@ -60,6 +60,14 @@
     -webkit-transition-delay: initial;
 }
 
+.background-cover (@url) {
+  background: url(@url) no-repeat  center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 // Buttons ====================================================================
 
 .btn-app-store img{
@@ -260,14 +268,20 @@ strong {
 
 // Minigames ==================================================================
 
-.minigame-container {
-  background: url(../assets/images/games-pages/minifish-feature.png) no-repeat  center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-bottom: @footer-height + 50px;
+@minifish-color-background: rgba(103, 192, 224, 0.95);
+@minifish-color-border: #cbf1ff;
+@mininuts-color-background: rgba(122,204,106, 0.95);
+@mininuts-color-border: #c6d98f;
+
+.minigame-wrapper {
   color: black;
+  margin-bottom: @footer-height;
+  &.minifish {
+    .background-cover ("/assets/images/games-pages/minifish-feature.png");
+  }
+  &.mininuts {
+    .background-cover ("/assets/images/games-pages/mininuts/background.png");
+  }
 }
 
 .minigame-jumbotron {
@@ -276,12 +290,21 @@ strong {
 }
 
 .minigame-borders {
-  border: solid #cbf1ff 8px;
+  border: solid black 8px;
   background: rgba(128, 198, 224, 0.90);
   border-radius: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 100px;
   padding: 20px;
+  &.minifish {
+    border-color: @minifish-color-border;
+    background: @minifish-color-background;
+  }
+  &.mininuts {
+    border-color: @mininuts-color-border;
+    background: @mininuts-color-background;
+  }
 }
 
 .minigame-video {
