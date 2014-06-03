@@ -1,11 +1,11 @@
 ---
-permalink: template/
+permalink: minigames/
 ---
 {% include header.html %}
-<br/><br/><br/>
-<button id="but" class="button">Add!</button>
+<div id="left" class="minigame-nav pull-left"><span class="glyphicon glyphicon-arrow-left"></span></div>
+<div id="right" class="minigame-nav pull-right"><span class="glyphicon glyphicon-arrow-right"></span></div>
 
-<div class="minigame-wrapper minifish">
+<div class="minigame-wrapper minifish" id="minifish">
 
   <div class="jumbotron minigame-jumbotron">
     <div class="container">
@@ -49,10 +49,10 @@ permalink: template/
   </div> <!-- /container -->
 </div> <!-- /minigame-wrapper -->
 
-<div class="minigame-wrapper mininuts hidden">
+<div class="minigame-wrapper mininuts hidden" id="mininuts">
   <div class="jumbotron minigame-jumbotron">
-    <div class="container">
-    </div>
+    <img src="/assets/images/games-pages/mininuts/mininuts-tree.png" class="animated bounceInLeft"/>
+    <img src="/assets/images/games-pages/mininuts/mininuts-title.png" class="animated fadeInDown"/>
   </div>
 
   <div class="container">

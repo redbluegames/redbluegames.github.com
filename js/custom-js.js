@@ -16,11 +16,53 @@ $(".flipper").mouseenter(function() {
   });
 });
 
-/* Minigame Tranisitions */
+/* Minigame Microsite Behavior */
 $(document).ready(function() {
-  var $containers = $('.minigame-container');
-  $('#but').click(function() {
-    $('.minigame-wrapper.minifish').toggleClass("hidden");
-    $('.minigame-wrapper.mininuts').toggleClass("hidden");
-  });
+  var wrappers = $('.minigame-wrapper');
+  var activeIndex = LookUpIndex();
+  DisplayIndex(activeIndex);
+
+  $('#left').click(clickLeft);
+  $('#right').click(clickRight);
+
+  function clickLeft() {
+    activeIndex--;
+    if (activeIndex < 0) {
+      activeIndex = wrappers.length-1;
+    }
+    window.location.hash = wrappers.get(activeIndex).getAttribute('id');
+    DisplayIndex (activeIndex);
+  }
+
+  function clickRight() {
+    activeIndex++;
+    if (activeIndex >= wrappers.length) {
+      activeIndex = 0;
+    }
+    window.location.hash = wrappers.get(activeIndex).getAttribute('id');
+    DisplayIndex (activeIndex);
+  }
+
+  function LookUpIndex ()
+  {
+    for (var i = 0; i < wrappers.length; i++) {
+      if (wrappers.get(i).getAttribute('id') === window.location.hash.split('#')[1]) {
+        return i;
+      }
+    }
+    return 0;
+  }
+
+  function DisplayIndex (index)
+  {
+    for (var i = 0; i < wrappers.length; i++) {
+      var jqueryObj = $(wrappers.get(i));
+      if (i == index) {
+        $(jqueryObj).removeClass("hidden");
+      } else {
+        $(jqueryObj).addClass("hidden");
+      }
+    }
+  }
+
 });
