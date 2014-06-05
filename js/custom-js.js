@@ -8,6 +8,8 @@ $(document).ready(function() {
   });
 });
 
+/* Custom Tweening */
+
 // Handle flipping the little imagess in the footer
 $(".flipper").mouseenter(function() {
   $(this).transition({
