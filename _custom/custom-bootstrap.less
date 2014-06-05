@@ -288,20 +288,40 @@ strong {
 .minigame-jumbotron {
   background: transparent;
   img {
+    position: absolute;
     max-width: 100%;
+    max-height: 100%;
     height: auto;
-    width: auto\9; /* ie8 */
+    width: auto;
   }
   .branches {
-    position: absolute;
-    max-height: 100%;
     margin-left: -30px;
+    margin-top: 0;
+  }
+  .hex {
+    margin-top: 30%;
+    max-width: 12%;
+    max-height: 11%;
+    &.acorn {
+      margin-left: 50%;
+    }
+    &.grass {
+      margin-top: 35%;
+      margin-left: 65%;
+    }
+    &.grass2 {
+      margin-top: 20%;
+      margin-left: 35%;
+    }
+    &.dirt {
+      margin-left: 80%;
+    }
   }
   .titleimg {
-    position: absolute;
-    margin-top: 100px;
-    margin-right: 50px;
-    margin-left: 50%;
+    margin-top: @navbar-height + 20px;
+    margin-left: 60%;
+    max-width: 30%;
+    max-height: 30%;
   }
 }
 
@@ -339,7 +359,7 @@ strong {
 
 .minigame-nav {
   position: fixed;
-  margin-top: 25%;
+  margin-top: 20%;
   padding: 100px 25px 100px 25px;
   background: rgba(0, 0, 0, 0.2);
   color: lightgrey;
