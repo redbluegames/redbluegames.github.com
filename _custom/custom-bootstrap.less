@@ -61,7 +61,7 @@
 }
 
 .background-cover (@url) {
-  background: url(@url) no-repeat  center center fixed;
+  background: url(@url) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -268,25 +268,28 @@ strong {
 
 // Minigames ==================================================================
 
-@minifish-color-background: rgba(103, 192, 224, 0.95);
-@minifish-color-border: #cbf1ff;
+@minifish-color-background: rgba(156, 117, 58, 0.95);
+@minifish-color-border: #caa76f;
 @mininuts-color-background: rgba(122,204,106, 0.95);
 @mininuts-color-border: #c6d98f;
 
 .minigame-wrapper {
   color: black;
   margin-bottom: @footer-height;
-  &.minifish {
-//    .background-cover ("/assets/images/games-pages/minifish-feature.png");
-    background: linear-gradient(#4a98dd, #008cc0);
+  &#minifish {
+//    .background-cover ("/assets/images/games-pages/minifish/marketing-banner.png");
+      background-color: #6B5129;
   }
-  &.mininuts {
-    .background-cover ("/assets/images/games-pages/mininuts/background.png");
+  &#mininuts {
+//    .background-cover ("/assets/images/games-pages/mininuts/marketing-banner.png");
+      background-color: #419332;
   }
 }
 
 .minigame-jumbotron {
   background: transparent;
+  margin-top: @navbar-height;
+  min-height: 300px;
   img {
     position: absolute;
     max-width: 100%;
@@ -294,57 +297,13 @@ strong {
     height: auto;
     width: auto;
   }
-  .branches {
-    margin-left: -30px;
-    margin-top: 0;
-  }
-  .hex {
-    margin-top: 30%;
-    max-width: 12%;
-    max-height: 11%;
-    &.acorn {
-      margin-left: 50%;
-    }
-    &.grass {
-      margin-top: 35%;
-      margin-left: 65%;
-    }
-    &.grass2 {
-      margin-top: 20%;
-      margin-left: 35%;
-    }
-    &.dirt {
-      margin-left: 80%;
-    }
-  }
   .minititle {
     margin-top: @navbar-height + 20px;
     margin-left: 60%;
-    max-width: 30%;
-    max-height: 30%;
+    margin-right: 10%;
+    max-width: 35%;
+    max-height: 35%;
     z-index: 1;
-    &.fishtitle {
-      margin-left: 10%;
-      margin-top: 25%;
-    }
-  }
-  .waves {
-    margin-top: @navbar-height;
-  }
-  .whale {
-    margin-left: 55%;
-    margin-top: 25%;
-    max-width: 50%; // 386 x 367
-  }
-  .redfish {
-    margin-left: 45%;
-    margin-top: 20%;
-    max-width: 15%; // = 115/386 *.50, 115x111
-  }
-  .bluefish {
-    margin-left: 40%;
-    margin-top: 50%;
-    max-width: 18%; // = 138/115 * 15, 138x124
   }
 }
 
@@ -355,7 +314,6 @@ strong {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 100px;
-  margin-top: 100%;
   padding: 20px;
   &.minifish {
     border-color: @minifish-color-border;
@@ -364,6 +322,17 @@ strong {
   &.mininuts {
     border-color: @mininuts-color-border;
     background: @mininuts-color-background;
+  }
+}
+@media (min-width: @screen-sm) {
+  .minigame-jumbotron {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: @screen-md) {
+  .minigame-jumbotron {
+    min-height: 575px;
   }
 }
 
@@ -384,12 +353,12 @@ strong {
   position: fixed;
   margin-top: 20%;
   padding: 100px 25px 100px 25px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.02);
   color: lightgrey;
   font-size: 30px;
   z-index: 2;
   &:hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
 }
