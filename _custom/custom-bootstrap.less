@@ -31,6 +31,30 @@
 //    text-transform: uppercase;
 }
 
+.dropdown .active {
+}
+.dropdown-menu {
+  min-width: 0px;
+  > li {
+    min-width: 100%;
+  }
+}
+
+.navbar-default .navbar-nav {
+  .active {
+    color: @navbar-default-link-hover-color;
+  }
+  >.open {
+    >a:focus {
+      background-color: @navbar-default-bg;
+      color: @navbar-default-link-hover-color;
+    }
+    >a:hover {
+      color: @navbar-default-link-hover-color;
+    }
+  }
+}
+
 // My Mixins ==================================================================
 
 .greyscale {

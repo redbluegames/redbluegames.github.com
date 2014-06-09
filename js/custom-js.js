@@ -1,4 +1,5 @@
 // Highlight the active link in the navbar
+$('.dropdown-menu > li > a[href="' + document.location.pathname + '"]').parent().addClass('active');
 $('.nav > li > a[href="' + document.location.pathname + '"]').parent().addClass('active');
 
 // Off-Canvas (Toggles the side-bar for Buzzwords page)
@@ -20,9 +21,13 @@ $(".flipper").mouseenter(function() {
 
 /* Minigame Microsite Behavior */
 $(document).ready(function() {
-  var wrappers = $('.minigame-wrapper');
+  var minigamePath = "/games/minigames/";
+  var minigamePages = ["minifish/", "mininuts/"];
   var activeIndex = LookUpIndex();
-  DisplayIndex(activeIndex);
+
+  if (activeIndex != -1) {
+    $('.dropdown > a').addClass("active");
+  }
 
   $('#left').click(clickLeft);
   $('#right').click(clickRight);
@@ -30,41 +35,26 @@ $(document).ready(function() {
   function clickLeft() {
     activeIndex--;
     if (activeIndex < 0) {
-      activeIndex = wrappers.length-1;
+      activeIndex = minigamePages.length-1;
     }
-    window.location.hash = wrappers.get(activeIndex).getAttribute('id');
-    DisplayIndex (activeIndex);
+    window.location.href = minigamePath + minigamePages[activeIndex];
   }
 
   function clickRight() {
     activeIndex++;
-    if (activeIndex >= wrappers.length) {
+    if (activeIndex >= minigamePages.length) {
       activeIndex = 0;
     }
-    window.location.hash = wrappers.get(activeIndex).getAttribute('id');
-    DisplayIndex (activeIndex);
+    window.location.href = minigamePath + minigamePages[activeIndex];
   }
 
   function LookUpIndex ()
   {
-    for (var i = 0; i < wrappers.length; i++) {
-      if (wrappers.get(i).getAttribute('id') === window.location.hash.split('#')[1]) {
+    for (var i = 0; i < minigamePages.length; i++) {
+      if (minigamePages[i] === document.URL.split("/minigames/")[1]) {
         return i;
       }
     }
-    return 0;
+    return -1;
   }
-
-  function DisplayIndex (index)
-  {
-    for (var i = 0; i < wrappers.length; i++) {
-      var jqueryObj = $(wrappers.get(i));
-      if (i == index) {
-        $(jqueryObj).removeClass("hidden");
-      } else {
-        $(jqueryObj).addClass("hidden");
-      }
-    }
-  }
-
 });
