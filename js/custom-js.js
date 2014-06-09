@@ -20,10 +20,10 @@ $(".flipper").mouseenter(function() {
 });
 
 // Tween our badge icons by scaling up and down on mouseover
-$(".badge-icon").mouseenter(function() {
+$(".badge-icon img").mouseenter(function() {
   $(this).transition({scale: 1.1}, 150, 'ease');
 });
-$(".badge-icon").mouseleave(function() {
+$(".badge-icon img").mouseleave(function() {
   $(this).transition({scale: 1}, 150, 'ease');
 });
 
