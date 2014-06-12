@@ -293,7 +293,7 @@ strong {
 // Minigames ==================================================================
 
 @minifish-color-background: #67c0e0;
-@minifish-color-border: #cbf1ff;
+@minifish-color-border: black;//#cbf1ff;
 @mininuts-color-background: rgba(122,204,106, 1);
 @mininuts-color-border: #c6d98f;
 @webclip-width: 304px;
@@ -371,6 +371,18 @@ strong {
     }
   }
 }
+.minigame-blocks {
+  margin-left: 20px;
+  margin-right: 20px;
+  @media (min-width: @screen-md) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  @media (min-width: @screen-lg) {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+}
 
 .minigame-borders {
   border: solid black 8px;
@@ -378,7 +390,7 @@ strong {
   border-radius: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   padding: 20px;
   padding-top: 0px;
   &.minifish {
@@ -392,27 +404,18 @@ strong {
 }
 
 .minigame-video {
-  padding: 0px;
-  margin: 10px;
   max-width: @webclip-width;
   max-height: @webclip-height;
   .center-block();
   img {
+    padding: 0px;
     .center-block();
-    border: solid black 5px;
-    border-radius: 15px;
     max-width: 250px;
     max-height: 444px;
     @media (min-width: @screen-xs) {
       max-width: @webclip-width;
       max-height: @webclip-height;
     }
-  }
-  .minifish {
-    border-color: @minifish-color-border;
-  }
-  .mininuts {
-    border-color: @mininuts-color-border;
   }
 }
 
@@ -463,7 +466,9 @@ strong {
 .leftnavarrow {
 }
 .rightnavarrow {
-  margin-right: @largescreen-border*2;
+  @media (min-width: @screen-lg) {
+    margin-right: @largescreen-border*2;
+  }
 }
 
 // Sticky Footer ==============================================================
