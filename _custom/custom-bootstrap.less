@@ -16,7 +16,7 @@
 // Navbar =====================================================================
 
 .navbar {
-    border-bottom: 1px solid @brand-primary;
+    border-bottom: 1px solid grey;
     font-size: 14px;
     font-family: @font-family-sans-serif;
     font-weight: @headings-font-weight;
@@ -298,7 +298,16 @@ strong {
 @mininuts-color-border: #c6d98f;
 @webclip-width: 304px;
 @webclip-height: 540px;
-@largescreen-border: 7px;
+@largescreen-border: 2px;
+
+.minigame-background {
+  &.minifish {
+    background-color: @minifish-color-background;
+  }
+  &.mininuts {
+    background-color: @mininuts-color-background;
+  }
+}
 
 .minigame-wrapper {
   color: black;
@@ -490,7 +499,7 @@ body {
 
 /* Set the fixed height of the footer here */
 .footer {
-    border-top: 1px solid @brand-secondary;
+    border-top: 3px solid @brand-secondary;
     font-size: @font-size-small;
     color: @gray-darker;
     background-color: @gray-lighter;
@@ -498,6 +507,9 @@ body {
     h4, h5 {
         color: darken(@gray-darker, 05%);
     }
+}
+.subfooter {
+  border-bottom: 3px solid @brand-primary;
 }
 
 p.credit {
