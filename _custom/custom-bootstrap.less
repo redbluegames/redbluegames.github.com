@@ -17,7 +17,7 @@
 
 .navbar {
     border-bottom: 1px solid grey;
-    font-size: 14px;
+    font-size: @font-size-small;
     font-family: @font-family-sans-serif;
     font-weight: @headings-font-weight;
     color: #000;
@@ -25,8 +25,8 @@
 }
 
 .navbar-brand {
-    font-size: 20px;
-    font-family: @font-family-sans-serif;
+    font-size: @font-size-large;
+    font-family: @font-family-headings;
     font-weight: @headings-font-weight;
 //    text-transform: uppercase;
 }
@@ -96,6 +96,18 @@
 
 .btn-app-store img{
     max-width: @btn-app-width;
+}
+
+.btn-email {
+  border-color: darken(@brand-secondary, 20%);
+  background-color: @brand-secondary;
+  padding: 15px 80px 15px 80px;
+}
+
+.btn-email:hover, .btn-email:focus, .btn-email:active, .btn-email.active, .open .dropdown-toggle.btn-email {
+  .slow-fade();
+  background-color: darken(@brand-secondary, 10%);
+  border-color: @brand-secondary;
 }
 
 // Links ======================================================================
@@ -234,7 +246,7 @@ strong {
 .jumbotron {
     margin-top: @navbar-height;
     h1, h2, h3, h4, h5, h6 {
-        font-family: "Open Sans",sans-serif;
+        font-family: @font-family-headings;
         font-size: 64px;
         text-rendering: optimizeLegibility;
         font-weight: 700;
@@ -262,14 +274,25 @@ strong {
 }
 
 .aboutredblue {
-    background-image: linear-gradient(315deg, rgba(110, 11, 11, 0.30), rgba(130, 14, 14, 0.25) 100%),
-        url(../assets/patterns/random_grey_variations.png);
-//    background-attachment: fixed;
-    text-shadow: darken(@brand-secondary, 20%) 4px 3px 0px, rgba(0, 0, 0, 0.14902) 9px 8px 0px;
-    border-bottom: 1px solid @gray-dark;
-    h1 {
-        color: white;
-    }
+  // Reproportion our image as we scale up
+  background-image: url(/assets/images/redblue-header-sm.png);
+  @media (min-width: @screen-xs) {
+    background-image: url(/assets/images/redblue-header.png);
+  }
+  @media (min-width: @screen-lg) {
+    background-image: url(/assets/images/redblue-header-lg.png);
+  }
+  background-attachment: fixed;
+  background-size:100%;
+  text-shadow: darken(black, 20%) 4px 3px 0px, rgba(0, 0, 0, 0.14902) 9px 8px 0px;
+  border-bottom: 1px solid @gray-dark;
+  h1 {
+      color: white;
+  }
+}
+
+.engine-highlights {
+  padding: 15px 0px 15px 0px;
 }
 
 // Carousels ==================================================================
@@ -567,9 +590,15 @@ html {
 // Company page
 
 .skill-logo {
-    max-width: 100px;
-    text-align: center;
-    .greyscale();
+  .center-block ();
+  max-width: 100px;
+  text-align: center;
+  .greyscale();
+}
+
+.platform-logo {
+  max-width: 75px;
+  text-align: center;
 }
 
 // TODO Refactor this to nest properly under .skill-logo

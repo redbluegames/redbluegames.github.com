@@ -20,11 +20,17 @@ $(".flipper").mouseenter(function() {
 });
 
 // Tween our badge icons by scaling up and down on mouseover
-$(".badge-icon img").mouseenter(function() {
+$(".scale-on-hover").mouseenter(function() {
   $(this).transition({scale: 1.1}, 150, 'ease');
 });
-$(".badge-icon img").mouseleave(function() {
+$(".scale-on-hover").mouseleave(function() {
   $(this).transition({scale: 1}, 150, 'ease');
+});
+$(".wiggle-on-hover").mouseenter(function() {
+  $(this).addClass('animated rubberBand');
+});
+$(".wiggle-on-hover").mouseleave(function() {
+  $(this).removeClass('animated rubberBand');
 });
 
 
