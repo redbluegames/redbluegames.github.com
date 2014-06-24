@@ -361,18 +361,6 @@ strong {
     }
   }
   @media (min-width: @screen-lg) {
-    max-width: @screen-lg;
-    border-left: @largescreen-border solid black;
-    border-right: @largescreen-border solid black;
-    margin-left: auto;
-    margin-right: auto;
-    .center-block ();
-    &.minifish {
-      border-color: @minifish-color-border;
-    }
-    &.mininuts {
-      border-color: @mininuts-color-border;
-    }
   }
 }
 
@@ -389,12 +377,17 @@ strong {
     width: auto;
   }
   .minititle {
-    position: absolute;
-    top: @navbar-height + 20px;
-    left: 60%;
-    max-width: 35%;
-    max-height: 260px;
-    z-index: 1;
+      position: absolute;
+      top: @navbar-height + 40px;
+      max-width: 28%;
+      max-height: 260px;
+      z-index: 1;
+    &.nutstitle {
+      left: 60%;
+    }
+    &.fishtitle {
+      left: 15%;
+    }
   }
   @media (min-width: @screen-sm) {
     min-height: 400px;
@@ -407,30 +400,19 @@ strong {
     img {
       position: relative;
       .center-block ();
-      max-width: @screen-lg - @largescreen-border * 2;
     }
   }
 }
 .minigame-blocks {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 50px;
-  @media (min-width: @screen-md) {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-  @media (min-width: @screen-lg) {
-    margin-left: 120px;
-    margin-right: 120px;
-  }
 }
 
 .minigame-borders {
   border: solid black 8px;
   background: rgba(128, 198, 224, 0.90);
   border-radius: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 20px;
   padding: 20px;
   padding-top: 0px;
@@ -489,7 +471,7 @@ strong {
   margin-top: 15%;
   z-index: 2;
   @media (min-width: @screen-lg) {
-    width: @screen-lg;
+//    width: @screen-lg;
   }
 }
 
