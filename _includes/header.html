@@ -10,7 +10,7 @@
     <link rel="icon"
       type="image/jpg"
       href="/assets/images/favicon.jpg">
-    <title>Red Blue Games</title>
+    <title>{% if include.title %} {{ include.title }}{% else %}Red Blue Games{% endif %}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
