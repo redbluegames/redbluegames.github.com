@@ -37,9 +37,21 @@
     <image:image>
       <image:loc>http://redbluegames.com/assets/images/bw-carousel/gamesetup-fourteams.jpg</image:loc>
     </image:image>
-  </url>
-  <url>
-    <loc>http://redbluegames.tumblr.com/</loc>
+    <image:image>
+      <image:loc>http://redbluegames.com/assets/images/bw-carousel/green-turn-howToPlay.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://redbluegames.com/assets/images/bw-carousel/blue-turn-houseRules.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://redbluegames.com/assets/images/bw-carousel/red-turn-gestures.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://redbluegames.com/assets/images/bw-carousel/turn-summary-review.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://redbluegames.com/assets/images/bw-carousel/buzzmode-annoy.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>http://redbluegames.com/company/</loc>
