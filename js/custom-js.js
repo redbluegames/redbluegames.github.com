@@ -104,7 +104,7 @@ $(document).ready(function() {
   function LookUpIndex ()
   {
     for (var i = 0; i < minigamePages.length; i++) {
-      if (minigamePages[i] === document.URL.split("/minigames/")[1]) {
+      if (minigamePages[i] === escape(document.URL.split("/minigames/")[1])) {
         return i;
       }
     }
