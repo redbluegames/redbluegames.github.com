@@ -19,6 +19,45 @@ $(".flipper").mouseenter(function() {
   });
 });
 
+// Handle our bio pics sliding in on scroll
+
+// Snagged from https://coderwall.com/p/fnvjvg
+$.fn.inView = function(){
+    //Window Object
+    var win = $(window);
+    //Object to Check
+    obj = $(this);
+    //the top Scroll Position in the page
+    var scrollPosition = win.scrollTop();
+    //the end of the visible area in the page, starting from the scroll position
+    var visibleArea = win.scrollTop() + win.height();
+    //the end of the object to check
+    var objEndPos = (obj.offset().top + obj.outerHeight());
+    return(visibleArea-600 >= objEndPos && scrollPosition <= objEndPos);
+};
+
+$(window).scroll(function(){
+    if ($(".bio").inView() && !$(".bio").hasClass("animated")) {
+     $(".bio").removeClass("hidden");
+     $(".bio").addClass("animated");
+    }
+});
+
+// Pop in engine icons
+$(document).ready (function () {
+  $('.android-icon').addClass("hidden");
+  $('.unity-icon').addClass("hidden");
+  $(".vicious-icon").addClass("animated bounceIn");
+  setTimeout(function () {
+    $('.android-icon').removeClass("hidden");
+    $('.android-icon').addClass('animated bounceIn');
+  }, 100);
+  setTimeout(function () {
+    $('.unity-icon').removeClass("hidden");
+    $('.unity-icon').addClass('animated bounceIn');
+  }, 200);
+});
+
 // Tween our badge icons by scaling up and down on mouseover
 $(".scale-on-hover").mouseenter(function() {
   $(this).transition({scale: 1.1}, 150, 'ease');
@@ -32,7 +71,6 @@ $(".wiggle-on-hover").mouseenter(function() {
 $(".wiggle-on-hover").mouseleave(function() {
   $(this).removeClass('animated rubberBand');
 });
-
 
 /* Minigame Microsite Behavior */
 $(document).ready(function() {
