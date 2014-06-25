@@ -369,7 +369,20 @@ strong {
 .minigame-jumbotron {
   background: transparent;
   margin-top: @navbar-height - 10px;
-  min-height: 300px;
+  min-height: 250px;
+  @media (min-width: @screen-xs) {
+    min-height: 375px;
+  }
+  @media (min-width: @screen-md) {
+    min-height: 475px;
+  }
+  @media (min-width: @screen-lg) {
+    //min-height: 625px;
+    img {
+      position: relative;
+      .center-block ();
+    }
+  }
   img {
     .center-block ();
     position: absolute;
@@ -389,19 +402,6 @@ strong {
     }
     &.fishtitle {
       left: 15%;
-    }
-  }
-  @media (min-width: @screen-sm) {
-    min-height: 400px;
-  }
-  @media (min-width: @screen-md) {
-    min-height: 475px;
-  }
-  @media (min-width: @screen-lg) {
-    //min-height: 625px;
-    img {
-      position: relative;
-      .center-block ();
     }
   }
 }
@@ -472,8 +472,11 @@ strong {
 .minigame-nav-container {
   position: fixed;
   width: 100%;
-  margin-top: 15%;
+  margin-top: 10%;
   z-index: 2;
+  @media (min-width: @screen-md) {
+    margin-top: 15%;
+  }
   @media (min-width: @screen-lg) {
 //    width: @screen-lg;
   }
