@@ -19,6 +19,7 @@ $(".flipper").mouseenter(function() {
   });
 });
 
+/*
 // Handle our bio pics sliding in on scroll
 
 // Snagged from https://coderwall.com/p/fnvjvg
@@ -42,6 +43,7 @@ $(window).scroll(function(){
      $(".bio").addClass("animated");
     }
 });
+*/
 
 // Pop in engine icons
 $(document).ready (function () {
