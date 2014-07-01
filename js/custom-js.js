@@ -62,10 +62,10 @@ $(document).ready (function () {
 
 // Tween our badge icons by scaling up and down on mouseover
 $(".scale-on-hover").mouseenter(function() {
-  $(this).transition({scale: 1.1}, 150, 'ease');
+  $(this).transition({scale: 1.1}, 100, 'ease');
 });
 $(".scale-on-hover").mouseleave(function() {
-  $(this).transition({scale: 1}, 150, 'ease');
+  $(this).transition({scale: 1}, 100, 'ease');
 });
 $(".wiggle-on-hover").mouseenter(function() {
   $(this).addClass('animated rubberBand');
@@ -77,7 +77,7 @@ $(".wiggle-on-hover").mouseleave(function() {
 /* Minigame Microsite Behavior */
 $(document).ready(function() {
   var minigamePath = "/games/minigames/";
-  var minigamePages = ["minifish/", "mininuts/"];
+  var minigamePages = ["minifish/", "mininuts/", "ministackem/"];
   var activeIndex = LookUpIndex();
 
   if (activeIndex != -1) {
