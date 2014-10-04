@@ -6772,7 +6772,7 @@ strong {
 #fourofour {
   padding-top: 80px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   #fourofour .center-vertically {
     padding-top: 15%;
   }
