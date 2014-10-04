@@ -6769,13 +6769,8 @@ strong {
   color: #ddd;
   text-shadow: 3px 0 3px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 1px 0 1px rgba(0, 0, 0, 0.1);
 }
-#fourofour {
-  padding-top: 80px;
-}
-@media (min-width: 1200px) {
-  #fourofour .center-vertically {
-    padding-top: 15%;
-  }
+.404banner {
+  background-image: url(/assets/images/games-pages/mininutes/squirell.png);
 }
 .aboutredblue {
   background-image: url(/assets/images/redblue-header-sm.png);
