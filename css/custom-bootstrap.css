@@ -6770,9 +6770,15 @@ strong {
   text-shadow: 3px 0 3px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 1px 0 1px rgba(0, 0, 0, 0.1);
 }
 #fourofour {
-  padding-top: 80px;
+  padding-top: 60px;
+}
+#fourofour img {
+  padding-bottom: 140px;
 }
 @media (min-width: 992px) {
+  #fourofour {
+    padding-top: 80px;
+  }
   #fourofour .center-vertically {
     padding-top: 15%;
   }
