@@ -62,7 +62,7 @@ permalink: game-off-2013/
 					break;
 				}
 			});
-			u.initPlugin(jQuery("#unityPlayer")[0], "d");
+			u.initPlugin(jQuery("#unityPlayer")[0], "color-quest.unity3d");
 		});
 	-->
 	</script>
@@ -110,11 +110,11 @@ permalink: game-off-2013/
 				</a>
 			</div>
 		</div>
-		<p class="footer text-center">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+		<p class="text-center">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
 	</div>
 	<div class="logo text-center">
 		<img src="./assets/images/games-pages/color-quest/ui_title.png" alt="color quest logo"/>
-		<p class="footer text-center">A <a href="https://github.com/github/game-off-2013">Github</a> Gameoff 2013 Contest Submission</p>
+		<p class="text-center">A <a href="https://github.com/github/game-off-2013">Github</a> Gameoff 2013 Contest Submission</p>
 		<p class="text-center">by <a href="http://www.redbluegames.com">Red Blue Studios</a></p>
 	</div>
 	<div class="instructions">
@@ -189,21 +189,4 @@ permalink: game-off-2013/
 			</div>
 		</div>
 	</div>
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery-2.0.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<!-- Google Analytics -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-45863297-2', 'github.com');
-ga('send', 'pageview');
-
-</script>
-</body>
-</html>
+{% include footer.html %}
