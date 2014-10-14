@@ -1,211 +1,209 @@
 ---
-permalink: games/color-quest/
+permalink: game-off-2013/
 ---
+{% include header.html title="Color Quest - Red Blue Games"%}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Color Quest | Github Gameoff 2013</title>
+<head>
+	<link href="./css/color-quest.css" rel="stylesheet">
 
-		<!-- Bootstrap core CSS -->
-		<link href="./css/bootstrap.min.css" rel="stylesheet">
-		<link href="./css/color-quest.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
 
-		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
-		<script type="text/javascript">
-		<!--
-		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
-		if (document.location.protocol == 'https:')
-			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
-		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
-		-->
-		</script>
-		<script type="text/javascript">
-		<!--
-			var config = {
-				width: 400,
-				height: 640,
-				params: { enableDebugging:"0" }
-
-			};
-			var u = new UnityObject2(config);
-
-			jQuery(function() {
-
-				var $missingScreen = jQuery("#unityPlayer").find(".missing");
-				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
-				$missingScreen.hide();
-				$brokenScreen.hide();
-
-				u.observeProgress(function (progress) {
-					switch(progress.pluginStatus) {
-						case "broken":
-							$brokenScreen.find("a").click(function (e) {
-								e.stopPropagation();
-								e.preventDefault();
-								u.installPlugin();
-								return false;
-							});
-							$brokenScreen.show();
-						break;
-						case "missing":
-							$missingScreen.find("a").click(function (e) {
-								e.stopPropagation();
-								e.preventDefault();
-								u.installPlugin();
-								return false;
-							});
-							$missingScreen.show();
-						break;
-						case "installed":
-							$missingScreen.remove();
-						break;
-						case "first":
-						break;
-					}
-				});
-				u.initPlugin(jQuery("#unityPlayer")[0], "color-quest.unity3d");
-			});
-		-->
-		</script>
-		<style type="text/css">
-		<!--
-		div.unity-content {
-			margin: auto;
-			width: 400px;
-			font-size: 10px;
-		}
-		div.broken,
-		div.missing {
-			margin: auto;
-			position: relative;
-			top: 50%;
-			width: 193px;
-		}
-		div.broken a,
-		div.missing a {
-			height: 63px;
-			position: relative;
-			top: -31px;
-		}
-		div.broken img,
-		div.missing img {
-			border-width: 0px;
-		}
-		div.broken {
-			display: none;
-		}
-		div#unityPlayer {
-			cursor: default;
-			height: 640px;
-			width: 400px;
-		}
-		-->
-		</style>
-	</head>
-	<body>
-		<div class="unity-content">
-			<div id="unityPlayer">
-				<div class="missing">
-					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
-						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
-					</a>
-				</div>
-			</div>
-			<p class="footer text-center">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
-		</div>
-		<div class="logo text-center">
-			<img src="./assets/images/games-pages/color-quest/ui_title.png" alt="color quest logo"/>
-			<p class="footer text-center">A <a href="https://github.com/github/game-off-2013">Github</a> Gameoff 2013 Contest Submission</p>
-			<p class="text-center">by <a href="http://www.redbluegames.com">Red Blue Studios</a></p>
-		</div>
-		<div class="instructions">
-			<div class="row marketing">
-				<div class="col-lg-8 col-lg-offset-2">
-					<p>You play as Pigment, a black and white pixel on a quest to become a color pixel by collecting colored crystal diodes. You race through a forever-scrolling grayscale obstacle course, changing between the RGB colors you collect to survive. For example, changing to a blue pixel will allow you to slow down time and move with better reflexes. Traverse as much of the world as possible, while absorbing as much color as you can. Use absorbed colors to purchase upgrades in order to help Pigment achieve his colorful form.</p>
-					<div class="text-center">
-					<h2>Goal</h2>
-					<p>Try to run as far as you can, using your powers and upgrades from the shop to help you along the way.</p>
-					<h2>Movement</h2>
-						<div class="inline-image"><img class="inline-image" src="./assets/images/games-pages/color-quest/movekeys.png" alt="move keys"/>
-							<p>Press the <strong>A</strong> and <strong>D</strong> keys to move left and right.</p>
-						</div>
-						<div class=""><img class="inline-image" src="./assets/images/powerkeys.png" alt="power keys"/>
-							<p>Press the <strong>J</strong>, <strong>K</strong>, and <strong>L</strong> keys to activate your powers.</p>
-						</div>
-					</div>
-					<h2>Pickups</h2>
-					<div class="well">
-						<div class="media">
-							<img class="pull-right media-object" src="./assets/images/games-pages/color-quest/crystals.png" alt="power keys"/>
-							<h4 class="media-heading">Crystals</h4>
-							<p class="media-body">These crystals can be collected and used to activate your different powers. They are also used as currency at the store.</p>
-						</div>
-						<br/>
-						<div class="media">
-							<img class="pull-left media-object" src="./assets/images/games-pages/color-quest/megapixel.png" alt="power keys"/>
-							<h4 class="media-heading">MegaPixels</h4>
-							<p class="media-body">These are rare pickups that contain a random goodie inside. There could be a boost powerup, a revive powerup, or extra crystals.</p>
-						</div>
-					</div>
-					<h2>Powers</h2>
-					<div class="media">
-						<img class="pull-left media-object" src="./assets/images/games-pages/color-quest/redpower.png" alt="power keys"/>
-						<h4 class="media-heading red">Laser (Red)</h4>
-						<p class="media-body">The laser allows you to break through blocks in your way. Each shot drains your meter slightly.<br/><strong>Upgrade:</strong> The laser upgrade makes each shot drain less power.</p>
-					</div>
-					<div class="media">
-						<img class="pull-left media-object" src="./assets/images/games-pages/color-quest/greenpower.png" alt="power keys"/>
-						<h4 class="media-heading green">Shields (Green)</h4>
-						<p class="media-body">Shields allow you to take block hits without dying. Each hit drains your shield meter.<br/><strong>Upgrade:</strong> The shield upgrade makes each hit drain less power.</p>
-					</div>
-					<div class="media">
-						<img class="pull-left media-object" src="./assets/images/games-pages/color-quest/bluepower.png" alt="power keys"/>
-						<h4 class="media-heading blue">Slow Down (Blue)</h4>
-						<p class="media-body">You can slow down the map when things get too dicey. This lets you move left and right a little faster and forward much slower.<br/><strong>Upgrade:</strong> The slow down upgrade makes Pigment move faster left and right.</p>
-					</div>
-				</div>
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="text-center">
-						<h2>Shop</h2>
-						<p>You can upgrade each of Pigment's colors at the shop. You can also buy boosts to your games with a head start.</p>
-					<img src="./assets/images/games-pages/color-quest/shop.png" alt="shop"/></div>
-					<h4>Consumables</h4>
-					<ul><li>Boost: Pigment gets a head start on next play.</li><li>Super Boost: Pigment gets an even bigger head start on next play.</li></ul>
-					<h4>Red Power Upgrades</h4>
-					<ul><li>Fill Faster: Meter charges a little faster.</li><li>Last Longer: Meter takes longer to deplete when active.</li><li>Magnet: Pull in nearby diodes of the same color.</li><li>Efficient Laser: Each shot takes less power, giving pigment more of them.</li></ul>
-					<h4>Blue Power Upgrades</h4>
-					<ul><li>Fill Faster: Meter charges a little faster.</li><li>Last Longer: Meter takes longer to deplete when active.</li><li>Magnet: Pull in nearby diodes of the same color.</li><li>Better Reflexes: Pigment can dodge faster left and right.</li></ul>
-					<h4>Green Power Upgrades</h4>
-					<ul><li>Fill Faster: Meter charges a little faster.</li><li>Last Longer: Meter takes longer to deplete when active.</li><li>Magnet: Pull in nearby diodes of the same color.</li><li>Stronger Shields: Each hit to Pigment's shields takes less energy.</li></ul>
-					<h3>Attributions</h3>
-					<h4>Music</h4>
-					<p>The following music was used in the final cut. It is an awesome Creative Commons licensed album called <a href="http://freemusicarchive.org/music/Multifaros/The_Factory/">The Factory</a> by <a href="http://multifaros.info.se/">Multifaros</a>.</p>
-					<ul>
-						<li><a href="http://freemusicarchive.org/music/Multifaros/The_Factory/">The Boss</a></li>
-						<li><a href="http://freemusicarchive.org/music/Multifaros/The_Factory/">The Factory</a></li>
-						<li><a href="http://freemusicarchive.org/music/Multifaros/The_Factory/">The Staff</a></li>
-					</uL>
-					<h4>Fonts</h4>
-					<p>The primary font in Color Quest is <a href="http://www.fontsquirrel.com/fonts/bowlby-one">Bowlby One</a> by the great <a href="http://www.fontsquirrel.com/fonts/list/foundry/vernon-adams">Vernon Adams</a>.</p>
-				</div>
-			</div>
-		</div>
-<!-- Bootstrap core JavaScript
-	================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/jquery-2.0.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Google Analytics -->
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	ga('create', 'UA-45863297-2', 'github.com');
-	ga('send', 'pageview');
-
+	<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+	<script type="text/javascript">
+	<!--
+	var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+	if (document.location.protocol == 'https:')
+		unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+	document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+	-->
 	</script>
-	</body>
-	</html>
+	<script type="text/javascript">
+	<!--
+		var config = {
+			width: 400,
+			height: 640,
+			params: { enableDebugging:"0" }
+
+		};
+		var u = new UnityObject2(config);
+
+		jQuery(function() {
+
+			var $missingScreen = jQuery("#unityPlayer").find(".missing");
+			var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+			$missingScreen.hide();
+			$brokenScreen.hide();
+
+			u.observeProgress(function (progress) {
+				switch(progress.pluginStatus) {
+					case "broken":
+						$brokenScreen.find("a").click(function (e) {
+							e.stopPropagation();
+							e.preventDefault();
+							u.installPlugin();
+							return false;
+						});
+						$brokenScreen.show();
+					break;
+					case "missing":
+						$missingScreen.find("a").click(function (e) {
+							e.stopPropagation();
+							e.preventDefault();
+							u.installPlugin();
+							return false;
+						});
+						$missingScreen.show();
+					break;
+					case "installed":
+						$missingScreen.remove();
+					break;
+					case "first":
+					break;
+				}
+			});
+			u.initPlugin(jQuery("#unityPlayer")[0], "color-quest.unity3d");
+		});
+	-->
+	</script>
+	<style type="text/css">
+	<!--
+	div.unity-content {
+		margin: auto;
+		width: 400px;
+		font-size: 10px;
+	}
+	div.broken,
+	div.missing {
+		margin: auto;
+		position: relative;
+		top: 50%;
+		width: 193px;
+	}
+	div.broken a,
+	div.missing a {
+		height: 63px;
+		position: relative;
+		top: -31px;
+	}
+	div.broken img,
+	div.missing img {
+		border-width: 0px;
+	}
+	div.broken {
+		display: none;
+	}
+	div#unityPlayer {
+		cursor: default;
+		height: 640px;
+		width: 400px;
+	}
+	-->
+	</style>
+</head>
+<body>
+	<div class="unity-content">
+		<div id="unityPlayer">
+			<div class="missing">
+				<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+					<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+				</a>
+			</div>
+		</div>
+		<p class="footer text-center">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+	</div>
+	<div class="logo text-center">
+		<img src="./assets/images/games-pages/color-quest/ui_title.png" alt="color quest logo"/>
+		<p class="footer text-center">A <a href="https://github.com/github/game-off-2013">Github</a> Gameoff 2013 Contest Submission</p>
+		<p class="text-center">by <a href="http://www.redbluegames.com">Red Blue Studios</a></p>
+	</div>
+	<div class="instructions">
+		<div class="row marketing">
+			<div class="col-lg-8 col-lg-offset-2">
+				<p>You play as Pigment, a black and white pixel on a quest to become a color pixel by collecting colored crystal diodes. You race through a forever-scrolling grayscale obstacle course, changing between the RGB colors you collect to survive. For example, changing to a blue pixel will allow you to slow down time and move with better reflexes. Traverse as much of the world as possible, while absorbing as much color as you can. Use absorbed colors to purchase upgrades in order to help Pigment achieve his colorful form.</p>
+				<div class="text-center">
+				<h2>Goal</h2>
+				<p>Try to run as far as you can, using your powers and upgrades from the shop to help you along the way.</p>
+				<h2>Movement</h2>
+					<div class="inline-image"><img class="inline-image" src="./assets/images/games-pages/color-quest/movekeys.png" alt="move keys"/>
+						<p>Press the <strong>A</strong> and <strong>D</strong> keys to move left and right.</p>
+					</div>
+					<div class=""><img class="inline-image" src="./assets/images/powerkeys.png" alt="power keys"/>
+						<p>Press the <strong>J</strong>, <strong>K</strong>, and <strong>L</strong> keys to activate your powers.</p>
+					</div>
+				</div>
+				<h2>Pickups</h2>
+				<div class="well">
+					<div class="media">
+						<img class="pull-right media-object" src="./assets/images/games-pages/color-quest/crystals.png" alt="power keys"/>
+						<h4 class="media-heading">Crystals</h4>
+						<p class="media-body">These crystals can be collected and used to activate your different powers. They are also used as currency at the store.</p>
+					</div>
+					<br/>
+					<div class="media">
+						<img class="pull-left media-object" src="./assets/images/games-pages/color-quest/megapixel.png" alt="power keys"/>
+						<h4 class="media-heading">MegaPixels</h4>
+						<p class="media-body">These are rare pickups that contain a random goodie inside. There could be a boost powerup, a revive powerup, or extra crystals.</p>
+					</div>
+				</div>
+				<h2>Powers</h2>
+				<div class="media">
+					<img class="pull-left media-object" src="./assets/images/games-pages/color-quest/redpower.png" alt="power keys"/>
+					<h4 class="media-heading red">Laser (Red)</h4>
+					<p class="media-body">The laser allows you to break through blocks in your way. Each shot drains your meter slightly.<br/><strong>Upgrade:</strong> The laser upgrade makes each shot drain less power.</p>
+				</div>
+				<div class="media">
+					<img class="pull-left media-object" src="./assets/images/games-pages/color-quest/greenpower.png" alt="power keys"/>
+					<h4 class="media-heading green">Shields (Green)</h4>
+					<p class="media-body">Shields allow you to take block hits without dying. Each hit drains your shield meter.<br/><strong>Upgrade:</strong> The shield upgrade makes each hit drain less power.</p>
+				</div>
+				<div class="media">
+					<img class="pull-left media-object" src="./assets/images/games-pages/color-quest/bluepower.png" alt="power keys"/>
+					<h4 class="media-heading blue">Slow Down (Blue)</h4>
+					<p class="media-body">You can slow down the map when things get too dicey. This lets you move left and right a little faster and forward much slower.<br/><strong>Upgrade:</strong> The slow down upgrade makes Pigment move faster left and right.</p>
+				</div>
+			</div>
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="text-center">
+					<h2>Shop</h2>
+					<p>You can upgrade each of Pigment's colors at the shop. You can also buy boosts to your games with a head start.</p>
+				<img src="./assets/images/games-pages/color-quest/shop.png" alt="shop"/></div>
+				<h4>Consumables</h4>
+				<ul><li>Boost: Pigment gets a head start on next play.</li><li>Super Boost: Pigment gets an even bigger head start on next play.</li></ul>
+				<h4>Red Power Upgrades</h4>
+				<ul><li>Fill Faster: Meter charges a little faster.</li><li>Last Longer: Meter takes longer to deplete when active.</li><li>Magnet: Pull in nearby diodes of the same color.</li><li>Efficient Laser: Each shot takes less power, giving pigment more of them.</li></ul>
+				<h4>Blue Power Upgrades</h4>
+				<ul><li>Fill Faster: Meter charges a little faster.</li><li>Last Longer: Meter takes longer to deplete when active.</li><li>Magnet: Pull in nearby diodes of the same color.</li><li>Better Reflexes: Pigment can dodge faster left and right.</li></ul>
+				<h4>Green Power Upgrades</h4>
+				<ul><li>Fill Faster: Meter charges a little faster.</li><li>Last Longer: Meter takes longer to deplete when active.</li><li>Magnet: Pull in nearby diodes of the same color.</li><li>Stronger Shields: Each hit to Pigment's shields takes less energy.</li></ul>
+				<h3>Attributions</h3>
+				<h4>Music</h4>
+				<p>The following music was used in the final cut. It is an awesome Creative Commons licensed album called <a href="http://freemusicarchive.org/music/Multifaros/The_Factory/">The Factory</a> by <a href="http://multifaros.info.se/">Multifaros</a>.</p>
+				<ul>
+					<li><a href="http://freemusicarchive.org/music/Multifaros/The_Factory/">The Boss</a></li>
+					<li><a href="http://freemusicarchive.org/music/Multifaros/The_Factory/">The Factory</a></li>
+					<li><a href="http://freemusicarchive.org/music/Multifaros/The_Factory/">The Staff</a></li>
+				</uL>
+				<h4>Fonts</h4>
+				<p>The primary font in Color Quest is <a href="http://www.fontsquirrel.com/fonts/bowlby-one">Bowlby One</a> by the great <a href="http://www.fontsquirrel.com/fonts/list/foundry/vernon-adams">Vernon Adams</a>.</p>
+			</div>
+		</div>
+	</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45863297-2', 'github.com');
+ga('send', 'pageview');
+
+</script>
+</body>
+</html>
