@@ -11,14 +11,6 @@ $(document).ready(function() {
 
 /* Custom Tweening */
 
-// Handle flipping the little imagess in the footer
-$(".flipper").mouseenter(function() {
-  $(this).transition({
-    perspective: '100px',
-    rotateY: '180deg'
-  });
-});
-
 /*
 // Handle our bio pics sliding in on scroll
 
@@ -61,12 +53,6 @@ $(document).ready (function () {
 });
 
 // Tween our badge icons by scaling up and down on mouseover
-$(".scale-on-hover").mouseenter(function() {
-  $(this).transition({scale: 1.1}, 100, 'ease');
-});
-$(".scale-on-hover").mouseleave(function() {
-  $(this).transition({scale: 1}, 100, 'ease');
-});
 $(".wiggle-on-hover").mouseenter(function() {
   $(this).addClass('animated rubberBand');
 });
