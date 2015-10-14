@@ -533,10 +533,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -545,10 +545,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -557,10 +557,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -569,10 +569,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -581,10 +581,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -6802,9 +6802,6 @@ strong {
 .aboutredblue h1 {
   color: white;
 }
-.engine-highlights {
-  padding: 15px 0px 15px 0px;
-}
 #bwCarousel {
   display: block;
   margin-left: auto;
@@ -7026,7 +7023,7 @@ strong {
   }
 }
 @media (min-width: 1200px) {
-  
+
 }
 .minigame-nav {
   position: static;
@@ -7119,31 +7116,6 @@ html {
   margin-right: auto;
   max-width: 100px;
   text-align: center;
-  filter: url(filters.svg#grayscale);
-  /* Firefox 3.5+ */
-
-  filter: gray;
-  /* IE6-9 */
-
-  -webkit-filter: grayscale(1);
-  /* Google Chrome, Safari 6+ & Opera 15+ */
-
-}
-.platform-logo {
-  max-width: 75px;
-  text-align: center;
-}
-.skill-logo:hover {
-  filter: none;
-  -webkit-filter: grayscale(0);
-  /* Google Chrome, Safari 6+ & Opera 15+ */
-
-  opacity: 100;
-  filter: alpha(opacity=10000);
-}
-.unity-logo {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
 }
 .bio {
   padding-top: 10px;
