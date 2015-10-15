@@ -266,6 +266,11 @@ strong {
     border-bottom: 2px solid black;
 }
 
+.jumbotron.services {
+    background-image: linear-gradient(315deg, rgba(30, 50, 70, 0.40), rgba(10, 50, 100, 0.40) 90%),
+        url(../assets/images/games-pages/mininuts/marketing-banner-lg.png);
+}
+
 .jumbotron-text {
     text-align: center;
     font-size: 30px;
@@ -286,7 +291,7 @@ strong {
   }
 }
 
-.aboutredblue {
+.fullbanner {
   // Reproportion our image as we scale up
   background-image: url(/assets/images/redblue-header-sm.png);
   @media (min-width: @screen-xs) {
@@ -309,6 +314,29 @@ strong {
   border-bottom: 1px solid @gray-dark;
   h1 {
       color: white;
+  }
+}
+
+#aboutredblue {
+  background-image: url(/assets/images/redblue-header-sm.png);
+  @media (min-width: @screen-xs) {
+    background-image: url(/assets/images/redblue-header.png);
+  }
+  @media (min-width: @screen-lg) {
+    background-image: url(/assets/images/redblue-header-lg.png);
+  }
+}
+
+#services-banner {
+  background-image: url(/assets/images/games-pages/mininuts/marketing-banner-lg.png);
+  @media (min-width: @screen-sm) {
+    background-image: url(/assets/images/games-pages/mininuts/marketing-banner-lg.png);
+  }
+  @media (min-width: @screen-md) {
+    background-image: url(/assets/images/games-pages/mininuts/marketing-banner-xl.png);
+  }
+  @media (min-width: @screen-lg) {
+    background-image: url(/assets/images/games-pages/mininuts/marketing-banner-xl.png);
   }
 }
 
