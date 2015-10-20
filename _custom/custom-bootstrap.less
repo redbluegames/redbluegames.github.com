@@ -601,19 +601,26 @@ body {
 
 /* Set the fixed height of the footer here */
 .footer {
-    border-top: 3px solid @brand-secondary;
     font-size: @font-size-small;
-    color: @gray-darker;
+    color: white;
     background-color: @gray-lighter;
-
-    h4, h5 {
-        color: darken(@gray-darker, 05%);
+    a {
+      color: white;
+    }
+    a:hover {
+      color: #333;
+    }
+    h5 {
+        color: white;
+        font-size: 30px;
     }
 }
-.subfooter {
-  border-bottom: 3px solid @brand-primary;
+.red-footer {
+  background-color: @brand-red;
 }
-
+.blue-footer {
+  background-color: @brand-blue;
+}
 p.credit {
     margin: 0px;
 }
@@ -625,7 +632,7 @@ p.credit {
 
 .copyright {
     font-size: @font-size-small;
-    color: @gray-footer;
+    color: @gray-darker;
     padding-left: 30px;
     line-height: @copyright-height;
     background-color: @gray-dark;
@@ -645,7 +652,7 @@ p.credit {
   font-size: @font-size-small - 2px;
 
     h5 {
-        font-size: @font-size-small;
+        font-size: @font-size-base;
         padding: 0px;
         line-height: 0px;
     }
