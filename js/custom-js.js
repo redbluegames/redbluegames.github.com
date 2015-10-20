@@ -9,6 +9,16 @@ $(document).ready(function() {
   });
 });
 
+// Colorize Footer
+$(document).ready(function() {
+  var curPath = window.location.pathname;
+    if(curPath.indexOf ("mininuts") > 0 || curPath.indexOf ("company") > 0){
+      $('.footer').addClass('blue-footer');
+    } else {
+      $('.footer').addClass('red-footer');
+    }
+});
+
 /* Custom Tweening */
 
 /*
