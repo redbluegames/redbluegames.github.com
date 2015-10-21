@@ -241,6 +241,11 @@ strong {
     .container-fixed();
 }
 
+.padded-container {
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+
 // Jumbotron ==================================================================
 
 .jumbotron {
@@ -672,15 +677,19 @@ html {
   font-family: @font-family-buzzwords;
 }
 
-// Company page
+// Services and Company pages
 
 .skill-logo {
   .center-block ();
-  max-width: 100px;
+  max-width: 120px;
   text-align: center;
   @media (max-width: @screen-sm) {
-    max-width: 60px;
+    max-width: 72px;
   }
+}
+.platform-icons {
+  .center-block ();
+  max-width: 80%;
 }
 
 .font-size-small {
