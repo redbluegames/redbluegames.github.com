@@ -16,7 +16,7 @@
 // Navbar =====================================================================
 
 .navbar {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #555;
     font-size: @font-size-small;
     font-family: @font-family-sans-serif;
     font-weight: @headings-font-weight;
@@ -271,11 +271,6 @@ strong {
     border-bottom: 2px solid black;
 }
 
-.jumbotron.services {
-    background-image: linear-gradient(315deg, rgba(30, 50, 70, 0.40), rgba(10, 50, 100, 0.40) 90%),
-        url(../assets/images/games-pages/mininuts/marketing-banner-lg.png);
-}
-
 .jumbotron-text {
     text-align: center;
     font-size: 30px;
@@ -297,10 +292,28 @@ strong {
 }
 
 .fullbanner {
-  // Reproportion our image as we scale up
-  background-image: url(/assets/images/redblue-header-sm.png);
+  @media (min-width: @screen-sm) {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+  @media (min-width: @screen-lg) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  background-attachment: fixed;
+  background-size:100%;
+  text-shadow: #333 2px 2px 0px, rgba(0, 0, 0, 0.14902) 10px 6px 0px;
+  border-bottom: 1px solid @gray-dark;
+  h1 {
+      color: white;
+  }
+}
+
+#aboutredblue {
+  background-color: @brand-blue;
+//  background-image: url(/assets/images/redblue-header-sm.png);
   @media (min-width: @screen-xs) {
-    background-image: url(/assets/images/redblue-header.png);
+    //background-image: url(/assets/images/redblue-header.png);
     padding-bottom: 30px;
     padding-top: 30px;
   }
@@ -309,40 +322,12 @@ strong {
     padding-top: 80px;
   }
   @media (min-width: @screen-lg) {
-    background-image: url(/assets/images/redblue-header-lg.png);
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
-  background-attachment: fixed;
-  background-size:100%;
-  text-shadow: darken(black, 20%) 4px 3px 0px, rgba(0, 0, 0, 0.14902) 9px 8px 0px;
-  border-bottom: 1px solid @gray-dark;
-  h1 {
-      color: white;
-  }
-}
-
-#aboutredblue {
-  background-image: url(/assets/images/redblue-header-sm.png);
-  @media (min-width: @screen-xs) {
-    background-image: url(/assets/images/redblue-header.png);
-  }
-  @media (min-width: @screen-lg) {
-    background-image: url(/assets/images/redblue-header-lg.png);
+    //background-image: url(/assets/images/redblue-header-lg.png);
   }
 }
 
 #services-banner {
-  background-image: url(/assets/images/games-pages/mininuts/marketing-banner-lg.png);
-  @media (min-width: @screen-sm) {
-    background-image: url(/assets/images/games-pages/mininuts/marketing-banner-lg.png);
-  }
-  @media (min-width: @screen-md) {
-    background-image: url(/assets/images/games-pages/mininuts/marketing-banner-xl.png);
-  }
-  @media (min-width: @screen-lg) {
-    background-image: url(/assets/images/games-pages/mininuts/marketing-banner-xl.png);
-  }
+  background-color: @brand-red;
 }
 
 // Carousels ==================================================================
