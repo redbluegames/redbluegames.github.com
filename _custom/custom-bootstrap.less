@@ -6,7 +6,6 @@
 @import url("//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic");
 @import url("//fonts.googleapis.com/css?family=News+Cycle:400,700");
 @import url("//fonts.googleapis.com/css?family=Anton:400,700");
-@import url("//fonts.googleapis.com/css?family=PT+Sans");
 @import "../_bootstrap/less/bootstrap.less";
 @import "custom-variables.less";
 @import "custom-other.less";
@@ -57,12 +56,13 @@
 // My Mixins ==================================================================
 
 .greyscale {
-    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: grayscale(100%); /* Firefox */
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 
 .nogreyscale {
+    filter: grayscale(0%); /* Firefox */
     filter: none;
     -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
     .opacity(100);
