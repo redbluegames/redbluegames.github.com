@@ -637,26 +637,6 @@ p.credit {
     list-style: none;
 }
 
-.tiny-biopic {
-    width: 25px;
-    margin-top: 10px;
-    border: 1px solid @gray-dark;
-}
-
-.tiny-bios {
-  font-size: @font-size-small - 2px;
-
-    h5 {
-        font-size: @font-size-base;
-        padding: 0px;
-        line-height: 0px;
-    }
-
-    .media {
-        margin-top: 0px;
-    }
-}
-
 // Miscellaneous Tweaks =======================================================
 
 html {
@@ -689,18 +669,11 @@ html {
 .bio {
     padding-top: 10px;
     padding-bottom: 25px;
+    img {
+        .center-block;
+        max-width: 225px;
+    }
 }
 
 .caption {
-}
-
-// TODO Refactor these to nest properly under .bio
-.bio img {
-    .center-block;
-    max-width: 225px;
-    .greyscale;
-}
-
-.bio img:hover {
-    .nogreyscale;
 }
