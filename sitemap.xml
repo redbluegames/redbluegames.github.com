@@ -56,10 +56,13 @@
   <url>
     <loc>http://redbluegames.com/company/</loc>
     <image:image>
-       <image:loc>http://redbluegames.com/assets/images/edward-bio.jpg</image:loc>
+       <image:loc>http://redbluegames.com/assets/images/bios/edward-bio.jpg</image:loc>
     </image:image>
     <image:image>
-       <image:loc>http://redbluegames.com/assets/images/lucas-bio.jpg</image:loc>
+       <image:loc>http://redbluegames.com/assets/images/bios/lucas-bio.jpg</image:loc>
+    </image:image>
+    <image:image>
+       <image:loc>http://redbluegames.com/assets/images/bios/kevin-bio.jpg</image:loc>
     </image:image>
   </url>
 </urlset>
