@@ -1,89 +1,23 @@
 // Sparklight Less
 
-// Colors
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+// Variables
+@font-body:  "Righteous";
+@color-dirt-background: rgb(17, 14, 11);
+@color-gold-light: rgb(254, 242, 107);
+@color-gold-dark: rgb(255, 179, 10);
+
+// CSS
 // -------------------------
 
-@dark-green: #61AD56;
-@sl-yellow: #FFD125;
-@sl-blue: #00BFFF;
-@sl-grey: rgb(184, 195, 199);
-
-// Typography
-// -------------------------
-@font-family-headings:    "Londrina Solid", "Open Sans", "Arial Narrow Bold", sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
-@font-family-sans-serif:  "PT Sans", "Arial Narrow Bold", sans-serif;
-
-@font-size-base:          24px;
-@font-size-huge:          ceil(@font-size-base * 5);
-@font-size-large:         ceil(@font-size-base * 1.3);
-@font-size-small:         ceil(@font-size-base * 0.8);
-
-@line-height-base:        1.66; // (this was 20/14 at one point)
-@line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
-
-@headings-font-weight:    100;
-@headings-line-height:    1.2;
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: @font-family-headings;
-  font-weight: @headings-font-weight;
-  text-shadow: 3px 0 3px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 1px 0 1px rgba(0, 0, 0, 0.1);
+.subtitle {
+  font-family: @font-body;
+  color: @color-gold-light;
 }
 
 body {
-}
-
-.newsletter {
-  margin-top: 250px;
-}
-
-.newsletter-panel {
-  padding: 15px;
-}
-
-button {
-
-}
-
-.sl-yellow {
-  color: @sl-yellow;
-}
-
-.sl-blue {
-  color: @sl-blue;
-}
-
-.sl-grey {
-  color: @sl-grey;
-}
-
-.background-cover {
-  background: url("/assets/images/games-pages/sparklight/Badlands_Mockup.png") no-repeat;
-  background-attachment: fixed;
-  background-size:100%;
-  background-color: @dark-green;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-
-  height: 800px;
-}
-
-// Mailchimp -- perhaps another file for this?
-.response {
-  color: rgba(255,255,255,0.9);
-}
-
-.input-box {
-  background-color: rgba(255,255,255,0.65);
-}
-
-#mce-success-response {
-  color: white;
-}
-
-.input-group {
-  color: rgba(0,0,0,0.65);
+  background-color: @color-dirt-background;
+  background-image: url("../assets/sparklight/background.gif");
+  background-repeat: repeat;
 }
