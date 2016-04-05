@@ -3,13 +3,52 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
 // Variables
+// -------------------------
+
+// Typography
 @font-body:  "Righteous";
-@color-dirt-background: #181512;
+
+@font-size-base:          18px;
+@font-size-huge:          ceil(@font-size-base * 6);
+@font-size-large:         ceil(@font-size-base * 2.8);
+@font-size-small:         ceil(@font-size-base * 0.8);
+
+// Colors
+@alphad-white: rgba(255, 255, 255, 0.75);
+
+@color-dirt-background: #110E0B;
 @color-gold-light: rgb(254, 242, 107);
 @color-gold-dark: rgb(255, 179, 10);
 
-// CSS
-// -------------------------
+
+// General
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5 {
+  font-family: @font-body;
+  color: @color-gold-light;
+}
+
+h1 {
+  font-size: @font-size-large;
+}
+
+// Navbar
+// --------------------------------------------------
+
+.navbar {
+  background-color: @color-dirt-background;
+  border: none;
+}
+
+.navbar-default .navbar-brand {
+  color: @alphad-white;
+}
+
+.redblueicon {
+    vertical-align: 0%;
+    max-width: 20px;
+}
 
 .subtitle {
   font-family: @font-body;
@@ -26,3 +65,6 @@ img {
   width: 100%;
   height: auto;
 }
+
+// Mailchimp / Newsletter
+// --------------------------------------------------
