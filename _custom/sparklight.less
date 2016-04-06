@@ -11,11 +11,12 @@
 @font-size-base:          18px;
 @font-size-huge:          ceil(@font-size-base * 5);
 @font-size-large:         ceil(@font-size-base * 2.5);
+@font-size-medium:         ceil(@font-size-base * 1.5);
 @font-size-small:         ceil(@font-size-base * 0.8);
 
 // Colors
 @alphad-white: rgba(255, 255, 255, 0.75);
-@alphad-black: rgba(0, 0, 0, 0.5);
+@alphad-black: rgba(0, 0, 0, 0.8);
 
 @color-dirt-background: #110E0B;
 
@@ -99,11 +100,13 @@ body {
 // --------------------------------------------------
 
 .newsletter-form {
+  padding: 0 100px 100px 100px;
   input {
      color: @alphad-white;
   }
   label {
     font-size: large;
+    cursor: pointer;
     color: @color-gold-light;
   }
 
@@ -138,7 +141,6 @@ body {
   .mc-field-group {
     background-color: transparent;
     border: none;
-
   }
 
   input[type="checkbox"] {
@@ -161,8 +163,26 @@ body {
     background-color: @color-gold-light;
     color: @alphad-black;
     font-family: @font-body;
-    width: 200px;
+    font-size: @font-size-medium;
+    height: 60px;
+    width: 250px;
     border: none;
+    box-shadow: 0px 6px @color-gold-dark;
+    border: 8px solid transparent;
+  }
+
+  .button:hover {
+    outline: none;
+    background-color: lighten(@color-gold-light, 5%);
+    box-shadow: 0px 6px lighten(@color-gold-dark, 15%);
+  }
+
+  .button:active {
+    outline: none;
+    position:relative;
+    top:6px;
+    background-color: @color-gold-dark;
+    box-shadow: 0px 0px @color-gold-dark;
   }
 }
 
