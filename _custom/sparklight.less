@@ -9,14 +9,17 @@
 @font-body:  "Righteous";
 
 @font-size-base:          18px;
-@font-size-huge:          ceil(@font-size-base * 6);
-@font-size-large:         ceil(@font-size-base * 2.8);
+@font-size-huge:          ceil(@font-size-base * 5);
+@font-size-large:         ceil(@font-size-base * 2.5);
 @font-size-small:         ceil(@font-size-base * 0.8);
 
 // Colors
 @alphad-white: rgba(255, 255, 255, 0.75);
 
 @color-dirt-background: #110E0B;
+
+@color-blue-light: rgb(92, 203, 238);
+@color-blue-dark: rgb(2, 99, 170);
 @color-gold-light: rgb(254, 242, 107);
 @color-gold-dark: rgb(255, 179, 10);
 
@@ -30,7 +33,12 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
+  font-size: @font-size-huge;
+}
+
+h2 {
   font-size: @font-size-large;
+  color: @color-blue-light;
 }
 
 // Navbar
@@ -46,14 +54,12 @@ h1 {
 }
 
 .redblueicon {
-    vertical-align: 0%;
-    max-width: 20px;
+  vertical-align: 0%;
+  max-width: 20px;
 }
 
-.subtitle {
-  font-family: @font-body;
-  color: @color-gold-light;
-}
+// Body and Contents
+// --------------------------------------------------
 
 body {
   background-color: @color-dirt-background;
@@ -61,10 +67,50 @@ body {
   background-repeat: repeat;
 }
 
-img {
-  width: 100%;
-  height: auto;
+.title-subtitle {
+  position: absolute;
+	left: 0;
+	right: 0;
+	top: 10%;
+	margin-left: auto;
+ 	margin-right: auto;
+}
+
+.title {
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-family: @font-body;
+}
+
+.blue3d {
+  color: @color-blue-light;
+  .text3d(@color-blue-dark);}
+
+.yellow3d {
+  color: @color-gold-light;
+  .text3d(@color-gold-dark);
 }
 
 // Mailchimp / Newsletter
 // --------------------------------------------------
+
+// Mixins
+// --------------------------------------------------
+
+.text3d(@side-color) {
+  text-shadow:
+    0 0.02em 0 darken(@side-color, 4%),
+    0 0.04em 0 darken(@side-color, 8%),
+    0 0.06em 0 darken(@side-color, 12%),
+    0 0.08em 0 darken(@side-color, 16%),
+    0 0.1em 0 darken(@side-color, 20%),
+    0 6px 1px rgba(0,0,0,.2),
+    0 0 5px rgba(0,0,0,.3),
+    0 1px 3px rgba(0,0,0,.4),
+    0 3px 5px rgba(0,0,0,.3),
+    0 5px 10px rgba(0,0,0,.5),
+    0 10px 10px rgba(0,0,0,.4),
+    0 20px 20px rgba(0,0,0,.3);
+}
