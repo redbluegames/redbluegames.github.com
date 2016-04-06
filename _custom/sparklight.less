@@ -15,6 +15,7 @@
 
 // Colors
 @alphad-white: rgba(255, 255, 255, 0.75);
+@alphad-black: rgba(0, 0, 0, 0.5);
 
 @color-dirt-background: #110E0B;
 
@@ -22,6 +23,7 @@
 @color-blue-dark: rgb(2, 99, 170);
 @color-gold-light: rgb(254, 242, 107);
 @color-gold-dark: rgb(255, 179, 10);
+@color-pink-transparent: rgba(194, 7, 7, 0.15);
 
 
 // General
@@ -95,6 +97,74 @@ body {
 
 // Mailchimp / Newsletter
 // --------------------------------------------------
+
+.newsletter-form {
+  input {
+     color: @alphad-white;
+  }
+  label {
+    font-size: large;
+    color: @color-gold-light;
+  }
+
+  .input-box {
+    font-size: larger;
+    height: 3.5em;
+    background-color: transparent;
+    border: 1px solid @color-blue-light;
+  }
+  .input-box:focus {
+    color: white;
+    background-color: rgba(94, 145, 179, 0.2);
+  }
+  .mce_inline_error {
+    background-color: @color-pink-transparent;
+  }
+
+  // Change color of placeholder text
+  ::-webkit-input-placeholder {
+   color: darken(@alphad-white, 40%);
+  }
+  :-moz-placeholder { /* Firefox 18- */
+   color: darken(@alphad-white, 40%);
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+   color: darken(@alphad-white, 40%);
+  }
+  :-ms-input-placeholder {
+   color: darken(@alphad-white, 40%);
+  }
+
+  .mc-field-group {
+    background-color: transparent;
+    border: none;
+
+  }
+
+  input[type="checkbox"] {
+      display:none;
+  }
+  input[type="checkbox"] + label span {
+      display:inline-block;
+      width:28px;
+      height:28px;
+      margin:-1px 4px 0 0;
+      vertical-align:middle;
+      background:url(../assets/sparklight/checkbox.png) left top no-repeat;
+      cursor:pointer;
+  }
+  input[type="checkbox"]:checked + label span {
+      background:url(../assets/sparklight/checkbox-checked.png) 0px top no-repeat;
+  }
+
+  .button {
+    background-color: @color-gold-light;
+    color: @alphad-black;
+    font-family: @font-body;
+    width: 200px;
+    border: none;
+  }
+}
 
 // Mixins
 // --------------------------------------------------
