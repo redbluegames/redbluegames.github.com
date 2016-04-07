@@ -1,6 +1,7 @@
 // Sparklight Less
 
 @import url(https://fonts.googleapis.com/css?family=Righteous);
+@import "custom-bootstrap.less";
 
 // Variables
 // -------------------------
@@ -9,7 +10,7 @@
 @font-body:  "Righteous";
 
 @font-size-base:          18px;
-@font-size-huge:          ceil(@font-size-base * 5);
+@font-size-huge:          ceil(@font-size-base * 6);
 @font-size-large:         ceil(@font-size-base * 2.5);
 @font-size-medium:         ceil(@font-size-base * 1.5);
 @font-size-small:         ceil(@font-size-base * 0.8);
@@ -37,11 +38,33 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: @font-size-huge;
+  @media (max-width: @screen-md) {
+    font-size: @font-size-huge * 0.8;
+  }
+  @media (max-width: @screen-sm) {
+    font-size: @font-size-huge * 0.5;
+  }
+  @media (max-width: @screen-xs) {
+    font-size: @font-size-huge * 0.5;
+  }
 }
 
 h2 {
   font-size: @font-size-large;
   color: @color-blue-light;
+  @media (max-width: @screen-md) {
+    font-size: @font-size-large * 0.8;
+  }
+  @media (max-width: @screen-sm) {
+    font-size: @font-size-large * 0.7;
+  }
+  @media (max-width: @screen-xs) {
+    font-size: @font-size-large * 0.5;
+  }
+}
+
+a {
+  color: white;
 }
 
 // Navbar
@@ -50,15 +73,19 @@ h2 {
 .navbar {
   background-color: transparent;
   border: none;
+  margin-bottom: -50px;
+  height: 50px;
   .container {
     margin-left: 0px;
   }
-  margin-bottom: -50px;
-  height: 50px;
 }
 
 .navbar-default .navbar-brand {
   color: @alphad-white;
+  font-size: @font-size-medium;
+  a:hover {
+    color: white;
+  }
 }
 
 .redblueicon {
@@ -94,7 +121,23 @@ body {
 }
 
 .jumbo-screenshot {
+  margin: 0 auto;
+  margin-top: 200px;
+  min-width: 200px;
+  max-width: 1054px;
   z-index: -1;
+  @media (max-width: @screen-lg) {
+    margin-top: 100px;
+  }
+  @media (max-width: @screen-md) {
+    margin-top: 75px;
+  }
+  @media (max-width: @screen-sm) {
+    margin-top: 75px;
+  }
+  @media (max-width: @screen-xs) {
+    margin-top: 75px;
+  }
 }
 
 .blue3d {
@@ -108,7 +151,8 @@ body {
 
 // Parallax Behavior
 // --------------------------------------------------
-
+// Consider using http://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
+// effect longer term for website
 
 // Mailchimp / Newsletter
 // --------------------------------------------------
@@ -216,4 +260,19 @@ body {
     0 5px 10px rgba(0,0,0,.5),
     0 10px 10px rgba(0,0,0,.4),
     0 20px 20px rgba(0,0,0,.3);
+}
+
+// Media Query Breakpoints
+// --------------------------------------------------
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg) {
+
 }
