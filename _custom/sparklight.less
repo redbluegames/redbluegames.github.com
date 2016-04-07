@@ -48,8 +48,13 @@ h2 {
 // --------------------------------------------------
 
 .navbar {
-  background-color: @color-dirt-background;
+  background-color: transparent;
   border: none;
+  .container {
+    margin-left: 0px;
+  }
+  margin-bottom: -50px;
+  height: 50px;
 }
 
 .navbar-default .navbar-brand {
@@ -77,6 +82,7 @@ body {
 	top: 10%;
 	margin-left: auto;
  	margin-right: auto;
+  z-index: 1;
 }
 
 .title {
@@ -85,6 +91,10 @@ body {
 
 .subtitle {
   font-family: @font-body;
+}
+
+.jumbo-screenshot {
+  z-index: -1;
 }
 
 .blue3d {
