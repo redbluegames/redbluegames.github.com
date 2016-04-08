@@ -54,6 +54,12 @@
     </image:image>
   </url>
   <url>
+    <loc>http://redbluegames.com/games/sparklite</loc>
+    <image:image>
+       <image:loc>http://redbluegames.com/assets/sparklight/mine-animated.gif</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>http://redbluegames.com/company/</loc>
     <image:image>
        <image:loc>http://redbluegames.com/assets/images/bios/edward-bio.jpg</image:loc>
