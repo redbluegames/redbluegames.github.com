@@ -64,22 +64,27 @@ h2 {
 // --------------------------------------------------
 
 .navbar {
-  position: absolute;
+  position: relative;
+  display: block;
   background-color: transparent;
   border: none;
   margin-bottom: -50px;
   height: 50px;
+  width: 100%;
+  // z-index between screenshot and title text
+  z-index: 1;
   .container {
     margin-left: 0px;
+  }
+  .horizontal-icon-list {
+    right: 20px;
+    position: absolute;
   }
 }
 
 .navbar-default .navbar-brand {
   color: @alphad-white;
   font-size: @font-size-medium;
-  a:hover {
-    color: white;
-  }
 }
 
 .redblueicon {
@@ -92,8 +97,7 @@ h2 {
 
 body {
   background-color: @color-dirt-background;
-  background-image: url("../assets/sparklight/background.gif");
-  background-repeat: repeat;
+  color: @alphad-white;
 }
 
 .jumbo-screenshot {
@@ -102,7 +106,7 @@ body {
   min-width: 400px;
   max-width: 1054px;
   left: 50%;
-  top: 60%;
+  top: 65%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -117,7 +121,7 @@ body {
 }
 
 .title-subtitle {
-  margin-top: 4vh;
+  margin-top: 2vh;
   padding: 20px;
   h2 {
     margin-top: -15px;
@@ -128,7 +132,7 @@ body {
 // --------------------------------------------------
 
 .newsletter-form {
-  margin-top: 20vh;
+  margin-top: 30vh;
   position: absolute;
   max-width: 1200px;
   left: 50%;
@@ -289,13 +293,12 @@ body {
   -webkit-transform: translateZ(-300px) scale(2);
   transform: translateZ(-300px) scale(2);
   z-index: 3;
+  background-image: url("../assets/sparklight/background.gif");
+  background-repeat: repeat;
 }
 
 .parallax__layer--deep {
   -webkit-transform: translateZ(-600px) scale(3);
   transform: translateZ(-600px) scale(3);
   z-index: 2;
-}
-.parallax {
-  font-size: 200%;
 }
