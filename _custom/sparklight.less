@@ -1,89 +1,304 @@
 // Sparklight Less
 
-// Colors
-// -------------------------
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import "custom-bootstrap.less";
 
-@dark-green: #61AD56;
-@sl-yellow: #FFD125;
-@sl-blue: #00BFFF;
-@sl-grey: rgb(184, 195, 199);
+// Variables
+// -------------------------
 
 // Typography
-// -------------------------
-@font-family-headings:    "Londrina Solid", "Open Sans", "Arial Narrow Bold", sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
-@font-family-sans-serif:  "PT Sans", "Arial Narrow Bold", sans-serif;
+@font-body:  "Righteous";
 
-@font-size-base:          24px;
-@font-size-huge:          ceil(@font-size-base * 5);
-@font-size-large:         ceil(@font-size-base * 1.3);
+@font-size-base:          18px;
+@font-size-huge:          ceil(@font-size-base * 6);
+@font-size-large:         ceil(@font-size-base * 2.5);
+@font-size-medium:         ceil(@font-size-base * 1.5);
 @font-size-small:         ceil(@font-size-base * 0.8);
 
-@line-height-base:        1.66; // (this was 20/14 at one point)
-@line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
+// Colors
+@alphad-white: rgba(255, 255, 255, 0.75);
+@alphad-black: rgba(0, 0, 0, 0.8);
 
-@headings-font-weight:    100;
-@headings-line-height:    1.2;
+@color-dirt-background: rgb(22, 18, 14);
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: @font-family-headings;
-  font-weight: @headings-font-weight;
-  text-shadow: 3px 0 3px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 1px 0 1px rgba(0, 0, 0, 0.1);
+@color-blue-light: rgb(92, 203, 238);
+@color-blue-dark: rgb(2, 99, 170);
+@color-gold-light: rgb(254, 242, 107);
+@color-gold-dark: rgb(255, 179, 10);
+@color-pink-transparent: rgba(194, 7, 7, 0.15);
+
+
+// General
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5 {
+  font-family: @font-body;
+  color: @color-gold-light;
 }
+
+h1 {
+  font-size: @font-size-huge;
+  @media (max-width: @screen-sm) {
+    font-size: @font-size-huge * 0.5;
+  }
+  @media (max-width: @screen-xs) {
+    font-size: @font-size-huge * 0.5;
+  }
+}
+
+h2 {
+  font-size: @font-size-large;
+  color: @color-blue-light;
+  @media (max-width: @screen-md) {
+    font-size: @font-size-large * 0.8;
+  }
+  @media (max-width: @screen-sm) {
+    font-size: @font-size-large * 0.7;
+  }
+  @media (max-width: @screen-xs) {
+    font-size: @font-size-large * 0.6;
+  }
+}
+
+// Navbar
+// --------------------------------------------------
+
+.navbar {
+  position: relative;
+  display: block;
+  background-color: transparent;
+  border: none;
+  margin-bottom: -50px;
+  height: 50px;
+  width: 100%;
+  // z-index between screenshot and title text
+  z-index: 1;
+  .container {
+    margin-left: 0px;
+  }
+  .horizontal-icon-list {
+    right: 20px;
+    position: absolute;
+  }
+}
+
+.navbar-default .navbar-brand {
+  color: @alphad-white;
+  font-size: @font-size-medium;
+}
+
+.redblueicon {
+  vertical-align: 0%;
+  max-width: 20px;
+}
+
+// Body and Contents
+// --------------------------------------------------
 
 body {
+  background-color: @color-dirt-background;
+  color: @alphad-white;
 }
 
-.newsletter {
-  margin-top: 250px;
+.jumbo-screenshot {
+  text-align: center;
+  position: absolute;
+  min-width: 400px;
+  max-width: 1054px;
+  left: 50%;
+  top: 65%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.newsletter-panel {
-  padding: 15px;
+.blue3d {
+  color: @color-blue-light;
+  .text3d(@color-blue-dark);}
+
+.yellow3d {
+  color: @color-gold-light;
+  .text3d(@color-gold-dark);
 }
 
-button {
-
+.title-subtitle {
+  margin-top: 2vh;
+  padding: 20px;
+  h2 {
+    margin-top: -15px;
+  }
 }
 
-.sl-yellow {
-  color: @sl-yellow;
+// Mailchimp / Newsletter
+// --------------------------------------------------
+
+.newsletter-form {
+  margin-top: 30vh;
+  position: absolute;
+  max-width: 1200px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  input {
+    width: 100%;
+    color: @alphad-white;
+  }
+  label {
+    font-size: @font-size-base;
+    cursor: pointer;
+    color: @color-gold-light;
+  }
+  .input-box {
+    font-size: @font-size-base;
+    height: 2.5em;
+    background-color: transparent;
+    border: 1px solid @color-blue-light;
+  }
+  .input-box:hover {
+    background-color: rgba(94, 145, 179, 0.2);
+  }
+  .input-box:focus {
+    color: white;
+    background-color: rgba(94, 145, 179, 0.2);
+  }
+  .mce_inline_error {
+    background-color: @color-pink-transparent;
+    font-size: @font-size-base;
+  }
+
+  // Change color of placeholder text
+  ::-webkit-input-placeholder {
+   color: darken(@alphad-white, 40%);
+  }
+  :-moz-placeholder { /* Firefox 18- */
+   color: darken(@alphad-white, 40%);
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+   color: darken(@alphad-white, 40%);
+  }
+  :-ms-input-placeholder {
+   color: darken(@alphad-white, 40%);
+  }
+
+  .mc-field-group {
+    background-color: transparent;
+    border: none;
+  }
+
+  input[type="checkbox"] {
+      display:none;
+  }
+  input[type="checkbox"] + label span {
+      display:inline-block;
+      width:28px;
+      height:28px;
+      margin:-1px 4px 0 0;
+      vertical-align:middle;
+      background:url(../assets/sparklight/checkbox.png) left top no-repeat;
+      cursor:pointer;
+  }
+  input[type="checkbox"]:checked + label span {
+      background:url(../assets/sparklight/checkbox-checked.png) 0px top no-repeat;
+  }
+
+  .button {
+    background-color: @color-gold-light;
+    color: @alphad-black;
+    font-family: @font-body;
+    vertical-align: middle;
+    width: 250px;
+    border: none;
+    box-shadow: 0px 6px @color-gold-dark;
+  }
+
+  .button:hover {
+    outline: none;
+    background-color: darken(@color-gold-light, 5%);
+  }
+
+  .button:active {
+    outline: none;
+    position:relative;
+    top:6px;
+    background-color: @color-gold-dark;
+    box-shadow: 0px 0px @color-gold-dark;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: -28px;
+  }
 }
 
-.sl-blue {
-  color: @sl-blue;
+// Mixins
+// --------------------------------------------------
+
+.text3d(@side-color) {
+  text-shadow:
+    0 0.02em 0 darken(@side-color, 4%),
+    0 0.04em 0 darken(@side-color, 8%),
+    0 0.06em 0 darken(@side-color, 12%),
+    0 0.08em 0 darken(@side-color, 16%),
+    0 0.1em 0 darken(@side-color, 20%),
+    0 6px 1px rgba(0,0,0,.2),
+    0 0 5px rgba(0,0,0,.3),
+    0 1px 3px rgba(0,0,0,.4),
+    0 3px 5px rgba(0,0,0,.3),
+    0 5px 10px rgba(0,0,0,.5),
+    0 10px 10px rgba(0,0,0,.4),
+    0 20px 20px rgba(0,0,0,.3);
 }
 
-.sl-grey {
-  color: @sl-grey;
+// Parallax Behavior
+// --------------------------------------------------
+// Using http://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
+
+.parallax {
+  height: 500px; /* fallback for older browsers */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
 }
 
-.background-cover {
-  background: url("/assets/images/games-pages/sparklight/Badlands_Mockup.png") no-repeat;
-  background-attachment: fixed;
-  background-size:100%;
-  background-color: @dark-green;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-
-  height: 800px;
+.parallax__group {
+  position: relative;
+  height: 500px; /* fallback for older browsers */
+  height: 70vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
-// Mailchimp -- perhaps another file for this?
-.response {
-  color: rgba(255,255,255,0.9);
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.input-box {
-  background-color: rgba(255,255,255,0.65);
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.7);
+  z-index: 1;
 }
 
-#mce-success-response {
-  color: white;
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
 }
 
-.input-group {
-  color: rgba(0,0,0,0.65);
+.parallax__layer--back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+  background-image: url("../assets/sparklight/background.gif");
+  background-repeat: repeat;
+}
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
 }
