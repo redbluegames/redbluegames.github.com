@@ -21,19 +21,21 @@
 
 @color-dirt-background: rgb(12, 19, 30);
 
-@color-blue-light: rgb(0, 213, 156);
-@color-blue-dark: rgb(27, 120, 129);
-@color-gold-light: rgb(234, 223, 146);
-@color-gold-dark: rgb(173, 149, 91);
+// Game Colors
+@color-green: #88EC96;
+@color-green-dark: #05D89E;
+@color-yellow: #EAE099;
+@color-yellow-dark: #91896E;
+@color-brown: #6C5E52;
+@color-dark-brown: #1B1B21;
 @color-pink-transparent: rgba(194, 7, 7, 0.15);
-
 
 // General
 // --------------------------------------------------
 
 h1, h2, h3, h4, h5 {
   font-family: @font-body;
-  color: @color-gold-light;
+  color: @color-yellow;
 }
 
 h1 {
@@ -48,7 +50,7 @@ h1 {
 
 h2 {
   font-size: @font-size-large;
-  color: @color-blue-light;
+  color: @color-green;
   @media (max-width: @screen-md) {
     font-size: @font-size-large * 0.8;
   }
@@ -118,12 +120,12 @@ body {
 }
 
 .blue3d {
-  color: @color-blue-light;
-  .text3d(@color-blue-dark);}
+  color: @color-green;
+  .text3d(@color-green-dark);}
 
 .yellow3d {
-  color: @color-gold-light;
-  .text3d(@color-gold-dark);
+  color: @color-yellow;
+  .text3d(@color-yellow-dark);
 }
 
 .title-subtitle {
@@ -138,12 +140,15 @@ body {
 // --------------------------------------------------
 
 .newsletter-form {
-  margin-top: 30vh;
   position: absolute;
   max-width: 1200px;
+  top: 40vh;
   left: 50%;
+  background-color: @color-dark-brown;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  border: 5px solid @color-brown;
+  padding: 0px 50px 40px 50px;
   input {
     width: 100%;
     color: @alphad-white;
@@ -151,13 +156,13 @@ body {
   label {
     font-size: @font-size-base;
     cursor: pointer;
-    color: @color-gold-light;
+    color: @color-yellow;
   }
   .input-box {
     font-size: @font-size-base;
     height: 2.5em;
     background-color: transparent;
-    border: 1px solid @color-blue-light;
+    border: 1px solid @color-green;
   }
   .input-box:hover {
     background-color: rgba(94, 145, 179, 0.2);
@@ -207,26 +212,26 @@ body {
   }
 
   .button {
-    background-color: @color-gold-light;
+    background-color: @color-yellow;
     color: @alphad-black;
     font-family: @font-body;
     vertical-align: middle;
     width: 250px;
     border: none;
-    box-shadow: 0px 6px @color-gold-dark;
+    box-shadow: 0px 6px @color-yellow-dark;
   }
 
   .button:hover {
     outline: none;
-    background-color: darken(@color-gold-light, 5%);
+    background-color: darken(@color-yellow, 5%);
   }
 
   .button:active {
     outline: none;
     position:relative;
     top:6px;
-    background-color: @color-gold-dark;
-    box-shadow: 0px 0px @color-gold-dark;
+    background-color: @color-yellow-dark;
+    box-shadow: 0px 0px @color-yellow-dark;
   }
 
   ul {
