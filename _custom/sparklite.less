@@ -1,19 +1,30 @@
 // Sparklite Less
 
-@import url(https://fonts.googleapis.com/css?family=Righteous);
+// Imports
+// -------------------------
+
+@import url(https://fonts.googleapis.com/css?family=Francois+One);
 @import "custom-bootstrap.less";
 
 // Variables
 // -------------------------
 
 // Typography
-@font-body:  "Righteous";
+@font-body:  "Francois One";
 
-@font-size-base:          18px;
-@font-size-huge:          ceil(@font-size-base * 6);
-@font-size-large:         ceil(@font-size-base * 2.5);
-@font-size-medium:         ceil(@font-size-base * 1.5);
-@font-size-small:         ceil(@font-size-base * 0.8);
+@font-face {
+  font-family: Blocky;
+  src:
+       url('../assets/fonts/zephyrea.ttf'); /* Safari, Android, iOS */
+}
+
+@font-headings: "Blocky";
+
+@font-size-base: 18px;
+@font-size-huge: ceil(@font-size-base * 7);
+@font-size-large: ceil(@font-size-base * 2.75);
+@font-size-medium: ceil(@font-size-base * 1.75);
+@font-size-small: ceil(@font-size-base * 0.75);
 
 // Colors
 @alphad-white: rgba(255, 255, 255, 0.75);
@@ -24,6 +35,7 @@
 // Game Colors
 @color-green: #88EC96;
 @color-green-dark: #05D89E;
+@color-green-darker: #1B7879;
 @color-yellow: #EAE099;
 @color-yellow-dark: #91896E;
 @color-brown: #6C5E52;
@@ -34,7 +46,7 @@
 // --------------------------------------------------
 
 h1, h2, h3, h4, h5 {
-  font-family: @font-body;
+  font-family: @font-headings, Fallback, @font-body;
   color: @color-yellow;
 }
 
@@ -128,6 +140,11 @@ body {
   .text3d(@color-yellow-dark);
 }
 
+.green-stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: @color-green-darker;
+}
+
 .title-subtitle {
   margin-top: 2vh;
   padding: 20px;
@@ -149,6 +166,9 @@ body {
   transform: translate(-50%, -50%);
   border: 5px solid @color-brown;
   padding: 0px 50px 40px 50px;
+  @media (max-width: @screen-sm) {
+    padding: 0px 20px 30px 20px;
+  }
   input {
     width: 100%;
     color: @alphad-white;
@@ -214,7 +234,8 @@ body {
   .button {
     background-color: @color-yellow;
     color: @alphad-black;
-    font-family: @font-body;
+    font-family: @font-headings;
+    font-size: 26px;
     vertical-align: middle;
     width: 250px;
     border: none;
@@ -223,7 +244,7 @@ body {
 
   .button:hover {
     outline: none;
-    background-color: darken(@color-yellow, 5%);
+    background-color: lighten(@color-yellow, 10%);
   }
 
   .button:active {
@@ -248,15 +269,11 @@ body {
     0 0.02em 0 darken(@side-color, 4%),
     0 0.04em 0 darken(@side-color, 8%),
     0 0.06em 0 darken(@side-color, 12%),
-    0 0.08em 0 darken(@side-color, 16%),
-    0 0.1em 0 darken(@side-color, 20%),
     0 6px 1px rgba(0,0,0,.2),
     0 0 5px rgba(0,0,0,.3),
     0 1px 3px rgba(0,0,0,.4),
     0 3px 5px rgba(0,0,0,.3),
     0 5px 10px rgba(0,0,0,.5),
-    0 10px 10px rgba(0,0,0,.4),
-    0 20px 20px rgba(0,0,0,.3);
 }
 
 // Parallax Behavior
