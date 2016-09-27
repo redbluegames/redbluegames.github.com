@@ -1,39 +1,54 @@
 // Sparklite Less
 
-@import url(https://fonts.googleapis.com/css?family=Righteous);
+// Imports
+// -------------------------
+
+@import url(https://fonts.googleapis.com/css?family=Francois+One);
 @import "custom-bootstrap.less";
 
 // Variables
 // -------------------------
 
 // Typography
-@font-body:  "Righteous";
+@font-body:  "Francois One";
 
-@font-size-base:          18px;
-@font-size-huge:          ceil(@font-size-base * 6);
-@font-size-large:         ceil(@font-size-base * 2.5);
-@font-size-medium:         ceil(@font-size-base * 1.5);
-@font-size-small:         ceil(@font-size-base * 0.8);
+@font-face {
+  font-family: Blocky;
+  src:
+       url('../assets/fonts/zephyrea.ttf'); /* Safari, Android, iOS */
+}
+
+@font-headings: "Blocky";
+
+@font-size-base: 18px;
+@font-size-huge: ceil(@font-size-base * 7);
+@font-size-large: ceil(@font-size-base * 2.75);
+@font-size-medium: ceil(@font-size-base * 1.5);
+@font-size-small: ceil(@font-size-base * 0.75);
 
 // Colors
 @alphad-white: rgba(255, 255, 255, 0.75);
 @alphad-black: rgba(0, 0, 0, 0.8);
 
-@color-dirt-background: rgb(22, 18, 14);
+@color-dirt-background: rgb(12, 19, 30);
 
-@color-blue-light: rgb(92, 203, 238);
-@color-blue-dark: rgb(2, 99, 170);
-@color-gold-light: rgb(254, 242, 107);
-@color-gold-dark: rgb(255, 179, 10);
+// Game Colors
+@color-green: #88EC96;
+@color-green-dark: #05D89E;
+@color-green-darker: #1B7879;
+@color-yellow-light: #FAF8F0;
+@color-yellow: #EAE099;
+@color-yellow-dark: #91896E;
+@color-brown: #6C5E52;
+@color-dark-brown: #1B1B21;
 @color-pink-transparent: rgba(194, 7, 7, 0.15);
-
 
 // General
 // --------------------------------------------------
 
 h1, h2, h3, h4, h5 {
-  font-family: @font-body;
-  color: @color-gold-light;
+  font-family: @font-headings, Fallback, @font-body;
+  color: @color-yellow;
 }
 
 h1 {
@@ -48,7 +63,7 @@ h1 {
 
 h2 {
   font-size: @font-size-large;
-  color: @color-blue-light;
+  color: @color-green;
   @media (max-width: @screen-md) {
     font-size: @font-size-large * 0.8;
   }
@@ -87,11 +102,6 @@ h2 {
   font-size: @font-size-medium;
 }
 
-.redblueicon {
-  vertical-align: 0%;
-  max-width: 20px;
-}
-
 // Body and Contents
 // --------------------------------------------------
 
@@ -118,19 +128,36 @@ body {
 }
 
 .blue3d {
-  color: @color-blue-light;
-  .text3d(@color-blue-dark);}
+  color: @color-green;
+  .text3d(@color-green-dark);}
 
 .yellow3d {
-  color: @color-gold-light;
-  .text3d(@color-gold-dark);
+  color: @color-yellow;
+  .text3d(@color-yellow-dark);
+}
+
+.green-stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: @color-green-darker;
 }
 
 .title-subtitle {
-  margin-top: 2vh;
-  padding: 20px;
+  margin-top: 5vh;
   h2 {
-    margin-top: -15px;
+    margin-top: -20px;
+    padding-left: 20px;
+  }
+}
+
+.sparklite-logo {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+  @media (max-width: @screen-md) {
+    max-width: 400px;
+  }
+  @media (max-width: @screen-xs) {
+    max-width: 275px;
   }
 }
 
@@ -138,26 +165,38 @@ body {
 // --------------------------------------------------
 
 .newsletter-form {
-  margin-top: 30vh;
   position: absolute;
-  max-width: 1200px;
+  max-width: 90%;
+  width: 600px;
+  top: 112vh;
   left: 50%;
+  background-color: @color-dark-brown;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  border: 5px solid @color-brown;
+  padding: 0px 50px 40px 50px;
+
+  @media (max-width: @screen-xs) {
+    width: 350px;
+    padding: 0px 20px 30px 20px;
+  }
   input {
     width: 100%;
     color: @alphad-white;
   }
   label {
     font-size: @font-size-base;
+    @media (max-width: @screen-xs) {
+      font-size: @font-size-small;
+    }
     cursor: pointer;
-    color: @color-gold-light;
+    color: @color-yellow;
   }
   .input-box {
     font-size: @font-size-base;
     height: 2.5em;
     background-color: transparent;
-    border: 1px solid @color-blue-light;
+    border: 1px solid @color-green;
   }
   .input-box:hover {
     background-color: rgba(94, 145, 179, 0.2);
@@ -195,8 +234,8 @@ body {
   }
   input[type="checkbox"] + label span {
       display:inline-block;
-      width:28px;
-      height:28px;
+      width:30px;
+      height:30px;
       margin:-1px 4px 0 0;
       vertical-align:middle;
       background:url(../assets/sparklite/checkbox.png) left top no-repeat;
@@ -207,26 +246,27 @@ body {
   }
 
   .button {
-    background-color: @color-gold-light;
+    background-color: @color-yellow;
     color: @alphad-black;
-    font-family: @font-body;
+    font-family: @font-headings;
+    font-size: 26px;
     vertical-align: middle;
-    width: 250px;
     border: none;
-    box-shadow: 0px 6px @color-gold-dark;
+    box-shadow: 0px 6px @color-yellow-dark;
+    width: 70%;
   }
 
   .button:hover {
     outline: none;
-    background-color: darken(@color-gold-light, 5%);
+    background-color: lighten(@color-yellow, 10%);
   }
 
   .button:active {
     outline: none;
     position:relative;
     top:6px;
-    background-color: @color-gold-dark;
-    box-shadow: 0px 0px @color-gold-dark;
+    background-color: @color-yellow-dark;
+    box-shadow: 0px 0px @color-yellow-dark;
   }
 
   ul {
@@ -243,15 +283,11 @@ body {
     0 0.02em 0 darken(@side-color, 4%),
     0 0.04em 0 darken(@side-color, 8%),
     0 0.06em 0 darken(@side-color, 12%),
-    0 0.08em 0 darken(@side-color, 16%),
-    0 0.1em 0 darken(@side-color, 20%),
     0 6px 1px rgba(0,0,0,.2),
     0 0 5px rgba(0,0,0,.3),
     0 1px 3px rgba(0,0,0,.4),
     0 3px 5px rgba(0,0,0,.3),
     0 5px 10px rgba(0,0,0,.5),
-    0 10px 10px rgba(0,0,0,.4),
-    0 20px 20px rgba(0,0,0,.3);
 }
 
 // Parallax Behavior
