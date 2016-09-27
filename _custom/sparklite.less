@@ -143,18 +143,21 @@ body {
 
 .title-subtitle {
   margin-top: 5vh;
-  padding: 20px;
   h2 {
+    margin-top: -20px;
     padding-left: 20px;
   }
 }
 
 .sparklite-logo {
   display: block;
-  max-width: 440px;
+  max-width: 500px;
   margin: 0 auto;
-  @media (max-width: @screen-sm) {
-    max-width: 300px;
+  @media (max-width: @screen-md) {
+    max-width: 400px;
+  }
+  @media (max-width: @screen-xs) {
+    max-width: 275px;
   }
 }
 
@@ -163,8 +166,9 @@ body {
 
 .newsletter-form {
   position: absolute;
-  max-width: 1200px;
-  top: 110vh;
+  max-width: 90%;
+  width: 600px;
+  top: 115vh;
   left: 50%;
   background-color: @color-dark-brown;
   -webkit-transform: translate(-50%, -50%);
@@ -172,7 +176,8 @@ body {
   border: 5px solid @color-brown;
   padding: 0px 50px 40px 50px;
 
-  @media (max-width: @screen-sm) {
+  @media (max-width: @screen-xs) {
+    width: 350px;
     padding: 0px 20px 30px 20px;
   }
   input {
@@ -181,6 +186,9 @@ body {
   }
   label {
     font-size: @font-size-base;
+    @media (max-width: @screen-xs) {
+      font-size: @font-size-small;
+    }
     cursor: pointer;
     color: @color-yellow;
   }
@@ -226,8 +234,8 @@ body {
   }
   input[type="checkbox"] + label span {
       display:inline-block;
-      width:28px;
-      height:28px;
+      width:30px;
+      height:30px;
       margin:-1px 4px 0 0;
       vertical-align:middle;
       background:url(../assets/sparklite/checkbox.png) left top no-repeat;
@@ -243,7 +251,6 @@ body {
     font-family: @font-headings;
     font-size: 26px;
     vertical-align: middle;
-    width: 250px;
     border: none;
     box-shadow: 0px 6px @color-yellow-dark;
   }
