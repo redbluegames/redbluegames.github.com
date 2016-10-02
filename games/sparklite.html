@@ -39,7 +39,7 @@ permalink: games/sparklite/
     <link href="/css/sparklite.css" rel="stylesheet">
     <!-- Animated styles -->
     <link href="/css/animate.css" rel="stylesheet">
-
+    {% include analytics.html %}
 </head>
 <body>
 
@@ -55,9 +55,9 @@ permalink: games/sparklite/
             <span class="light-header"> Games</span></a>
 
           <ul class="horizontal-icon-list">
-            <li><a href="https://twitter.com/redbluegames"><i class="fa fa-lg fa-twitter green"></i></a></li>
-            <li><a href="https://www.facebook.com/redbluegamesllc"><i class="fa fa-lg fa-facebook-official green"></i></a></li>
-            <li><a href="https://github.com/redbluegames"><i class="fa fa-lg fa-github green lighten-hover"></i></a></li>
+            <li><a href="https://twitter.com/redbluegames" data-event-category="social" data-event-action="twitter-clicked"><i class="fa fa-lg fa-twitter green"></i></a></li>
+            <li><a href="https://www.facebook.com/redbluegamesllc" data-event-category="social" data-event-action="facebook-clicked"><i class="fa fa-lg fa-facebook-official green"></i></a></li>
+            <li><a href="https://github.com/redbluegames"data-event-category="social" data-event-action="github-clicked"><i class="fa fa-lg fa-github green lighten-hover"></i></a></li>
           </ul>
         </div>
       </div>
@@ -114,5 +114,4 @@ permalink: games/sparklite/
   <script src="/js/jquery-2.0.3.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/custom-js.js"></script>
-  {% include analytics.html %}
 </html>
