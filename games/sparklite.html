@@ -1,47 +1,9 @@
 ---
 permalink: games/sparklite/
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Google Analytics Content Experiment code -->
-    <script>function utmx_section(){}function utmx(){}(function(){var
-    k='79274432-0',d=document,l=d.location,c=d.cookie;
-    if(l.search.indexOf('utm_expid='+k)>0)return;
-    function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-    indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-    length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-    '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-    '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-    '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-    valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-    '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-    </script><script>utmx('url','A/B');</script>
-    <!-- End of Google Analytics Content Experiment code -->
-
-    <title>Sparklite - An Inventive Roguelike Adventure</title>
-    <link rel="icon" type="image/png" href="/assets/sparklite/favicon.png">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Landing page for Sparklite, an upcoming
-    whimsical roguelike adventure game by Red Blue Games."/>
-    <meta name="author" content="red blue games"/>
-    <meta name="keywords" content="roguelike, game, indie dev, gamedev, adventure,
-    pixel art, zelda, adventure game, action adventure game, top down action"/>
-    <meta name="robots" content="index, follow"/>
-    <meta name="google-site-verification" content="uVV-7L8xLBlXT9FkSSWMwvIGImm_fG4wBKUj0kPg-mg" />
-    <meta http-equiv="expires" content="Sunday, 01 Jan 2017 08:00:00 GMT">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="/fonts/font-awesome-4.4.0/css/font-awesome.min.css">
-    <!-- Custom styles for this template -->
-    <link href="/css/sparklite.css" rel="stylesheet">
-    <!-- Animated styles -->
-    <link href="/css/animate.css" rel="stylesheet">
-    {% include analytics.html %}
-</head>
-<body>
+{% include header.html title="Sparklite - An Inventive Roguelike Adventure"%}
+{% include analytics.html %}
+<link href="/css/sparklite.css" rel="stylesheet">
 
   <div class="parallax">
     <!-- Static navbar -->
