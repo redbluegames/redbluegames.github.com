@@ -1,61 +1,27 @@
 ---
+layout: mobile-promo
+title: Mini Fish - Red Blue Games
 redirect_from: "/games/minigames/minifish/"
+
+title-art: "/assets/images/games-pages/minifish/fish-title.png"
+title-anim: "rubberBand"
+
+lg-banner: "/assets/images/games-pages/minifish/marketing-banner-lg.png"
+xl-banner: "/assets/images/games-pages/minifish/marketing-banner-xl.png"
+gif: "/assets/images/games-pages/minifish/mf-webclip-highres.gif"
+
+app:
+  display-name: "Mini Fish: Downstream Dash"
+  name: minifish
+  description: "<p>Swim as far as your little fins can take you in this
+      swimfinite runner Minigame! </p>
+      <p>It's an easy to learn but delightfully hard to master minigame where
+        players dodge the dangers of the sea while trying to swim as far
+        as possible.</p>"
+  features:
+    - "Rapid retrying"
+    - "Challenging gameplay"
+    - "Compete on the Leaderboards"
+  playstore-url: "https://play.google.com/store/apps/details?id=com.redbluegames.minifish"
+  appstore-url: "https://itunes.apple.com/app/id880791656?mt=8"
 ---
-{% include header.html title="Mini Fish - Red Blue Games"%}
-<link href="/css/micropages.css" rel="stylesheet">
-{% include navbar.html %}
-
-<div class="minigame-background minifish">
-<div class="minigame-wrapper minifish" id="minifish">
-
-  <div class="minigame-jumbotron">
-    <div class="minigame-nav-container">
-      <div id="left" class="minigame-nav leftnavarrow pull-left animated fadeInLeft">
-        <span class="glyphicon glyphicon-arrow-left"></span>
-      </div>
-      <div id="right" class="minigame-nav rightnavarrow pull-right animated fadeInRight">
-        <span class="glyphicon glyphicon-arrow-right"></span>
-      </div>
-    </div>
-    <img src="/assets/images/games-pages/minifish/marketing-banner-lg.png" alt="mini fish banner" class="animated fadeIn hidden-lg"/>
-    <img src="/assets/images/games-pages/minifish/marketing-banner-xl.png" alt="mini fish large banner" class="animated fadeIn hidden-xs hidden-sm hidden-md visible-lg"/>
-    <img src="/assets/images/games-pages/minifish/fish-title.png" alt="mini fish title image" class="animated rubberBand minititle fishtitle"/>
-  </div>
-
-  <div class="container minigame-blocks">
-    <div class="row">
-      <div class="badge-container">
-        <div class="col-sm-12 text-center badge-icon animated fadeIn">
-          <a target="_blank" href="https://itunes.apple.com/app/id880791656?mt=8">
-            <img alt="Download app on App Store"
-            src="/assets/images/games-pages/app-store-badge.svg"/>
-          </a>
-          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.redbluegames.minifish">
-            <img alt="Android app on Google Play"
-            src="/assets/images/games-pages/play-store-badge.png"/>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-6 col-sm-offset-1 minigame-description minigame-borders">
-        <h1 class="text-center">Mini Fish: Downstream Dash</h1>
-        <div class="">
-          <p>Swim as far as your little fins can take you in this swimfinite runner Minigame! </p>
-          <p>It's an easy to learn but delightfully hard to master minigame where players dodge the dangers of the sea while trying to swim as far as possible.</p>
-        </div>
-        <div class="">
-          <h4>Features</h4>
-          <ul>
-            <li>Rapid retrying</li>
-            <li>Challenging gameplay </li>
-            <li>Compete on the Leaderboards</li>
-          </ul>
-        </div>
-      </div>
-      <div class="minigame-video col-sm-4 minifish">
-        <img class="minifish gif minigame-borders" src="/assets/images/games-pages/minifish/mf-webclip-highres.gif" alt="mini fish video"/>
-      </div>
-    </div>
-  </div> <!-- /container -->
-</div> <!-- /minigame-wrapper -->
-</div> <!-- /minigame-background -->
-{% include footer.html %}
