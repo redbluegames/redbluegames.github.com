@@ -72,7 +72,7 @@ $(".wiggle-on-hover").mouseleave(function() {
 
 /* Minigame Microsite Behavior */
 $(document).ready(function() {
-  var minigamePath = "/games/minigames/";
+  var minigamePath = "/games/promos/";
   var minigamePages = ["minifish/", "mininuts/", "ministackem/"];
   var activeIndex = LookUpIndex();
 
@@ -102,7 +102,7 @@ $(document).ready(function() {
   function LookUpIndex ()
   {
     for (var i = 0; i < minigamePages.length; i++) {
-      if (minigamePages[i] === escape(document.URL.split("/minigames/")[1])) {
+      if (minigamePages[i] === escape(document.URL.split("/promos/")[1])) {
         return i;
       }
     }

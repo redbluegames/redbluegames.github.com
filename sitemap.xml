@@ -3,7 +3,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>http://redbluegames.com/games/minigames/minifish/</loc>
+    <loc>http://redbluegames.com/games/promos/minifish/</loc>
     <image:image>
        <image:loc>http://redbluegames.com/assets/images/games-pages/minifish/marketing-banner-xl.png</image:loc>
     </image:image>
@@ -15,7 +15,7 @@
     </image:image>
   </url>
   <url>
-    <loc>http://redbluegames.com/games/minigames/mininuts/</loc>
+    <loc>http://redbluegames.com/games/promos/mininuts/</loc>
     <image:image>
        <image:loc>http://redbluegames.com/assets/images/games-pages/mininuts/marketing-banner-xl.png</image:loc>
     </image:image>
