@@ -1,0 +1,74 @@
+---
+layout: default
+---
+<link href="/css/micropages.css" rel="stylesheet">
+
+<div class="minigame-background {{  page.app.name  }}">
+<div class="minigame-wrapper {{  page.app.name  }}" id="{{ page.app.name }}">
+
+  <div class="minigame-jumbotron {{ page.app.name }}">
+    <div class="minigame-nav-container">
+      <div id="left" class="minigame-nav leftnavarrow pull-left animated fadeInLeft">
+        <span class="glyphicon glyphicon-arrow-left"></span>
+      </div>
+      <div id="right" class="minigame-nav rightnavarrow pull-right animated fadeInRight">
+        <span class="glyphicon glyphicon-arrow-right"></span>
+      </div>
+    </div>
+    {% if page.banner %}
+    <img src="{{ page.banner }}" alt="{{ page.app.name }} banner" class="animated fadeIn visible-xs"/>
+    {% endif %}
+    {% if page.lg-banner %}
+    <img src="{{ page.lg-banner }}" alt="{{ page.app.name }} banner" class="animated fadeIn visible-sm visible-md"/>
+    {% endif %}
+    {% if page.xl-banner %}
+    <img src="{{ page.xl-banner }}" alt="{{ page.app.name }} large banner" class="animated fadeIn visible-lg banner-img"/>
+    {% endif %}
+    <img src="{{ page.title-art }}" alt="{{ page.app.name }} title" class="animated {{ page.title-anim }} minititle {{ page.app.name }}"/>
+  </div>
+
+  <div class="container minigame-blocks">
+    <div class="row">
+      <div class="badge-container">
+        <div class="col-sm-12 text-center badge-icon animated fadeIn">
+          {% if page.app.appstore-url %}
+          <a target="_blank" href="{{ page.app.appstore-url }}">
+            <img alt="Download app on App Store" src="/assets/images/games-pages/app-store-badge.svg"/>
+          </a>
+          {% endif %}
+
+          {% if page.app.playstore-url %}
+          <a target="_blank" href="{{ page.app.playstore-url}}">
+            <img alt="Android app on Google Play" src="/assets/images/games-pages/play-store-badge.png"/>
+          </a>
+          {% endif %}
+
+          {% if page.app.kongregate-url %}
+          <a target="_blank" href="{{ page.app.kongregate-url}}">
+            <img class="kongregate" src="http://cdn1.kongcdn.com/images/sharedassets/badge_dev_220x25.png" width="220" height="25" alt="Kongregate Games logo"></a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-sm-6 col-sm-offset-1 minigame-description {{ page.app.name }} minigame-borders">
+        <div class="">
+          <h1 class="text-center">{{ page.app.display-name }}</h1>
+          <p>{{ page.app.description }}</p>
+        </div>
+        {% if page.app.features %}
+        <div class="feature-list">
+          <h4>Features</h4>
+          <ul>
+            {% for feature in page.app.features %}
+            <li>{{ feature }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      <div class="minigame-video col-sm-6 {{ page.app.name }}">
+        <img class="{{ page.app.name }} gif minigame-borders" src="{{ page.gif }}" alt="{{ page.app.name }} video"/>
+      </div>
+    </div>
+  </div> <!-- /container -->
+</div> <!-- /minigame-wrapper -->
+</div> <!-- /minigame-background -->
