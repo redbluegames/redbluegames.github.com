@@ -30,6 +30,7 @@ layout: default
   <div class="container minigame-blocks">
     <div class="row">
       <div class="badge-container">
+        {% if page.app.appstore-url or page.app.playstore-url or page.app.kongregate-url %}
         <div class="col-sm-12 text-center badge-icon animated fadeIn">
           {% if page.app.appstore-url %}
           <a target="_blank" href="{{ page.app.appstore-url }}">
@@ -48,7 +49,9 @@ layout: default
             <img class="kongregate" src="http://cdn1.kongcdn.com/images/sharedassets/badge_dev_220x25.png" width="220" height="25" alt="Kongregate Games logo"></a>
           {% endif %}
         </div>
+        {% endif %}
       </div>
+      {% if page.app.display-name and page.app.description %}
       <div class="col-sm-6 col-sm-offset-1 minigame-description {{ page.app.name }} minigame-borders">
         <div class="">
           <h1 class="text-center">{{ page.app.display-name }}</h1>
@@ -65,9 +68,12 @@ layout: default
         </div>
         {% endif %}
       </div>
+      {% endif %}
+      {% if page.gif %}
       <div class="minigame-video col-sm-6 {{ page.app.name }}">
         <img class="{{ page.app.name }} gif minigame-borders" src="{{ page.gif }}" alt="{{ page.app.name }} video"/>
       </div>
+      {% endif %}
     </div>
   </div> <!-- /container -->
 </div> <!-- /minigame-wrapper -->
