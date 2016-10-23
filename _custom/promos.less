@@ -5,26 +5,35 @@
 
 // Games ==================================================================
 
-@minifish-color-background: #67c0e0;
-@minifish-color-border: black;//#cbf1ff;
-@mininuts-color-background: rgba(122,204,106, 1);
-@mininuts-color-border: #c6d98f;
-@ministackem-color-background: #efefef;
-@ministackem-color-border: #adadad;
-@sparklite-color-background: rgb(12, 19, 30);
+@minifish-background-color: #6B5129;
+@minifish-panel-background: #67c0e0;
+@minifish-panel-border: black;//#cbf1ff;
+@mininuts-background-color: #419332;
+@mininuts-panel-background: rgba(122,204,106, 1);
+@mininuts-panel-border: #c6d98f;
+@ministackem-background-color: #e8e8e8;
+@ministackem-panel-background: #efefef;
+@ministackem-panel-border: #adadad;
+@sparklite-background-color: rgb(12, 19, 30);
 @webclip-width: 304px;
 @webclip-height: 540px;
 @largescreen-border: 2px;
 
+// Set our background colors for all promo pages
 #wrap {
   &.sparklite {
-    background-color: @sparklite-color-background;
+    background-color: @sparklite-background-color;
+    background-image: url("../assets/sparklite/background.gif");
+    background-repeat: repeat;
   }
   &.minifish {
-    background-color: @minifish-color-background;
+    background-color: @minifish-background-color;
   }
   &.mininuts {
-    background-color: @mininuts-color-background;
+    background-color: @mininuts-background-color;
+  }
+  &.ministackem {
+    background-color: @ministackem-background-color;
   }
 }
 
@@ -37,18 +46,6 @@
   h1, h2, h3, h4, h5 {
     color: black;
   }
-  &#minifish {
-    background-color: #6B5129;
-  }
-  &#mininuts {
-    background-color: #419332;
-  }
-  &#sparklite {
-    background-color: transparent;
-  }
-  &#ministackem {
-    background-color: #e8e8e8;
-  }
   @media (min-width: @screen-sm) {
     h1 {
       font-size: 38px;
@@ -57,6 +54,9 @@
   @media (min-width: @screen-lg) {
     max-width: 3000px;
     .center-block ();
+  }
+  &.ministackem {
+    background-color: @ministackem-background-color;
   }
 }
 
@@ -74,27 +74,6 @@
     //min-height: 625px;
     img {
       position: relative;
-      .center-block ();
-    }
-  }
-  img {
-    .center-block ();
-    position: absolute;
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
-  }
-  &.ministackem {
-    @media (min-width: @screen-lg) {
-      .banner-img {
-        margin-top: 100px;
-      }
-    }
-    @media (min-width: @screen-xl) {
-      .banner-img {
-        margin-top: 0px;
-      }
     }
   }
   .minititle {
@@ -136,17 +115,22 @@
   padding: 20px;
   padding-top: 0px;
   &.minifish {
-    border-color: @minifish-color-border;
-    background: @minifish-color-background;
+    border-color: @minifish-panel-border;
+    background: @minifish-panel-background;
   }
   &.mininuts {
-    border-color: @mininuts-color-border;
-    background: @mininuts-color-background;
+    border-color: @mininuts-panel-border;
+    background: @mininuts-panel-background;
   }
   &.ministackem {
-    border-color: @ministackem-color-border;
-    background: @ministackem-color-background;
+    border-color: @ministackem-panel-border;
+    background: @ministackem-panel-background;
   }
+}
+
+.body-content {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .minigame-video {
@@ -205,6 +189,8 @@
   position: relative;
   z-index: 2;
 }
+
+// Navigation ==================================================================
 
 .minigame-nav-container {
   position: fixed;

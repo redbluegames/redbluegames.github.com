@@ -3,8 +3,8 @@ layout: default
 ---
 <link href="/css/promos.css" rel="stylesheet">
 
-<div class="minigame-wrapper {{  page.app.name  }}" id="{{ page.app.name }}">
-  <div class="minigame-jumbotron {{ page.app.name }}">
+<div class="minigame-wrapper {{  page.tag  }}" id="{{ page.tag }}">
+  <div class="minigame-jumbotron {{ page.tag }}">
     <div class="minigame-nav-container">
       <div id="left" class="minigame-nav leftnavarrow pull-left animated fadeInLeft">
         <span class="glyphicon glyphicon-arrow-left"></span>
@@ -14,15 +14,15 @@ layout: default
       </div>
     </div>
     {% if page.banner %}
-    <img src="{{ page.banner }}" alt="{{ page.app.name }} banner" class="animated fadeIn visible-xs banner-img"/>
+    <img src="{{ page.banner }}" alt="{{ page.tag }} banner" class="img-responsive animated fadeIn visible-xs banner-img"/>
     {% endif %}
     {% if page.lg-banner %}
-    <img src="{{ page.lg-banner }}" alt="{{ page.app.name }} banner" class="animated fadeIn visible-sm visible-md banner-img"/>
+    <img src="{{ page.lg-banner }}" alt="{{ page.tag }} banner" class="img-responsive animated fadeIn visible-sm visible-md banner-img"/>
     {% endif %}
     {% if page.xl-banner %}
-    <img src="{{ page.xl-banner }}" alt="{{ page.app.name }} large banner" class="animated fadeIn visible-lg banner-img"/>
+    <img src="{{ page.xl-banner }}" alt="{{ page.tag }} large banner" class="img-responsive animated fadeIn visible-lg banner-img"/>
     {% endif %}
-    <img src="{{ page.title-art }}" alt="{{ page.app.name }} title" class="animated {{ page.title-anim }} minititle {{ page.app.name }}"/>
+    <img src="{{ page.title-art }}" alt="{{ page.tag }} title" class="animated {{ page.title-anim }} minititle {{ page.tag }}"/>
   </div>
 
   <div class="container minigame-blocks">
@@ -49,8 +49,9 @@ layout: default
         </div>
         {% endif %}
       </div>
+      {{ content }}
       {% if page.app.display-name and page.app.description %}
-      <div class="col-sm-6 col-sm-offset-1 minigame-description {{ page.app.name }} minigame-borders">
+      <div class="col-sm-6 col-sm-offset-1 minigame-description {{ page.tag }} minigame-borders">
         <div class="">
           <h1 class="text-center">{{ page.app.display-name }}</h1>
           <p>{{ page.app.description }}</p>
@@ -68,8 +69,8 @@ layout: default
       </div>
       {% endif %}
       {% if page.gif %}
-      <div class="minigame-video col-sm-6 {{ page.app.name }}">
-        <img class="{{ page.app.name }} gif minigame-borders" src="{{ page.gif }}" alt="{{ page.app.name }} video"/>
+      <div class="minigame-video col-sm-6 {{ page.tag }}">
+        <img class="{{ page.tag }} gif minigame-borders" src="{{ page.gif }}" alt="{{ page.tag }} video"/>
       </div>
       {% endif %}
     </div>
