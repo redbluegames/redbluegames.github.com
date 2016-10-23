@@ -3,9 +3,7 @@ layout: default
 ---
 <link href="/css/promos.css" rel="stylesheet">
 
-<div class="minigame-background {{  page.app.name  }}">
 <div class="minigame-wrapper {{  page.app.name  }}" id="{{ page.app.name }}">
-
   <div class="minigame-jumbotron {{ page.app.name }}">
     <div class="minigame-nav-container">
       <div id="left" class="minigame-nav leftnavarrow pull-left animated fadeInLeft">
@@ -16,10 +14,10 @@ layout: default
       </div>
     </div>
     {% if page.banner %}
-    <img src="{{ page.banner }}" alt="{{ page.app.name }} banner" class="animated fadeIn visible-xs"/>
+    <img src="{{ page.banner }}" alt="{{ page.app.name }} banner" class="animated fadeIn visible-xs banner-img"/>
     {% endif %}
     {% if page.lg-banner %}
-    <img src="{{ page.lg-banner }}" alt="{{ page.app.name }} banner" class="animated fadeIn visible-sm visible-md"/>
+    <img src="{{ page.lg-banner }}" alt="{{ page.app.name }} banner" class="animated fadeIn visible-sm visible-md banner-img"/>
     {% endif %}
     {% if page.xl-banner %}
     <img src="{{ page.xl-banner }}" alt="{{ page.app.name }} large banner" class="animated fadeIn visible-lg banner-img"/>
@@ -77,4 +75,3 @@ layout: default
     </div>
   </div> <!-- /container -->
 </div> <!-- /minigame-wrapper -->
-</div> <!-- /minigame-background -->

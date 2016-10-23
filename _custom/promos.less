@@ -11,11 +11,15 @@
 @mininuts-color-border: #c6d98f;
 @ministackem-color-background: #efefef;
 @ministackem-color-border: #adadad;
+@sparklite-color-background: rgb(12, 19, 30);
 @webclip-width: 304px;
 @webclip-height: 540px;
 @largescreen-border: 2px;
 
-.minigame-background {
+#wrap {
+  &.sparklite {
+    background-color: @sparklite-color-background;
+  }
   &.minifish {
     background-color: @minifish-color-background;
   }
@@ -109,6 +113,9 @@
       left: 15%;
       top: 12%;
       max-width: 38%;
+    }
+    &.sparklite {
+      .center-block();
     }
   }
 }
