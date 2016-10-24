@@ -73,7 +73,7 @@ $(".wiggle-on-hover").mouseleave(function() {
 /* Minigame Microsite Behavior */
 $(document).ready(function() {
   var minigamePath = "/games/promos/";
-  var minigamePages = ["minifish/", "mininuts/", "ministackem/", "sparklite"];
+  var minigamePages = ["minifish/", "mininuts/", "ministackem/", "sparklite/"];
   var activeIndex = LookUpIndex();
 
   if (activeIndex != -1) {
