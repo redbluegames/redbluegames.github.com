@@ -13,6 +13,7 @@ layout: default
         <span class="glyphicon glyphicon-arrow-right"></span>
       </div>
     </div>
+    <img src="{{ page.title-art }}" alt="{{ page.tag }} title" class="animated {{ page.title-anim }} minititle {{ page.tag }}"/>
     {% if page.banner %}
     <img src="{{ page.banner }}" alt="{{ page.tag }} banner" class="img-responsive animated fadeIn visible-xs banner-img"/>
     {% endif %}
@@ -22,7 +23,6 @@ layout: default
     {% if page.xl-banner %}
     <img src="{{ page.xl-banner }}" alt="{{ page.tag }} large banner" class="img-responsive animated fadeIn visible-lg banner-img"/>
     {% endif %}
-    <img src="{{ page.title-art }}" alt="{{ page.tag }} title" class="animated {{ page.title-anim }} minititle {{ page.tag }}"/>
   </div>
 
   <div class="container minigame-blocks">
