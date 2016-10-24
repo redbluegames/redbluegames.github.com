@@ -75,8 +75,8 @@ $(".wiggle-on-hover").mouseleave(function() {
 
 /* Minigame Microsite Behavior */
 $(document).ready(function() {
-  var minigamePath = "/games/promos/";
-  var minigamePages = ["minifish/", "mininuts/", "ministackem/", "sparklite/"];
+  var promoPath = "/games/promos/";
+  var minigamePages = ["minifish/", "sparklite/", "mininuts/", "ministackem/"];
   var activeIndex = LookUpIndex();
 
   if (activeIndex != -1) {
@@ -91,7 +91,7 @@ $(document).ready(function() {
     if (activeIndex < 0) {
       activeIndex = minigamePages.length-1;
     }
-    window.location.href = minigamePath + minigamePages[activeIndex];
+    window.location.href = promoPath + minigamePages[activeIndex];
   }
 
   function clickRight() {
@@ -99,7 +99,7 @@ $(document).ready(function() {
     if (activeIndex >= minigamePages.length) {
       activeIndex = 0;
     }
-    window.location.href = minigamePath + minigamePages[activeIndex];
+    window.location.href = promoPath + minigamePages[activeIndex];
   }
 
   function LookUpIndex ()
