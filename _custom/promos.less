@@ -1,26 +1,50 @@
-// Micropages LESS
+// Promo page LESS
 // Used for the games micropages
 // -----------------------------------------------------
 @import "custom-bootstrap.less";
 
+@font-face {
+  font-family: Blocky;
+  src:
+       url('../assets/fonts/zephyrea.ttf'); /* Safari, Android, iOS */
+}
 // Games ==================================================================
 
-@minifish-color-background: #67c0e0;
-@minifish-color-border: black;//#cbf1ff;
-@mininuts-color-background: rgba(122,204,106, 1);
-@mininuts-color-border: #c6d98f;
-@ministackem-color-background: #efefef;
-@ministackem-color-border: #adadad;
+@minifish-background-color: #6B5129;
+@minifish-panel-background: #67c0e0;
+@minifish-panel-border: black;//#cbf1ff;
+@mininuts-background-color: #419332;
+@mininuts-panel-background: rgba(122,204,106, 1);
+@mininuts-panel-border: #c6d98f;
+@ministackem-background-color: #e8e8e8;
+@ministackem-panel-background: #efefef;
+@ministackem-panel-border: #adadad;
+@sparklite-background-color: rgb(12, 19, 30);
 @webclip-width: 304px;
 @webclip-height: 540px;
 @largescreen-border: 2px;
 
-.minigame-background {
+// Colors
+@alphad-white: rgba(255, 255, 255, 0.75);
+@alphad-black: rgba(0, 0, 0, 0.8);
+@color-yellow: #EAE099;
+@color-yellow-dark: #91896E;
+
+// Set our background colors for all promo pages
+#wrap {
+  &.sparklite {
+    background-color: @sparklite-background-color;
+    background-image: url("../assets/sparklite/background.gif");
+    background-repeat: repeat;
+  }
   &.minifish {
-    background-color: @minifish-color-background;
+    background-color: @minifish-background-color;
   }
   &.mininuts {
-    background-color: @mininuts-color-background;
+    background-color: @mininuts-background-color;
+  }
+  &.ministackem {
+    background-color: @ministackem-background-color;
   }
 }
 
@@ -33,18 +57,6 @@
   h1, h2, h3, h4, h5 {
     color: black;
   }
-  &#minifish {
-    background-color: #6B5129;
-  }
-  &#mininuts {
-    background-color: #419332;
-  }
-  &#sparklite {
-    background-color: transparent;
-  }
-  &#ministackem {
-    background-color: #e8e8e8;
-  }
   @media (min-width: @screen-sm) {
     h1 {
       font-size: 38px;
@@ -54,7 +66,12 @@
     max-width: 3000px;
     .center-block ();
   }
+  &.ministackem {
+    background-color: @ministackem-background-color;
+  }
 }
+
+// Jumbotron ===================================================================
 
 .minigame-jumbotron {
   background: transparent;
@@ -70,27 +87,6 @@
     //min-height: 625px;
     img {
       position: relative;
-      .center-block ();
-    }
-  }
-  img {
-    .center-block ();
-    position: absolute;
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
-  }
-  &.ministackem {
-    @media (min-width: @screen-lg) {
-      .banner-img {
-        margin-top: 100px;
-      }
-    }
-    @media (min-width: @screen-xl) {
-      .banner-img {
-        margin-top: 0px;
-      }
     }
   }
   .minititle {
@@ -110,8 +106,60 @@
       top: 12%;
       max-width: 38%;
     }
+    &.sparklite {
+      top: @navbar-height;
+      position: relative;
+      max-height: 400px;
+      max-width: 50%;
+      .center-block();
+    }
   }
 }
+
+// Sparklite Only ==============================================================
+
+.sparklite &.banner-img {
+  .center-block();
+  margin-top: 3vh;
+
+  @media (min-width: @screen-sm) {
+    margin-top: -25vh;
+  }
+  @media (min-width: @screen-xl) {
+    margin-top: 5vh;
+  }
+}
+
+.sparklite {
+  &.btn {
+    background-color: @color-yellow;
+    color: @alphad-black;
+    font-family: "Blocky";
+    font-size: 28px;
+    border: none;
+    box-shadow: 0px 6px @color-yellow-dark;
+    max-width: 50%;
+    position: absolute;
+    top: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  &.btn:hover {
+    outline: none;
+    background-color: lighten(@color-yellow, 10%);
+  }
+
+  &.btn:active {
+    outline: none;
+    background-color: @color-yellow-dark;
+    box-shadow: 0px 0px @color-yellow-dark;
+  }
+}
+
+// Minigame Panels =============================================================
 
 .minigame-blocks {
   margin-left: auto;
@@ -129,17 +177,22 @@
   padding: 20px;
   padding-top: 0px;
   &.minifish {
-    border-color: @minifish-color-border;
-    background: @minifish-color-background;
+    border-color: @minifish-panel-border;
+    background: @minifish-panel-background;
   }
   &.mininuts {
-    border-color: @mininuts-color-border;
-    background: @mininuts-color-background;
+    border-color: @mininuts-panel-border;
+    background: @mininuts-panel-background;
   }
   &.ministackem {
-    border-color: @ministackem-color-border;
-    background: @ministackem-color-background;
+    border-color: @ministackem-panel-border;
+    background: @ministackem-panel-background;
   }
+}
+
+.body-content {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .minigame-video {
@@ -157,6 +210,8 @@
     }
   }
 }
+
+// Store Badges ================================================================
 
 .badge-icon img{
   width: 117px;
@@ -198,6 +253,8 @@
   position: relative;
   z-index: 2;
 }
+
+// Navigation ==================================================================
 
 .minigame-nav-container {
   position: fixed;
