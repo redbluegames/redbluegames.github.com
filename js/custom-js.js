@@ -12,7 +12,10 @@ $(document).ready(function() {
 // Colorize Footer
 $(document).ready(function() {
   var curPath = window.location.pathname;
-    if(curPath.indexOf ("mininuts") > 0 || curPath.indexOf ("minifish") > 0 || curPath.indexOf ("company") > 0){
+    if(curPath.indexOf ("mininuts") > 0 ||
+       curPath.indexOf ("minifish") > 0 ||
+       curPath.indexOf ("company") > 0 ||
+       curPath.indexOf ("sparklite") > 0){
       $('.footer').addClass('blue-footer');
     } else {
       $('.footer').addClass('red-footer');
