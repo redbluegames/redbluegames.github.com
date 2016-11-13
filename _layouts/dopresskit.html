@@ -2,16 +2,16 @@
 ---
 {% include header.html %}
 <head>
-  <title>Mini Fish: Downstream Dash</title>
-	<link href="/presskit/minifish-presskit_files/uikit.gradient.min.css" rel="stylesheet" type="text/css">
-	<link href="/presskit/minifish-presskit_files/style.css" rel="stylesheet" type="text/css">
+  <title>{{ page.app.display-name }}</title>
+	<link href="/presskit/common/uikit.gradient.min.css" rel="stylesheet" type="text/css">
+	<link href="/presskit/common/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <div class="uk-container uk-container-center">
   <div class="uk-grid">
     <div id="navigation" class="uk-width-medium-1-4">
-      <h1 class="nav-header">Mini Fish: Downstream Dash</h1>
-      <a class="nav-header" href="redbluegames-presskit.html" target="_self">press kit</a>
+      <h1 class="nav-header">{{ page.app.display-name }}</h1>
+      <a class="nav-header" href="." target="_self">press kit</a>
 
       <ul class="uk-nav uk-nav-side">
         <li><a href="#factsheet">Factsheet</a></li>
@@ -28,65 +28,51 @@
       </ul>
     </div>
     <div id="content" class="uk-width-medium-3-4">
-      <img src="/presskit/minifish-presskit_files/header.png" class="header"/>
+      <img src="{{ page.lg-banner }}" class="header"/>
       <div class="uk-grid">
         <div class="uk-width-medium-2-6">
           <h2 id="factsheet">Factsheet</h2>
           <p>
             <strong>Developer:</strong><br>
-            <a href="redbluegames-presskit.html">Red Blue Games, LLC</a><br/>
+            <a href="/presskit/redbluegames-presskit.html">Red Blue Games, LLC</a><br/>
             Based in Durham, North Carolina
           </p>
           <p>
             <strong>Release date:</strong><br/>
-            June 16, 2014
+            {{ page.app.release-date }}
           </p>
 
           <p>
             <strong>Platforms:</strong><br/>
-            <a href="http://play.google.com/store/apps/details?id=com.redbluegames.minifish">Google Play Store</a><br/>
-            <a href="http://itunes.apple.com/app/id880791656?mt=8">Apple App Store</a><br/>
+            {% if page.app.playstore-url %}
+              <a href="{{ page.app.playstore-url}}">Google Play Store</a><br/>
+            {% endif %}
+            {% if page.app.appstore-url %}
+              <a href="{{ page.app.appstore-url }}">Apple App Store</a><br/>
+            {% endif %}
           </p>
           <p>
             <strong>Website:</strong><br>
-            <a href="http://minifish.redbluegames.com/">minifish.redbluegames.com</a>
+            <a href="{{ page.presskit.microsite-url }}">{{ page.presskit.microsite-url }}</a>
           </p>
           <p>
             <strong>Regular Price:</strong><br>
           </p>
-          <table>
-            <tbody>
-              <tr>
-                <td></td>
-                <td>FREE</td>
-              </tr>
-            </tbody>
-          </table>
-          <p></p>
+            <td>{{ page.app.price }}</td>
         </div>
         <div class="uk-width-medium-4-6">
           <h2 id="description">Description</h2>
-          <p>Swim as far as your little fins can take you in this
-          swimfinite runner Minigame! It's an easy to learn but delightfully
-          hard to master minigame where players dodge the dangers of the sea
-          while trying to swim as far as possible. Mini Fish is one of
-          several games in our Red Blue Minigames series so check our
-          developer link for more if you like it!</p>
+          <p>
+            {{ page.app.description }}
+          </p>
 
           <h2 id="history">History</h2>
-          <p>Mini Fish is the first of the Red Blue Minigames. These minigames are
-          designed to be bite-sized experiences that allow for a minimal degree of
-          depth in the form of competitive leaderboards and achievements. We believe
-          that while the tricks that many free to play games use may increase
-          engadgement, they ultimately don't make for better player experiences. As
-          mobile gaming has become increasingly crowded with poor quality free games,
-          our minigames are an attempt to raise the bar by creating fundamentally
-          sound, polished, miniature games.</p>
+          <p>{{ page.presskit.history }}</p>
           <h2>Features</h2>
           <ul>
-            <li>Short and Sweet Gameplay Sessions</li>
-            <li>Challenges Your Memory</li>
-            <li>Compete on the Game Center Leaderboards</li>
+            {% for feature in page.app.features %}
+            <li>{{ feature }}</li>
+            {% endfor %}
           </ul>
         </div>
       </div>
