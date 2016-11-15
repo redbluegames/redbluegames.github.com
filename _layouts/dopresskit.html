@@ -82,11 +82,11 @@
       <h2 id="trailers">Videos</h2>
       <p>
         <strong>Gameplay Trailer </strong>
-        <a href="http://www.youtube.com/watch?v=PWUEUR3c1Uc">YouTube</a>
+        <a href="{{ page.presskit.trailer }}">YouTube</a>
       </p>
       <div class="uk-responsive-width iframe-container">
-        <iframe src="/presskit/minifish-presskit_files/PWUEUR3c1Uc.html" frameborder="0" allowfullscreen=""></iframe>
-      </div><p></p>
+        {{ page.presskit.trailer-embed }}
+      </div>
 
       <hr>
 
@@ -96,33 +96,33 @@
       -->
     <div class="uk-grid images" style="position: relative; height: 2214px;">
       <div class="uk-width-medium-1-2" style="position: absolute; left: 0px; top: 0px;">
-        <a href="/presskit/minifish-presskit_files/gps_feature.png">
-          <img src="/presskit/minifish-presskit_files/gps_feature.png" alt="gps_feature.png">
+        <a href="{{ page.presskit.screenshots[0] }}">
+          <img src="{{ page.presskit.screenshots[0] }}" alt="gps_feature.png">
         </a>
       </div>
       <div class="uk-width-medium-1-2" style="position: absolute; left: 436px; top: 0px;">
-        <a href="/presskit/minifish-presskit_files/iPhone 4 retina 640x1136 2.png">
-          <img src="/presskit/minifish-presskit_files/iPhone 4 retina 640x1136 2.png" alt="iPhone 4 retina 640x1136 2.png">
+        <a href="{{ page.presskit.screenshots[1] }}">
+          <img src="{{ page.presskit.screenshots[1] }}" alt="iPhone 4 retina 640x1136 2.png">
         </a>
       </div>
       <div class="uk-width-medium-1-2" style="position: absolute; left: 0px; top: 221px;">
-        <a href="/presskit/minifish-presskit_files/iPhone 4 retina 640x1136 3.png">
-          <img src="/presskit/minifish-presskit_files/iPhone 4 retina 640x1136 3.png" alt="iPhone 4 retina 640x1136 3.png">
+        <a href="{{ page.presskit.screenshots[2] }}">
+          <img src="{{ page.presskit.screenshots[2] }}" alt="iPhone 4 retina 640x1136 3.png">
         </a>
       </div>
       <div class="uk-width-medium-1-2" style="position: absolute; left: 436px; top: 738px;">
-        <a href="/presskit/minifish-presskit_files/iPhone 4 retina 640x1136 4.png">
-          <img src="/presskit/minifish-presskit_files/iPhone 4 retina 640x1136 4.png" alt="iPhone 4 retina 640x1136 4.png">
+        <a href="{{ page.presskit.screenshots[3] }}">
+          <img src="{{ page.presskit.screenshots[3] }}" alt="iPhone 4 retina 640x1136 4.png">
         </a>
       </div>
       <div class="uk-width-medium-1-2" style="position: absolute; left: 0px; top: 959px;">
-        <a href="/presskit/minifish-presskit_files/iPhone 4 retina 640x1136 5.png">
-          <img src="/presskit/minifish-presskit_files/iPhone 4 retina 640x1136 5.png" alt="iPhone 4 retina 640x1136 5.png">
+        <a href="{{ page.presskit.screenshots[4] }}">
+          <img src="{{ page.presskit.screenshots[4] }}" alt="iPhone 4 retina 640x1136 5.png">
         </a>
       </div>
       <div class="uk-width-medium-1-2" style="position: absolute; left: 436px; top: 1476px;">
-        <a href="/presskit/minifish-presskit_files/iPhone 4 retina 640x1136.png">
-          <img src="/presskit/minifish-presskit_files/iPhone 4 retina 640x1136.png" alt="iPhone 4 retina 640x1136.png">
+        <a href="{{ page.presskit.screenshots[5] }}">
+          <img src="{{ page.presskit.screenshots[5] }}" alt="iPhone 4 retina 640x1136.png">
         </a>
       </div>
     </div>
@@ -131,12 +131,12 @@
     <h2 id="logo">Logo &amp; Icon</h2>
     <div class="uk-grid images" style="position: relative; height: 428px;">
       <div class="uk-width-medium-1-2" style="position: absolute; left: 0px; top: 0px;">
-        <a href="/presskit/minifish-presskit_files/logo.png">
-          <img src="/presskit/minifish-presskit_files/logo.png" alt="logo">
+        <a href="{{ page.presskit.logo }}">
+          <img src="{{ page.presskit.logo }}" alt="logo">
         </a>
       </div>
       <div class="uk-width-medium-1-2" style="position: absolute; left: 436px; top: 0px;">
-        <a href="/presskit/minifish-presskit_files/icon.png"><img src="/presskit/minifish-presskit_files/icon.png" alt="logo">
+        <a href="{{ page.presskit.icon }}"><img src="{{ page.presskit.icon }}" alt="icon">
         </a>
       </div>
     </div>
@@ -157,19 +157,12 @@
         href="http:">Artsy Page</a></cite></li></ul> -->
       <hr>
       <h2 id="links">Additional Links</h2>
+      {% for attribution in page.presskit.attributions %}
       <p>
-        <strong>Soundtrack</strong><br/>
-        Jaunty Gumption by Kevin MacLeod is licensed under CC Attribution 3.0 <a href="http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1300017" alt="incompetech.com/music/royalty-free/index.html?isrc=USUAN1300017">incompetech.com</a>.
+        <strong>{{ attribution.label }}</strong><br/>
+        {{ attribution.source }}
       </p>
-      <p>
-        <strong>Lilita One Font</strong><br/>
-        Font by Juan Montoreano <a href="http://google.com/fonts/specimen/Lilita+One" alt="google.com/fonts/specimen/Lilita+One">google.com</a>.
-      </p>
-      <p>
-        <strong>Release Blog Post</strong><br/>
-        The blog-post through which this game was released is available at <a href="http://vlambeer.com/bloglink" alt="vlambeer.com/bloglink">vlambeer.com</a>.
-      </p>
-
+      {% endfor %}
       <hr>
 
       <h2 id="about">About Red Blue Games, LLC</h2>
@@ -188,15 +181,13 @@
 
       <div class="uk-grid">
         <div class="uk-width-medium-1-2">
-          <h2 id="credits">Mini Fish: Downstream Dash Credits</h2>
+          <h2 id="credits">{{ page.app.display-name }}</h2>
+          {% for credit in page.presskit.credits %}
           <p>
-            <strong>Edward Rowe</strong><br/>
-            Artist, Programmer, Game Designer
+            <strong>{{ credit.name }}</strong><br/>
+            {{ credit.role }}
           </p>
-          <p>
-            <strong>Lucas Rowe</strong><br/>
-            <a href="http://about.me/lucasrowe">Programmer, Game Designer</a>
-          </p>
+          {% endfor %}
         </div>
         <div class="uk-width-medium-1-2">
           <h2 id="contact">Contact</h2>
