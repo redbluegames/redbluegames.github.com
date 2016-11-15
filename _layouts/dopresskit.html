@@ -1,0 +1,221 @@
+---
+---
+{% include header.html %}
+<head>
+  <title>{{ page.app.display-name }}</title>
+	<link href="/presskit/common/uikit.gradient.min.css" rel="stylesheet" type="text/css">
+	<link href="/presskit/common/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<div class="uk-container uk-container-center">
+  <div class="uk-grid">
+    <div id="navigation" class="uk-width-medium-1-4">
+      <h1 class="nav-header">{{ page.app.display-name }}</h1>
+      <a class="nav-header" href="." target="_self">press kit</a>
+
+      <ul class="uk-nav uk-nav-side">
+        <li><a href="#factsheet">Factsheet</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#trailers">Videos</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#logo">Logo &amp; Icon</a></li>
+        <!--<li><a href="#awards">Awards &amp; Recognition</a></li><li><a href="#quotes">Selected Articles</a></li>-->
+        <li><a href="#links">Additional Links</a></lib>
+        <li><a href="#about">About Red Blue Games, LLC</a></li>
+        <li><a href="#credits">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div id="content" class="uk-width-medium-3-4">
+      <img src="{{ page.presskit.banner }}" class="header"/>
+      <div class="uk-grid">
+        <div class="uk-width-medium-2-6">
+          <h2 id="factsheet">Factsheet</h2>
+          <p>
+            <strong>Developer:</strong><br>
+            <a href="/presskit/redbluegames-presskit.html">Red Blue Games, LLC</a><br/>
+            Based in Durham, North Carolina
+          </p>
+          <p>
+            <strong>Release date:</strong><br/>
+            {{ page.app.release-date }}
+          </p>
+
+          <p>
+            <strong>Platforms:</strong><br/>
+            {% if page.app.playstore-url %}
+              <a href="{{ page.app.playstore-url}}">Google Play Store</a><br/>
+            {% endif %}
+            {% if page.app.appstore-url %}
+              <a href="{{ page.app.appstore-url }}">Apple App Store</a><br/>
+            {% endif %}
+          </p>
+          <p>
+            <strong>Website:</strong><br>
+            <a href="{{ page.presskit.microsite-url }}">{{ page.presskit.microsite-url }}</a>
+          </p>
+          <p>
+            <strong>Regular Price:</strong><br>
+          </p>
+            <td>{{ page.app.price }}</td>
+        </div>
+        <div class="uk-width-medium-4-6">
+          <h2 id="description">Description</h2>
+          <p>
+            {{ page.app.description }}
+          </p>
+
+          <h2 id="history">History</h2>
+          <p>{{ page.presskit.history }}</p>
+          <h2>Features</h2>
+          <ul>
+            {% for feature in page.app.features %}
+            <li>{{ feature }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+      <h2 id="trailers">Videos</h2>
+      <p>
+        <strong>Gameplay Trailer </strong>
+        <a href="{{ page.presskit.trailer }}">YouTube</a>
+      </p>
+      <div class="uk-responsive-width iframe-container">
+        {{ page.presskit.trailer-embed }}
+      </div>
+
+      <hr>
+
+      <h2 id="images">Images</h2>
+      <!--
+      <a href="http://localhost/~lucas/presskit/mini_fish/images/images.zip"><div class="uk-alert">download all screenshots &amp; photos as .zip (1MB)</div></a>
+      -->
+    <div class="uk-grid images" style="position: relative; height: 2214px;">
+      <div class="uk-width-medium-1-2" style="position: absolute; left: 0px; top: 0px;">
+        <a href="{{ page.presskit.screenshots[0] }}">
+          <img src="{{ page.presskit.screenshots[0] }}" alt="gps_feature.png">
+        </a>
+      </div>
+      <div class="uk-width-medium-1-2" style="position: absolute; left: 436px; top: 0px;">
+        <a href="{{ page.presskit.screenshots[1] }}">
+          <img src="{{ page.presskit.screenshots[1] }}" alt="iPhone 4 retina 640x1136 2.png">
+        </a>
+      </div>
+      <div class="uk-width-medium-1-2" style="position: absolute; left: 0px; top: 221px;">
+        <a href="{{ page.presskit.screenshots[2] }}">
+          <img src="{{ page.presskit.screenshots[2] }}" alt="iPhone 4 retina 640x1136 3.png">
+        </a>
+      </div>
+      <div class="uk-width-medium-1-2" style="position: absolute; left: 436px; top: 738px;">
+        <a href="{{ page.presskit.screenshots[3] }}">
+          <img src="{{ page.presskit.screenshots[3] }}" alt="iPhone 4 retina 640x1136 4.png">
+        </a>
+      </div>
+      <div class="uk-width-medium-1-2" style="position: absolute; left: 0px; top: 959px;">
+        <a href="{{ page.presskit.screenshots[4] }}">
+          <img src="{{ page.presskit.screenshots[4] }}" alt="iPhone 4 retina 640x1136 5.png">
+        </a>
+      </div>
+      <div class="uk-width-medium-1-2" style="position: absolute; left: 436px; top: 1476px;">
+        <a href="{{ page.presskit.screenshots[5] }}">
+          <img src="{{ page.presskit.screenshots[5] }}" alt="iPhone 4 retina 640x1136.png">
+        </a>
+      </div>
+    </div>
+
+    <hr>
+    <h2 id="logo">Logo &amp; Icon</h2>
+    <div class="uk-grid images" style="position: relative; height: 428px;">
+      <div class="uk-width-medium-1-2" style="position: absolute; left: 0px; top: 0px;">
+        <a href="{{ page.presskit.logo }}">
+          <img src="{{ page.presskit.logo }}" alt="logo">
+        </a>
+      </div>
+      <div class="uk-width-medium-1-2" style="position: absolute; left: 436px; top: 0px;">
+        <a href="{{ page.presskit.icon }}"><img src="{{ page.presskit.icon }}" alt="icon">
+        </a>
+      </div>
+    </div>
+      <!--<hr><h2 id="awards">Awards &amp; Recognition</h2><ul><li>"Winner
+      in this highly relevant contest." <cite>Award Location, 20 October,
+      1989</cite></li><li>"Nomination for this prestigious award."
+      <cite>Award Ceremony, 4 December, 1991</cite></li><li>"Winner in this
+      highly relevant contest." <cite>Award Location, 20 October,
+      1989</cite></li></ul><hr>          <hr>
+
+        <h2>Selected Articles</h2> <ul><li>"This is a rather insignificant
+        quote by a highly important person." <br> <cite>- Person Name, <a
+        href="http:">Website</a></cite></li><li>"An extremely positive quote
+        from a rather insignificant person. Also great." <br> <cite>- Some
+        Guy, <a href="http:">This Page Is Visited By 12 Visitors A
+        Month</a></cite></li><li>"I pretend to love this game even though I
+        do not actually understand it." <br> <cite>- Pretentious Bastard, <a
+        href="http:">Artsy Page</a></cite></li></ul> -->
+      <hr>
+      <h2 id="links">Additional Links</h2>
+      {% for attribution in page.presskit.attributions %}
+      <p>
+        <strong>{{ attribution.label }}</strong><br/>
+        {{ attribution.source }}
+      </p>
+      {% endfor %}
+      <hr>
+
+      <h2 id="about">About Red Blue Games, LLC</h2>
+      <p>
+        <strong>Boilerplate</strong><br/>
+        Red Blue Games is an idie game studio based out of Durham, North
+        Carolina founded by twin brothers Edward and Lucas Rowe.
+      </p>
+
+      <p>
+        <strong>More information</strong><br>
+        More information on Red Blue Games, LLC, our logo &amp; relevant media
+        are available <a href="redbluegames-presskit.html">here</a>.
+      </p>
+
+      <hr>
+
+      <div class="uk-grid">
+        <div class="uk-width-medium-1-2">
+          <h2 id="credits">{{ page.app.display-name }}</h2>
+          {% for credit in page.presskit.credits %}
+          <p>
+            <strong>{{ credit.name }}</strong><br/>
+            {{ credit.role }}
+          </p>
+          {% endfor %}
+        </div>
+        <div class="uk-width-medium-1-2">
+          <h2 id="contact">Contact</h2>
+          <p>
+            <strong>Inquiries</strong><br/>
+            <a href="mailto:contact@redbluegames.com">contact@redbluegames.com</a>
+          </p>
+          <p>
+            <strong>Twitter</strong><br/>
+            <a href="http://twitter.com/redbluegames">twitter.com/redbluegames</a>
+          </p>
+          <p>
+            <strong>Facebook</strong><br/>
+            <a href="http://facebook.com/redbluegamesllc">facebook.com/redbluegamesllc</a>
+          </p>
+          <p>
+            <strong>Web</strong><br/>
+            <a href="http://redbluegames.com/">redbluegames.com</a>
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <p><a href="http://dopresskit.com/">presskit()</a> by Rami Ismail
+        (<a href="http://www.vlambeer.com/">Vlambeer</a>) - also thanks to
+        <a href="/presskit/credits.html">these fine folks</a></p>
+    </div>
+  </div>
+</div>
