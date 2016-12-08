@@ -167,19 +167,21 @@ body {
   }
 }
 
-.clouds-bottom {
+.clouds {
   position: absolute;
-  top: -55vh;
   width: 100vw;
+}
+
+.clouds-bottom {
+  top: -55vh;
   @media (max-width: @screen-sm) {
     top: -60vh;
     width: auto;
   }
 }
+
 .clouds-top {
-  position: absolute;
   bottom: -30vh;
-  width: 100vw;
   @media (max-width: @screen-sm) {
     bottom: -55vh;
     width: auto;
@@ -193,6 +195,7 @@ body {
   text-align: center;
   max-width: 40vw;
   color: #594b42;
+
   @media (max-width: @screen-md) {
     top: -50vh;
     max-width: 60vw;
@@ -329,7 +332,80 @@ body {
 }
 
 // Parallax
+// --------------------------------------------------
 
+.parallax {
+  height: 500px; /* fallback for older browsers */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+.parallax__group {
+  position: relative;
+  height: 500px; /* fallback for older browsers */
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  margin-bottom: 20vh;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.7);
+  z-index: 1;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
+}
+
+// Custom Parallax
+
+.parallax__group {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+#group1 .parallax__layer--base {
+  background-image: url('/assets/sparklite/foothills-animated.gif');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #95bc58;
+}
+
+#group2 .parallax__layer--base {
+  background-image: url('/assets/sparklite/cave-animated-wide.gif');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #1B1B21;
+}
 
 // Mixins
 // --------------------------------------------------
