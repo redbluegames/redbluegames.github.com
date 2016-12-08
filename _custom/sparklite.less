@@ -196,18 +196,22 @@ body {
 .cloud-block {
   position: absolute;
   left: 30vw;
-  top: -52vh;
+  top: -50vh;
   text-align: center;
   max-width: 40vw;
   color: @color-brown;
 
+  @media (max-width: @screen-lg) {
+    top: -53vh;
+  }
+
   @media (max-width: @screen-md) {
-    top: -50vh;
+    top: -52vh;
     max-width: 60vw;
     left: 20vw;
   }
   @media (max-width: @screen-xs) {
-    top: -40vh;
+    top: -52vh;
     max-width: 80vw;
     left: 10vw;
   }
@@ -369,6 +373,7 @@ body {
   -webkit-transform: translateZ(90px) scale(.7);
   transform: translateZ(90px) scale(.7);
   z-index: 1;
+  pointer-events: none;
 }
 
 .parallax__layer--base {
