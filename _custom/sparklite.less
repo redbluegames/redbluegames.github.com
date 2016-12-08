@@ -181,7 +181,16 @@ body {
 }
 
 .clouds-bottom {
-  top: -45vh;
+  // More negative moves clouds higher
+  top: -58vh;
+  @media (max-width: 1500px) {
+    top: -42vh;
+    width: auto;
+  }
+  @media (max-width: @screen-md) {
+    top: -40vh;
+    width: auto;
+  }
   @media (max-width: @screen-sm) {
     top: -45vh;
     width: auto;
@@ -189,7 +198,16 @@ body {
 }
 
 .clouds-top {
-  bottom: -20vh;
+  // More negative moves clouds lower
+  bottom: -35vh;
+  @media (max-width: 1500px) {
+    bottom: -28vh;
+    width: auto;
+  }
+  @media (max-width: @screen-md) {
+    bottom: -15vh;
+    width: auto;
+  }
   @media (max-width: @screen-sm) {
     bottom: -30vh;
     width: auto;
@@ -202,7 +220,7 @@ body {
 
 .cloud-block {
   position: absolute;
-  top: -50vh;
+  top: -48vh;
   text-align: center;
   width: 100vw;
   color: @color-brown;
