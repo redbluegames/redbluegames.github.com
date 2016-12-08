@@ -42,6 +42,7 @@
 @color-brown: #6C5E52;
 @color-dark-brown: #1B1B21;
 @color-pink-transparent: rgba(194, 7, 7, 0.15);
+@color-clouds: #F2F4DC;
 
 // General
 // --------------------------------------------------
@@ -98,8 +99,13 @@ h2 {
 }
 
 .navbar-default .navbar-brand {
-  color: @alphad-white;
   font-size: @font-size-medium;
+  color: @color-clouds;
+}
+
+// Couldn't find the selector for these icons
+i.fa.fa-lg {
+  color: @color-clouds;
 }
 
 // Body and Contents
@@ -166,7 +172,7 @@ body {
   top: -55vh;
   width: 100vw;
   @media (max-width: @screen-sm) {
-    top: -70vh;
+    top: -60vh;
     width: auto;
   }
 }
@@ -180,30 +186,22 @@ body {
   }
 }
 
-.awards {
-  z-index: 10;
-  text-align: center;
+.cloud-block {
   position: absolute;
-  left: 50%;
-  top: 120vh;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.cloud-text-block {
-  position: absolute;
-  left: 30%;
+  left: 30vw;
   top: -52vh;
   text-align: center;
   max-width: 40vw;
   color: #594b42;
   @media (max-width: @screen-md) {
     top: -50vh;
+    max-width: 60vw;
+    left: 20vw;
   }
   @media (max-width: @screen-xs) {
     top: -59vh;
-    max-width: 70vw;
-    left: 15vw;
+    max-width: 80vw;
+    left: 10vw;
   }
 }
 
