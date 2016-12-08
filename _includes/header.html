@@ -13,7 +13,7 @@
   <meta http-equiv="expires" content="Sunday, 01 Jan 2017 08:00:00 GMT">
   <link rel="icon"
     type="image/png"
-    href="/assets/images/favicon.png">
+    href="{% if page.icon %} {{ page.icon }}{% else %}/assets/images/favicon.png {% endif %}">
   <title>{% if page.title %} {{ page.title }}{% else %}Red Blue Games{% endif %}</title>
 
   <!-- Bootstrap core CSS -->

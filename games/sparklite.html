@@ -1,78 +1,122 @@
 ---
+title: Sparklite - An Inventive Roguelike Adventure
+icon: "/assets/sparklite/favicon.png"
 ---
-{% include header.html title="Sparklite - An Inventive Roguelike Adventure"%}
+{% include header.html %}
 {% include analytics.html %}
 <link href="/css/sparklite.css" rel="stylesheet">
 
-  <div class="parallax">
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default animated fadeIn">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">
-            <img class="redblueicon light-header" src="/assets/images/favicon.png" alt="red blue games logo"/>
-            <span class="light-header">Red</span>
-            <span class="light-header"> Blue</span>
-            <span class="light-header"> Games</span></a>
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default animated fadeIn">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+          <span class="">Red</span>
+          <span class=""> Blue</span>
+          <span class=""> Games</span></a>
 
-          <ul class="horizontal-icon-list">
-            <li><a href="https://twitter.com/redbluegames" data-event-category="social" data-event-action="twitter-clicked"><i class="fa fa-lg fa-twitter green"></i></a></li>
-            <li><a href="https://www.facebook.com/redbluegamesllc" data-event-category="social" data-event-action="facebook-clicked"><i class="fa fa-lg fa-facebook-official green"></i></a></li>
-            <li><a href="https://github.com/redbluegames"data-event-category="social" data-event-action="github-clicked"><i class="fa fa-lg fa-github green lighten-hover"></i></a></li>
-          </ul>
-        </div>
+        <ul class="horizontal-icon-list">
+          <li><a href="https://twitter.com/redbluegames" data-event-category="social" data-event-action="twitter-clicked"><i class="fa fa-lg fa-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com/redbluegamesllc" data-event-category="social" data-event-action="facebook-clicked"><i class="fa fa-lg fa-facebook-official"></i></a></li>
+          <li><a href="https://github.com/redbluegames"data-event-category="social" data-event-action="github-clicked"><i class="fa fa-lg fa-github"></i></a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+
+  <div class="parallax">
     <div id="group1" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base">
+      <div class="parallax__layer parallax__layer--fore">
         <div class="title-subtitle">
           <img class="sparklite-logo" src="/assets/sparklite/logo-white.png" alt="sparklite logo"/>
           <h2 class="subtitle text-center yellow3d">An Inventive Roguelike Adventure</h2>
-        </div>
-      </div>
-      <div class="parallax__layer parallax__layer--back">
-        <img class="jumbo-screenshot img-responsive" src="/assets/sparklite/cave-animated.gif"/>
-      </div>
-    </div>
-    <!-- Begin MailChimp Signup Form -->
-    <div class="newsletter-form animated ">
-      <div id="mc_embed_signup" class="">
-        <form action="//redbluegames.us12.list-manage.com/subscribe/post?u=d4b20d0dcb4ef22862b11d4b4&amp;id=4d47288fe4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-            <h2 class="text-center green-stroke">Stay Updated</h2>
-            <div class="mc-field-group form-group">
-              <label for="mce-EMAIL" class="sr-only">Email Address <span class="asterisk">*</span>
-              </label>
-              <input type="email" value="" name="EMAIL" class="required email input-box form-control" id="mce-EMAIL" placeholder="Email" data-event-category="newsletter" data-event-action="email-focused">
-            </div>
-            <div class="description">
-              <p>We will send out periodic updates to let you know how development is going.
-                Your support means a lot to the team!</p>
-            </div>
-            <div class="mc-field-group from-control input-group-addon form-group">
-              <span class="sr-only"><strong>Subscription Options </strong></span>
-              <ul><li><input type="checkbox" value="4" name="group[4133][4]" id="mce-group[4133]-4133-0"><label for="mce-group[4133]-4133-0"><span></span> Release Announcement Only</label></li>
-              </ul>
-            </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d4b20d0dcb4ef22862b11d4b4_4d47288fe4" tabindex="-1" value=""></div>
-            <div class="clear text-center"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default" data-event-category="newsletter" data-event-action="submit"></div>
           </div>
-        </form>
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-        <script type='text/javascript'>(function($) {window.fnames = new Array();window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-        <!--End mc_embed_signup-->
+          <img class="clouds clouds-top hidden-md hidden-lg visible-xs-* visible-sm-*" src="/assets/sparklite/clouds-top-small.png"/>
+          <img class="clouds clouds-top hidden-xs hidden-sm" src="/assets/sparklite/clouds-top.png"/>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
       </div>
     </div>
+
+    <div id="group2" class="parallax__group">
+      <div class="parallax__layer parallax__layer--fore">
+        <img class="clouds clouds-bottom hidden-md hidden-lg visible-xs-* visible-sm-*" src="/assets/sparklite/clouds-bottom-small.png"/>
+        <img class="clouds clouds-bottom hidden-xs hidden-sm" src="/assets/sparklite/clouds-bottom.png"/>
+        <div class="cloud-block">
+          <p class="cloud-text">Explore charming procedural worlds
+            in this Action Adventure Roguelite as you race to rebuild your ship
+            and prevent the extraction of the last of the world's Sparklite.</p>
+        </div>
+        <img class="clouds clouds-top hidden-md hidden-lg visible-xs-* visible-sm-*" src="/assets/sparklite/clouds-top-small.png"/>
+        <img class="clouds clouds-top hidden-xs hidden-sm" src="/assets/sparklite/clouds-top.png"/>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+      </div>
+    </div>
+
+    <div id="group3" class="parallax__group">
+      <div class="parallax__layer parallax__layer--fore">
+        <img class="clouds clouds-bottom hidden-md hidden-lg visible-xs-* visible-sm-*" src="/assets/sparklite/clouds-bottom-small.png"/>
+        <img class="clouds clouds-bottom hidden-xs hidden-sm" src="/assets/sparklite/clouds-bottom.png"/>
+        <div class="cloud-block">
+          <!-- More cloud content can go here -->
+        </div>
+        <img class="clouds clouds-top hidden-md hidden-lg visible-xs-* visible-sm-*" src="/assets/sparklite/clouds-top-small.png"/>
+        <img class="clouds clouds-top hidden-xs hidden-sm" src="/assets/sparklite/clouds-top.png"/>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <!-- Begin MailChimp Signup Form -->
+        <div class="newsletter-form animated ">
+          <div id="mc_embed_signup" class="">
+            <form action="//redbluegames.us12.list-manage.com/subscribe/post?u=d4b20d0dcb4ef22862b11d4b4&amp;id=4d47288fe4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <h2 class="text-center green-stroke">Stay Updated</h2>
+                <div class="mc-field-group form-group">
+                  <label for="mce-EMAIL" class="sr-only">Email Address <span class="asterisk">*</span>
+                  </label>
+                  <input type="email" value="" name="EMAIL" class="required email input-box form-control" id="mce-EMAIL" placeholder="Email" data-event-category="newsletter" data-event-action="email-focused">
+                </div>
+                <div class="description">
+                  <p>We will send out periodic updates to let you know how development is going.
+                    Your support means a lot to the team!</p>
+                </div>
+                <div class="mc-field-group from-control input-group-addon form-group">
+                  <span class="sr-only"><strong>Subscription Options </strong></span>
+                  <ul><li><input type="checkbox" value="4" name="group[4133][4]" id="mce-group[4133]-4133-0"><label for="mce-group[4133]-4133-0"><span></span> Release Announcement Only</label></li>
+                  </ul>
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d4b20d0dcb4ef22862b11d4b4_4d47288fe4" tabindex="-1" value=""></div>
+                <div class="clear text-center"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default" data-event-category="newsletter" data-event-action="submit"></div>
+              </div>
+            </form>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+            <script type='text/javascript'>(function($) {window.fnames = new Array();window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+          </div>
+        </div>
+        <!--End mc_embed_signup-->      </div>
+    </div>
+    <!-- Future blocks go here
+    <div id="group4" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">Base Layer</div>
+      </div>
+    </div>
+    -->
   </div>
 
+  <script>
+    var debugInput = document.querySelector("input");
+    function updateDebugState() {
+        document.body.classList.toggle('debug-on', debugInput.checked);
+    }
+    debugInput.addEventListener("click", updateDebugState);
+    updateDebugState();
+  </script>
+
 </body>
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="/js/jquery-2.0.3.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/custom-js.js"></script>
 </html>
