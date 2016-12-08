@@ -43,7 +43,6 @@
 @color-dark-brown: #1B1B21;
 @color-pink-transparent: rgba(194, 7, 7, 0.15);
 @color-clouds: #F2F4DC;
-
 // General
 // --------------------------------------------------
 
@@ -84,11 +83,10 @@ h2 {
   display: block;
   background-color: transparent;
   border: none;
-  margin-bottom: -50px;
-  height: 50px;
   width: 100%;
   // z-index between screenshot and title text
-  z-index: 1;
+  z-index: 11;
+  color: @color-clouds;
   .container {
     margin-left: 0px;
   }
@@ -100,12 +98,19 @@ h2 {
 
 .navbar-default .navbar-brand {
   font-size: @font-size-medium;
-  color: @color-clouds;
+  color: @color-yellow;
+
+  &:hover {
+    color:  @color-green-darker;
+  }
 }
 
 // Couldn't find the selector for these icons
 i.fa.fa-lg {
-  color: @color-clouds;
+  color: @color-yellow;
+  &:hover {
+    color: @color-green-darker;
+  }
 }
 
 // Body and Contents
@@ -194,7 +199,7 @@ body {
   top: -52vh;
   text-align: center;
   max-width: 40vw;
-  color: #594b42;
+  color: @color-brown;
 
   @media (max-width: @screen-md) {
     top: -50vh;
@@ -202,7 +207,7 @@ body {
     left: 20vw;
   }
   @media (max-width: @screen-xs) {
-    top: -59vh;
+    top: -40vh;
     max-width: 80vw;
     left: 10vw;
   }
@@ -230,7 +235,7 @@ body {
   transform: translate(-50%, -50%);
   border: 5px solid @color-brown;
   padding: 0px 50px 40px 50px;
-  box-shadow: 5px 5px 5px rgba(84, 86, 124, 0.84);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.50);
 
   @media (max-width: @screen-xs) {
     max-width: : 80vw;
