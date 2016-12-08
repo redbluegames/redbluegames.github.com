@@ -175,10 +175,13 @@ body {
 .clouds {
   position: absolute;
   width: 100vw;
+  @media (max-height: @screen-xs) {
+    visibility: hidden;
+  }
 }
 
 .clouds-bottom {
-  top: -55vh;
+  top: -45vh;
   @media (max-width: @screen-sm) {
     top: -45vh;
     width: auto;
@@ -186,34 +189,41 @@ body {
 }
 
 .clouds-top {
-  bottom: -30vh;
+  bottom: -20vh;
   @media (max-width: @screen-sm) {
     bottom: -30vh;
     width: auto;
   }
 }
 
+.clouds.last {
+  bottom: -30vh;
+}
+
 .cloud-block {
   position: absolute;
-  left: 30vw;
   top: -50vh;
   text-align: center;
-  max-width: 40vw;
+  width: 100vw;
   color: @color-brown;
+  background-color: @color-clouds;
+  padding: 2vh 30vw 2vw 30vw;
+  border-radius: 25px;
+
+  &.filler {
+    height: 10vh;
+  }
 
   @media (max-width: @screen-lg) {
     top: -53vh;
   }
-
   @media (max-width: @screen-md) {
     top: -52vh;
-    max-width: 60vw;
-    left: 20vw;
+    padding: 2vh 20vw 2vw 20vw;
   }
   @media (max-width: @screen-xs) {
-    top: -52vh;
-    max-width: 80vw;
-    left: 10vw;
+    top: -58vh;
+    padding: 2vh 5vw 2vw 5vw;
   }
 }
 
@@ -374,6 +384,7 @@ body {
   transform: translateZ(90px) scale(.7);
   z-index: 1;
   pointer-events: none;
+  top: -5vh;
 }
 
 .parallax__layer--base {
@@ -414,10 +425,8 @@ body {
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #1B1B21;
+  background-color: #0C131E;
 }
-
-
 
 // Mixins
 // --------------------------------------------------
