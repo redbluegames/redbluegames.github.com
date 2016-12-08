@@ -79,7 +79,7 @@ h2 {
 // --------------------------------------------------
 
 .navbar {
-  position: relative;
+  position: absolute;;
   display: block;
   background-color: transparent;
   border: none;
@@ -165,19 +165,23 @@ body {
 // --------------------------------------------------
 
 .newsletter-form {
+  z-index: 10;
+  text-align: center;
   position: absolute;
-  max-width: 90%;
-  width: 600px;
-  top: 112vh;
   left: 50%;
+  top: -38vh;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: : 30vw;
   background-color: @color-dark-brown;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border: 5px solid @color-brown;
   padding: 0px 50px 40px 50px;
+  box-shadow: 5px 5px 5px rgba(84, 86, 124, 0.84);
 
   @media (max-width: @screen-xs) {
-    width: 350px;
+    max-width: : 80vw;
     padding: 0px 20px 30px 20px;
   }
   input {
@@ -290,57 +294,31 @@ body {
     0 5px 10px rgba(0,0,0,.5),
 }
 
-// Parallax Behavior
-// --------------------------------------------------
-// Using http://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
-
-.parallax {
-  height: 500px; /* fallback for older browsers */
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-perspective: 300px;
-  perspective: 300px;
-}
-
-.parallax__group {
-  position: relative;
-  height: 500px; /* fallback for older browsers */
-  height: 70vh;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.parallax__layer {
+.clouds-bottom {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: -55vh;
+  width: 100vw;
+  @media (max-width: @screen-sm) {
+    top: -70vh;
+    width: auto;
+  }
+}
+.clouds-top {
+  position: absolute;
+  bottom: -30vh;
+  width: 100vw;
+  @media (max-width: @screen-sm) {
+    bottom: -55vh;
+    width: auto;
+  }
 }
 
-.parallax__layer--fore {
-  -webkit-transform: translateZ(90px) scale(.7);
-  transform: translateZ(90px) scale(.7);
-  z-index: 1;
-}
-
-.parallax__layer--base {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  z-index: 4;
-}
-
-.parallax__layer--back {
-  -webkit-transform: translateZ(-300px) scale(2);
-  transform: translateZ(-300px) scale(2);
-  z-index: 3;
-  background-image: url("../assets/sparklite/background.gif");
-  background-repeat: repeat;
-}
-
-.parallax__layer--deep {
-  -webkit-transform: translateZ(-600px) scale(3);
-  transform: translateZ(-600px) scale(3);
-  z-index: 2;
+.awards {
+  z-index: 10;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 120vh;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
