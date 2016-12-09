@@ -177,6 +177,20 @@ p {
   }
 }
 
+#animated-scroll {
+  width: 100vw;
+  text-align: center;
+  position: absolute;
+  bottom: 7vh;
+
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-delay: 1s;
+}
+#scroll-text {
+  -webkit-animation-duration: 1.0s;
+  -webkit-animation-delay: 3.5s;
+}
+
 // Cloud Style
 // --------------------------------------------------
 
@@ -435,9 +449,14 @@ p {
   text-align: center;
   position: absolute;
   left: 50vw;
-  top: 95vh;
+  bottom: 5vh;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  @media (max-height: @screen-sm)
+  {
+    width: 80vw;
+    bottom: -10vh;
+  }
 }
 
 // Mixins
