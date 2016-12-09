@@ -251,9 +251,14 @@ p {
 
 .cloud-top {
   background-image: url('/assets/sparklite/clouds-top.png');
-  background-repeat: repeat-x;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   background-position: center top;
-  height: 200px;
+  height: 150px;
+
+  @media (max-width: @screen-md){
+    background-size: auto;
+  }
 
     // Clear out the clouds if the screen is too small vertically
   @media (max-height: @screen-xs)
@@ -264,9 +269,14 @@ p {
 
 .cloud-bottom {
   background-image: url('/assets/sparklite/clouds-bottom.png');
-  height: 200px;
+  background-size: 100% auto;
+  height: 150px;
   background-repeat: repeat-x;
   background-position: center bottom;
+
+  @media (max-width: @screen-md){
+    background-size: auto;
+  }
 
   // Clear out the clouds if the screen is too small vertically
   @media (max-height: @screen-xs)
