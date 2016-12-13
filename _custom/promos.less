@@ -109,8 +109,8 @@
     &.sparklite {
       top: @navbar-height;
       position: relative;
-      max-height: 400px;
-      max-width: 50%;
+      max-height: 35vh;
+      max-width: 40%;
       .center-block();
     }
   }
@@ -120,25 +120,28 @@
 
 .sparklite &.banner-img {
   .center-block();
-  margin-top: 3vh;
+  width: 100%;
+  height: auto;
 
   @media (min-width: @screen-sm) {
     margin-top: -25vh;
   }
-  @media (min-width: @screen-xl) {
-    margin-top: 5vh;
+
+  @media (max-width: @screen-md){
+    width: auto;
   }
 }
 
 .sparklite {
   &.btn {
-    background-color: @color-yellow;
-    color: @alphad-black;
+    z-index: 100;
+    background-color: transparent;
+    color: @alphad-white;
     font-family: "Blocky";
-    font-size: 28px;
-    border: none;
-    box-shadow: 0px 6px @color-yellow-dark;
-    max-width: 50%;
+    font-size: 1.2em;
+    border: 3px solid @alphad-white;
+    border-radius: 10px;
+    max-width: 35%;
     position: absolute;
     top: 80vh;
     margin-left: auto;
@@ -149,13 +152,7 @@
 
   &.btn:hover {
     outline: none;
-    background-color: lighten(@color-yellow, 10%);
-  }
-
-  &.btn:active {
-    outline: none;
-    background-color: @color-yellow-dark;
-    box-shadow: 0px 0px @color-yellow-dark;
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }
 
