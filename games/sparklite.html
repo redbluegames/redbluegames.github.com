@@ -16,9 +16,30 @@ icon: "/assets/sparklite/favicon.png"
           <span class=""> Games</span></a>
 
         <ul class="horizontal-icon-list">
-          <li><a href="https://twitter.com/redbluegames" data-event-category="social" data-event-action="twitter-clicked"><i class="fa fa-lg fa-twitter"></i></a></li>
-          <li><a href="https://www.facebook.com/redbluegamesllc" data-event-category="social" data-event-action="facebook-clicked"><i class="fa fa-lg fa-facebook-official"></i></a></li>
-          <li><a href="https://github.com/redbluegames"data-event-category="social" data-event-action="github-clicked"><i class="fa fa-lg fa-github"></i></a></li>
+          <li>
+            <a href="https://twitter.com/redbluegames"
+              ga-on="click"
+              ga-event-category="social"
+              ga-event-action="twitter-clicked">
+              <i class="fa fa-lg fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/redbluegamesllc"
+              ga-on="click"
+              ga-event-category="social"
+              ga-event-action="facebook-clicked">
+              <i class="fa fa-lg fa-facebook-official"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/redbluegames"
+              ga-on="click"
+              ga-event-category="social"
+              ga-event-action="github-clicked">
+              <i class="fa fa-lg fa-github"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -75,7 +96,10 @@ icon: "/assets/sparklite/favicon.png"
                     <div class="mc-field-group form-group">
                       <label for="mce-EMAIL" class="sr-only">Email Address <span class="asterisk">*</span>
                       </label>
-                      <input type="email" value="" name="EMAIL" class="required email input-box form-control" id="mce-EMAIL" placeholder="Email" data-event-category="newsletter" data-event-action="email-focused">
+                      <input type="email" value="" name="EMAIL" class="required email input-box form-control" id="mce-EMAIL" placeholder="Email"
+                        ga-on="click"
+                        ga-event-category="newsletter"
+                        ga-event-action="email-focused">
                     </div>
                     <div class="description">
                       <p>We will send out periodic updates to let you know how development is going.
@@ -92,7 +116,12 @@ icon: "/assets/sparklite/favicon.png"
                     </div>
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d4b20d0dcb4ef22862b11d4b4_4d47288fe4" tabindex="-1" value=""></div>
-                    <div class="clear text-center"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default" data-event-category="newsletter" data-event-action="submit"></div>
+                    <div class="clear text-center">
+                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default"
+                      ga-on="click"
+                      ga-event-category="newsletter"
+                      ga-event-action="submit">
+                    </div>
                   </div>
                 </form>
                 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>

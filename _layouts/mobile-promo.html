@@ -32,19 +32,19 @@ layout: default
         <div class="col-sm-12 text-center badge-icon animated fadeIn">
           {% if page.app.appstore-url %}
           <a target="_blank" href="{{ page.app.appstore-url }}">
-            <img alt="Download app on App Store" src="/assets/images/games-pages/app-store-badge.svg" data-event-category="cta" data-event-action="goto-appstore"/>
+            <img alt="Download app on App Store" src="/assets/images/games-pages/app-store-badge.svg" ga-event-category="cta" ga-event-action="goto-appstore"/>
           </a>
           {% endif %}
 
           {% if page.app.playstore-url %}
           <a target="_blank" href="{{ page.app.playstore-url}}">
-            <img alt="Android app on Google Play" src="/assets/images/games-pages/play-store-badge.png" data-event-category="cta" data-event-action="goto-playstore"/>
+            <img alt="Android app on Google Play" src="/assets/images/games-pages/play-store-badge.png" ga-event-category="cta" ga-event-action="goto-playstore"/>
           </a>
           {% endif %}
 
           {% if page.app.kongregate-url %}
           <a target="_blank" href="{{ page.app.kongregate-url}}">
-            <img class="kongregate" src="http://cdn1.kongcdn.com/images/sharedassets/badge_dev_220x25.png" width="220" height="25" alt="Kongregate Games logo" data-event-category="cta" data-event-action="goto-kongregate"></a>
+            <img class="kongregate" src="http://cdn1.kongcdn.com/images/sharedassets/badge_dev_220x25.png" width="220" height="25" alt="Kongregate Games logo" ga-event-category="cta" ga-event-action="goto-kongregate"></a>
           {% endif %}
         </div>
         {% endif %}
