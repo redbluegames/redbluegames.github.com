@@ -6457,10 +6457,10 @@ p {
   }
 }
 #cloud-1 {
-  margin-top: -25vh;
+  margin-top: -15vh;
 }
 #cloud-2 {
-  margin-top: 25vh;
+  margin-top: 15vh;
 }
 .cloud-fill {
   color: #6C5E52;
@@ -6499,7 +6499,7 @@ p {
 }
 .clouds {
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   height: 160px;
 }
 @media (min-width: 2200px) {
@@ -6633,11 +6633,7 @@ p {
 .bottom-text {
   text-align: center;
 }
-#screenshot-2 {
-  margin-top: 30vh;
-}
-/*
-#group1 {
+#screenshot-1 {
   background-image: url('/assets/sparklite/foothills-animated.gif');
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -6645,8 +6641,8 @@ p {
   background-color: #95bc58;
   height: 100vh;
 }
-
-#group2 {
+#screenshot-2 {
+  margin-top: 30vh;
   background-image: url('/assets/sparklite/cave-animated-wide.gif');
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -6654,6 +6650,5 @@ p {
   background-color: #0C131E;
   height: 100vh;
 }
-*/
 
 /*# sourceMappingURL=sparklite.css.map */
