@@ -419,7 +419,7 @@ p {
 
 .bottom-text {
   position: relative;
-  height: 75vh;
+  height: 100vh;
   h2 {
     width: 100vw;
     position: absolute;
@@ -431,24 +431,28 @@ p {
 // Screenshots
 // --------------------------------------------------
 
-#screenshot-1 {
-  background-image: url('/assets/sparklite/foothills-animated.gif');
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #95bc58;
+.screenshot-container {
   height: 100vh;
+
+  .full-screen-screenshot {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+  }
+
+  #screenshot-1 {
+    background-image: url('/assets/sparklite/foothills-animated.gif');
+    background-color: #95bc58;
+  }
+
+  #screenshot-2 {
+    margin-top: 30vh;
+    background-image: url('/assets/sparklite/cave-animated-wide.gif');
+    background-color: #0C131E;
+  }
 }
 
-#screenshot-2 {
-  margin-top: 30vh;
-  background-image: url('/assets/sparklite/cave-animated-wide.gif');
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #0C131E;
-  height: 100vh;
-}
 
 // Mixins
 // --------------------------------------------------
