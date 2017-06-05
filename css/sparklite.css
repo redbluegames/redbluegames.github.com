@@ -6526,6 +6526,14 @@ p {
   background-position: center bottom;
   margin-top: -20px;
 }
+.cloud-puff {
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .cloud-puff {
+    display: none;
+  }
+}
 .newsletter-form {
   z-index: 10;
   text-align: center;
@@ -6631,6 +6639,13 @@ p {
   margin-left: -28px;
 }
 .bottom-text {
+  position: relative;
+  height: 75vh;
+}
+.bottom-text h2 {
+  width: 100vw;
+  position: absolute;
+  bottom: 0px;
   text-align: center;
 }
 #screenshot-1 {

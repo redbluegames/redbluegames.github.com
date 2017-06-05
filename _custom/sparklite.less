@@ -298,6 +298,14 @@ p {
   margin-top: -20px;
 }
 
+.cloud-puff {
+  position: absolute;
+
+  @media (max-width: @screen-sm){
+    display: none;
+  }
+}
+
 // Mailchimp / Newsletter
 // --------------------------------------------------
 
@@ -410,7 +418,14 @@ p {
 }
 
 .bottom-text {
-  text-align: center;
+  position: relative;
+  height: 75vh;
+  h2 {
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+  }
 }
 
 // Screenshots
