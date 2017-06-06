@@ -6640,6 +6640,7 @@ p {
   margin-left: -28px;
 }
 .bottom-text {
+  pointer-events: none;
   position: relative;
   height: 100vh;
 }
