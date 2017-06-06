@@ -6466,7 +6466,7 @@ p {
 .cloud-fill {
   color: #6C5E52;
   background-color: #F2F4DC;
-  min-height: 20vh;
+  min-height: 15vh;
   padding: 5% 5% 5% 5%;
 }
 .cloud-fill .cloud-fill-center {
