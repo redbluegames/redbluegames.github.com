@@ -50,6 +50,9 @@
             {% if page.app.appstore-url %}
               <a href="{{ page.app.appstore-url }}">Apple App Store</a><br/>
             {% endif %}
+            {% for platform in page.presskit.platforms %}
+            {{ platform }}<br/>
+            {% endfor %}
           </p>
           <p>
             <strong>Website:</strong><br>
@@ -94,51 +97,109 @@
       <!--
       <a href="http://localhost/~lucas/presskit/mini_fish/images/images.zip"><div class="uk-alert">download all screenshots &amp; photos as .zip (1MB)</div></a>
       -->
-    <div class="uk-grid images" style="position: relative; height: 2214px;">
+      <div class=""/>
+      <table>
+        <tr>
+        {% for screenshot in page.presskit.screenshots %}
+        {% assign isSecond = forloop.index0 | modulo:2 %}
+        {% if isSecond == 0 %}
+        </tr>
+        <tr>
+          {% endif %}
+          <td style="width: 50%;">
+            <a href="{{ screenshot }}">
+              <img src="{{ screenshot }}" alt="game screenshot {{ forloop.index0 }}">
+          </td>
+        {% endfor %}
+        </tr>
+      </table>
+      </div>
+    <!-- BETTER TO GET THIS IN A FOR STATEMENT
+    <div class="uk-grid images" style="position: relative; height:
+    {% if page.presskit.screenshot-height %}
+      {{ page.presskit.screenshot-height }}
+    {% else %}
+      2214px;
+    {% endif %}">
+      {% for screenshot in page.presskit.screenshots %}
+
+      <div class="uk-width-medium-1-2" style="position: absolute;
+      {% if forloop.first == true %}
+        left: 0px; top: 0px;
+      {% elsif forloop.index == 0 %}
+        left: 0px;
+        top: {{ page.presskit.screenshots[forloop.index].height }};
+      {% else %}
+        left: {{ page.presskit.screenshots[forloop.index].width }};
+        top: {{ page.presskit.screenshots[forloop.index].height }};
+      {% endif %}">
+        <a href="{{ screenshot.path }}">
+          <img src="{{ screenshot.path }}" alt="gps_feature.png">
+        </a>
+      </div>
+
+      {% endfor %}-->
+      <!--
+
+      {% if page.presskit.screenshots[0] %}
       <div class="uk-width-medium-1-2" style="position: absolute; left: 0px; top: 0px;">
         <a href="{{ page.presskit.screenshots[0] }}">
           <img src="{{ page.presskit.screenshots[0] }}" alt="gps_feature.png">
         </a>
       </div>
+      {% endif %}
+      {% if page.presskit.screenshots[1] %}
       <div class="uk-width-medium-1-2" style="position: absolute; left: 436px; top: 0px;">
         <a href="{{ page.presskit.screenshots[1] }}">
           <img src="{{ page.presskit.screenshots[1] }}" alt="iPhone 4 retina 640x1136 2.png">
         </a>
       </div>
-      <div class="uk-width-medium-1-2" style="position: absolute; left: 0px; top: 221px;">
+      {% endif %}
+      {% if page.presskit.screenshots[2] %}
+      <div class="uk-width-medium-1-2" style="position: absolute; left: 0px; top: 230px;">
         <a href="{{ page.presskit.screenshots[2] }}">
           <img src="{{ page.presskit.screenshots[2] }}" alt="iPhone 4 retina 640x1136 3.png">
         </a>
       </div>
+      {% endif %}
+      {% if page.presskit.screenshots[3] %}
       <div class="uk-width-medium-1-2" style="position: absolute; left: 436px; top: 738px;">
         <a href="{{ page.presskit.screenshots[3] }}">
           <img src="{{ page.presskit.screenshots[3] }}" alt="iPhone 4 retina 640x1136 4.png">
         </a>
       </div>
+      {% endif %}
+      {% if page.presskit.screenshots[4] %}
       <div class="uk-width-medium-1-2" style="position: absolute; left: 0px; top: 959px;">
         <a href="{{ page.presskit.screenshots[4] }}">
           <img src="{{ page.presskit.screenshots[4] }}" alt="iPhone 4 retina 640x1136 5.png">
         </a>
       </div>
+      {% endif %}
+      {% if page.presskit.screenshots[5] %}
       <div class="uk-width-medium-1-2" style="position: absolute; left: 436px; top: 1476px;">
         <a href="{{ page.presskit.screenshots[5] }}">
           <img src="{{ page.presskit.screenshots[5] }}" alt="iPhone 4 retina 640x1136.png">
         </a>
       </div>
-    </div>
+      {% endif %}
+    </div>-->
 
     <hr>
     <h2 id="logo">Logo &amp; Icon</h2>
-    <div class="uk-grid images" style="position: relative; height: 428px;">
+    <div class="uk-grid images" style="position: relative; height:
+    {% if page.presskit.logo-height %}{{ page.presskit.logo-height }}{% endif %} 428px;">
       <div class="uk-width-medium-1-2" style="position: absolute; left: 0px; top: 0px;">
         <a href="{{ page.presskit.logo }}">
           <img src="{{ page.presskit.logo }}" alt="logo">
         </a>
       </div>
+      {% if page.presskit.icon %}
       <div class="uk-width-medium-1-2" style="position: absolute; left: 436px; top: 0px;">
         <a href="{{ page.presskit.icon }}"><img src="{{ page.presskit.icon }}" alt="icon">
         </a>
       </div>
+      {% endif %}
     </div>
       <!--<hr><h2 id="awards">Awards &amp; Recognition</h2><ul><li>"Winner
       in this highly relevant contest." <cite>Award Location, 20 October,
@@ -156,6 +217,7 @@
         do not actually understand it." <br> <cite>- Pretentious Bastard, <a
         href="http:">Artsy Page</a></cite></li></ul> -->
       <hr>
+      {% if page.presskit.attribution %}
       <h2 id="links">Additional Links</h2>
       {% for attribution in page.presskit.attributions %}
       <p>
@@ -164,18 +226,20 @@
       </p>
       {% endfor %}
       <hr>
+      {% endif %}
 
       <h2 id="about">About Red Blue Games, LLC</h2>
       <p>
         <strong>Boilerplate</strong><br/>
         Red Blue Games is an idie game studio based out of Durham, North
-        Carolina founded by twin brothers Edward and Lucas Rowe.
+        Carolina founded by twin brothers Edward and Lucas Rowe and joined
+        by Kevin Mabie.
       </p>
 
       <p>
         <strong>More information</strong><br>
         More information on Red Blue Games, LLC, our logo &amp; relevant media
-        are available <a href="redbluegames-presskit.html">here</a>.
+        are available <a href="/presskit/redbluegames-presskit.html">here</a>.
       </p>
 
       <hr>
