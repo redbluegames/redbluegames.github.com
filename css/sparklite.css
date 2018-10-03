@@ -6720,9 +6720,20 @@ p {
   background-image: url('/assets/sparklite/cave-animated-wide.gif');
   background-color: #0C131E;
 }
+.steam-wishlist {
+  position: absolute;
+  margin-top: 65vh;
+  text-align: center;
+  width: 100vw;
+}
 .steam-wishlist img {
-  border: 1px solid white;
-  max-width: 20vw;
-  min-width: 10vw;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.075);
+  max-width: 22vw;
+  min-width: 17vw;
   padding: 1vw 2vw 1vw 2vw;
+}
+.steam-wishlist img:hover {
+  background-color: rgba(234, 224, 153, 0.2);
 }
