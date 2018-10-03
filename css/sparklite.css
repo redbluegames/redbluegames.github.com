@@ -1,8 +1,57 @@
-@import url(https://fonts.googleapis.com/css?family=Francois+One);
-@import url("//fonts.googleapis.com/css?family=Londrina+Solid");
-@import url("//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic");
-@import url("//fonts.googleapis.com/css?family=News+Cycle:400,700");
-@import url("//fonts.googleapis.com/css?family=Anton:400,700");
+@font-face {
+  font-family: 'Francois One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Francois One Regular'), local('FrancoisOne-Regular'), url(https://fonts.gstatic.com/s/francoisone/v11/_Xmr-H4zszafZw3A-KPSZut9wQiU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Londrina Solid';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Londrina Solid Regular'), local('LondrinaSolid-Regular'), url(http://fonts.gstatic.com/s/londrinasolid/v6/flUhRq6sw40kQEJxWNgkLuudGfNeKBY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v15/mem6YaGs126MiZpBA-UFUK0Zdcg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v15/memnYaGs126MiZpBA-UFUKWiUNhrIqY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(http://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'News Cycle';
+  font-style: normal;
+  font-weight: 400;
+  src: local('News Cycle'), local('NewsCycle'), url(http://fonts.gstatic.com/s/newscycle/v14/CSR64z1Qlv-GDxkbKVQ_fOAKSA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'News Cycle';
+  font-style: normal;
+  font-weight: 700;
+  src: local('News Cycle Bold'), local('NewsCycle-Bold'), url(http://fonts.gstatic.com/s/newscycle/v14/CSR54z1Qlv-GDxkbKVQ_dFsvWNRevA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Anton Regular'), local('Anton-Regular'), url(http://fonts.gstatic.com/s/anton/v9/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+}
 /*!
  * Bootstrap v3.0.0
  *
@@ -217,7 +266,7 @@ table {
     max-width: 100% !important;
   }
   @page {
-    margin: 2cm .5cm;
+    margin: 2cm 0.5cm;
   }
   p,
   h2,
@@ -4134,7 +4183,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .label {
   display: inline;
-  padding: .2em .6em .3em;
+  padding: 0.2em 0.6em 0.3em;
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
@@ -4142,7 +4191,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 .label[href]:hover,
 .label[href]:focus {
@@ -5900,15 +5949,15 @@ td.visible-print {
 }
 .slow-fade {
   text-decoration: none;
-  transition: all .20s;
+  transition: all 0.2s;
   transition-property: all;
-  transition-duration: 0.20s;
+  transition-duration: 0.2s;
   transition-timing-function: initial;
   transition-delay: initial;
-  -moz-transition: all .20s;
-  -webkit-transition: all .20s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
   -webkit-transition-property: all;
-  -webkit-transition-duration: 0.20s;
+  -webkit-transition-duration: 0.2s;
   -webkit-transition-timing-function: initial;
   -webkit-transition-delay: initial;
 }
@@ -5926,15 +5975,15 @@ td.visible-print {
 .btn-email.active,
 .open .dropdown-toggle.btn-email {
   text-decoration: none;
-  transition: all .20s;
+  transition: all 0.2s;
   transition-property: all;
-  transition-duration: 0.20s;
+  transition-duration: 0.2s;
   transition-timing-function: initial;
   transition-delay: initial;
-  -moz-transition: all .20s;
-  -webkit-transition: all .20s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
   -webkit-transition-property: all;
-  -webkit-transition-duration: 0.20s;
+  -webkit-transition-duration: 0.2s;
   -webkit-transition-timing-function: initial;
   -webkit-transition-delay: initial;
   background-color: #b6413a;
@@ -5942,15 +5991,15 @@ td.visible-print {
 }
 a {
   text-decoration: none;
-  transition: all .20s;
+  transition: all 0.2s;
   transition-property: all;
-  transition-duration: 0.20s;
+  transition-duration: 0.2s;
   transition-timing-function: initial;
   transition-delay: initial;
-  -moz-transition: all .20s;
-  -webkit-transition: all .20s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
   -webkit-transition-property: all;
-  -webkit-transition-duration: 0.20s;
+  -webkit-transition-duration: 0.2s;
   -webkit-transition-timing-function: initial;
   -webkit-transition-delay: initial;
 }
@@ -6354,16 +6403,19 @@ h2 {
 .navbar-default .navbar-brand:hover {
   color: #EAE099;
 }
-i.fa.fa-lg {
+i.fa.fa-lg,
+.fab {
   font-size: 30px;
   color: rgba(255, 255, 255, 0.75);
 }
 @media (max-width: 768px) {
-  i.fa.fa-lg {
+  i.fa.fa-lg,
+  .fab {
     font-size: 21px;
   }
 }
-i.fa.fa-lg:hover {
+i.fa.fa-lg:hover,
+.fab:hover {
   color: #EAE099;
 }
 body {
@@ -6443,7 +6495,7 @@ p {
   -webkit-animation-delay: 2.5s;
 }
 #scroll-text {
-  -webkit-animation-duration: 1.0s;
+  -webkit-animation-duration: 1s;
   -webkit-animation-delay: 4s;
 }
 .cloud-block {
@@ -6668,5 +6720,9 @@ p {
   background-image: url('/assets/sparklite/cave-animated-wide.gif');
   background-color: #0C131E;
 }
-
-/*# sourceMappingURL=sparklite.css.map */
+.steam-wishlist img {
+  border: 1px solid white;
+  max-width: 20vw;
+  min-width: 10vw;
+  padding: 1vw 2vw 1vw 2vw;
+}
