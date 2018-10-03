@@ -1,5 +1,5 @@
 # Outputting
 permalink:     pretty
 
-gems:
+plugins:
   - jekyll-redirect-from
