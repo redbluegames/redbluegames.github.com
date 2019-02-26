@@ -2,13 +2,13 @@
   font-family: 'Francois One';
   font-style: normal;
   font-weight: 400;
-  src: local('Francois One Regular'), local('FrancoisOne-Regular'), url(https://fonts.gstatic.com/s/francoisone/v11/_Xmr-H4zszafZw3A-KPSZut9wQiU.ttf) format('truetype');
+  src: local('Francois One Regular'), local('FrancoisOne-Regular'), url(https://fonts.gstatic.com/s/francoisone/v13/_Xmr-H4zszafZw3A-KPSZut9wQiU.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Londrina Solid';
   font-style: normal;
   font-weight: 400;
-  src: local('Londrina Solid Regular'), local('LondrinaSolid-Regular'), url(http://fonts.gstatic.com/s/londrinasolid/v6/flUhRq6sw40kQEJxWNgkLuudGfNeKBY.ttf) format('truetype');
+  src: local('Londrina Solid Regular'), local('LondrinaSolid-Regular'), url(http://fonts.gstatic.com/s/londrinasolid/v8/flUhRq6sw40kQEJxWNgkLuudGfNeKBY.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
@@ -38,19 +38,19 @@
   font-family: 'News Cycle';
   font-style: normal;
   font-weight: 400;
-  src: local('News Cycle'), local('NewsCycle'), url(http://fonts.gstatic.com/s/newscycle/v14/CSR64z1Qlv-GDxkbKVQ_fOAKSA.ttf) format('truetype');
+  src: local('News Cycle'), local('NewsCycle'), url(http://fonts.gstatic.com/s/newscycle/v15/CSR64z1Qlv-GDxkbKVQ_fOAKSA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'News Cycle';
   font-style: normal;
   font-weight: 700;
-  src: local('News Cycle Bold'), local('NewsCycle-Bold'), url(http://fonts.gstatic.com/s/newscycle/v14/CSR54z1Qlv-GDxkbKVQ_dFsvWNRevA.ttf) format('truetype');
+  src: local('News Cycle Bold'), local('NewsCycle-Bold'), url(http://fonts.gstatic.com/s/newscycle/v15/CSR54z1Qlv-GDxkbKVQ_dFsvWNRevA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Anton';
   font-style: normal;
   font-weight: 400;
-  src: local('Anton Regular'), local('Anton-Regular'), url(http://fonts.gstatic.com/s/anton/v9/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+  src: local('Anton Regular'), local('Anton-Regular'), url(http://fonts.gstatic.com/s/anton/v10/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
 }
 /*!
  * Bootstrap v3.0.0
@@ -6457,25 +6457,25 @@ p {
 @media (max-width: 2200px) {
   .sparklite-logo {
     margin: -50px auto;
-    max-width: 100vw;
+    max-width: 60vw;
   }
 }
 @media (max-width: 1200px) {
   .sparklite-logo {
     margin: -50px auto;
-    max-width: 100vw;
+    max-width: 70vw;
   }
 }
 @media (max-width: 992px) {
   .sparklite-logo {
     margin: 0px auto;
-    max-width: 100vw;
+    max-width: 80vw;
   }
 }
 @media (max-width: 480px) {
   .sparklite-logo {
     margin: -20px auto;
-    max-width: 100vw;
+    max-width: 90vw;
   }
 }
 #sparklite-logo {
