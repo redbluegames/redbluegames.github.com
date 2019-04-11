@@ -144,6 +144,10 @@ p {
   .text3d(@color-yellow-dark);
 }
 
+.box-shadow {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.40);
+}
+
 .white-header {
   color: @color-clouds;
   text-shadow: 2px 3px darken(@color-clouds-dark, 30%);
@@ -316,7 +320,6 @@ p {
   background-color: @color-dark-brown;
   border: 5px solid @color-brown;
   padding: 0px 50px 40px 50px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.50);
   min-height: 500px;
 
   @media (max-width: @screen-xs) {
@@ -458,29 +461,46 @@ p {
 // Steam Wishlist
 // --------------------------------------------------
 
+@steam-iframe-width: 650px;
+@steam-iframe-bgcolor: #282e39;
+
 .steam-wishlist {
   position: absolute;
   margin-top: 65vh;
   text-align: center;
   width: 100vw;
-  img {
+  .steam-iframe {
+    border: 2px solid @color-dirt-background;
+    border-radius: 8px;
+    padding: 4px;
+    background-color: @steam-iframe-bgcolor;
+    height: 205px;
+    width: @steam-iframe-width;
+
+    // Hide when in mobile (iframe hangs off to side)
+    @media (max-width: @steam-iframe-width + 2vw){
+      display: none;
+    }
+  }
+  .steam-logo-link {
+    .center-block();
+    display: none;
     border: 2px solid white;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.075);
-    width: 20vw;
-    max-width: 400px;
+    border-radius: 6px;
+    background-color: @steam-iframe-bgcolor;
     padding: 1vw 2vw 1vw 2vw;
 
-    @media (max-width: @screen-md){
-      width: 275px;
+    // Only show in mobile
+    @media (max-width: @steam-iframe-width + 2vw){
+      display: block;
+      width: 300px;
     }
 
     &:hover {
-      background-color: rgba(234, 224, 153, 0.2);
+      background-color: lighten(@steam-iframe-bgcolor, 10%);
     }
   }
 }
-
 
 // Mixins
 // --------------------------------------------------
