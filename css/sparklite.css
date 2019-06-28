@@ -6518,21 +6518,24 @@ p {
 #cloud-2 {
   margin-top: 15vh;
 }
+#cloud-3 {
+  margin-top: 25vh;
+}
 .cloud-fill {
   color: #6C5E52;
   background-color: #F2F4DC;
   min-height: 15vh;
-  padding: 5% 5% 5% 5%;
+  padding: 0% 2% 0% 2%;
 }
 .cloud-fill .cloud-fill-center {
-  max-width: 80vw;
+  max-width: 90vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 1200px) {
   .cloud-fill .cloud-fill-center {
-    max-width: 60vw;
+    max-width: 70vw;
   }
 }
 @media (min-width: 1200px) {
@@ -6548,10 +6551,7 @@ p {
   }
 }
 .cloud-fill .cloud-text {
-  padding: 5% 5% 5% 5%;
-}
-.secondcloud {
-  margin-top: 30vh;
+  padding: 3% 3% 4% 3%;
 }
 .clouds {
   background-size: 100% auto;
@@ -6668,27 +6668,6 @@ p {
 .newsletter-form input[type="checkbox"]:checked + label span {
   background: url(../assets/sparklite/checkbox-checked.png) 0px top no-repeat;
 }
-.newsletter-form .button {
-  background-color: #EAE099;
-  color: rgba(0, 0, 0, 0.8);
-  font-family: "Blocky";
-  font-size: 26px;
-  vertical-align: middle;
-  border: none;
-  box-shadow: 0px 6px #91896E;
-  width: 70%;
-}
-.newsletter-form .button:hover {
-  outline: none;
-  background-color: #f3edc3;
-}
-.newsletter-form .button:active {
-  outline: none;
-  position: relative;
-  top: 6px;
-  background-color: #91896E;
-  box-shadow: 0px 0px #91896E;
-}
 .newsletter-form ul {
   list-style: none;
   margin-left: -28px;
@@ -6704,6 +6683,27 @@ p {
   bottom: 0px;
   text-align: center;
 }
+.button {
+  background-color: #EAE099;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Blocky";
+  font-size: 26px;
+  vertical-align: middle;
+  border: none;
+  box-shadow: 0px 6px #91896E;
+  width: 70%;
+}
+.button:hover {
+  outline: none;
+  background-color: #f3edc3;
+}
+.button:active {
+  outline: none;
+  position: relative;
+  top: 6px;
+  background-color: #91896E;
+  box-shadow: 0px 0px #91896E;
+}
 .screenshot-container {
   height: 100vh;
 }
@@ -6718,9 +6718,14 @@ p {
   background-color: #95bc58;
 }
 .screenshot-container #screenshot-2 {
-  margin-top: 40vh;
+  margin-top: 20vh;
   background-image: url('/assets/sparklite/cave-animated-wide.gif');
   background-color: #0C131E;
+}
+.screenshot-container #screenshot-3 {
+  margin-top: 40vh;
+  background-image: url('/assets/sparklite/forest-animated.gif');
+  background-color: #d6951d;
 }
 .steam-wishlist {
   position: absolute;
@@ -6759,4 +6764,9 @@ p {
 }
 .steam-wishlist .steam-logo-link:hover {
   background-color: #3d4657;
+}
+#sig-packshot {
+  margin: 1vw 2vw 2vw 2vw;
+  border-radius: 6px;
+  border: 2px solid #1B1B21;
 }

@@ -240,18 +240,22 @@ p {
   margin-top: 15vh;
 }
 
+#cloud-3 {
+  margin-top: 25vh;
+}
+
 .cloud-fill {
   color: @color-brown;
   background-color: @color-clouds;
   min-height: 15vh;
-  padding: 5% 5% 5% 5%;
+  padding: 0% 2% 0% 2%;
 
   .cloud-fill-center {
-    max-width: 80vw;
+    max-width: 90vw;
     .center-block();
 
     @media (min-width: @screen-lg) {
-      max-width: 60vw;
+      max-width: 70vw;
     }
   }
 
@@ -266,11 +270,8 @@ p {
   }
 
   .cloud-text {
-    padding: 5% 5% 5% 5%;
+    padding: 3% 3% 4% 3%;
   }
-}
-.secondcloud {
-  margin-top: 30vh;
 }
 
 .clouds {
@@ -391,30 +392,6 @@ p {
       background:url(../assets/sparklite/checkbox-checked.png) 0px top no-repeat;
   }
 
-  .button {
-    background-color: @color-yellow;
-    color: @alphad-black;
-    font-family: @font-headings;
-    font-size: 26px;
-    vertical-align: middle;
-    border: none;
-    box-shadow: 0px 6px @color-yellow-dark;
-    width: 70%;
-  }
-
-  .button:hover {
-    outline: none;
-    background-color: lighten(@color-yellow, 10%);
-  }
-
-  .button:active {
-    outline: none;
-    position:relative;
-    top:6px;
-    background-color: @color-yellow-dark;
-    box-shadow: 0px 0px @color-yellow-dark;
-  }
-
   ul {
     list-style: none;
     margin-left: -28px;
@@ -431,6 +408,30 @@ p {
     bottom: 0px;
     text-align: center;
   }
+}
+
+.button {
+  background-color: @color-yellow;
+  color: @alphad-black;
+  font-family: @font-headings;
+  font-size: 26px;
+  vertical-align: middle;
+  border: none;
+  box-shadow: 0px 6px @color-yellow-dark;
+  width: 70%;
+}
+
+.button:hover {
+  outline: none;
+  background-color: lighten(@color-yellow, 10%);
+}
+
+.button:active {
+  outline: none;
+  position:relative;
+  top:6px;
+  background-color: @color-yellow-dark;
+  box-shadow: 0px 0px @color-yellow-dark;
 }
 
 // Screenshots
@@ -452,9 +453,15 @@ p {
   }
 
   #screenshot-2 {
-    margin-top: 40vh;
+    margin-top: 20vh;
     background-image: url('/assets/sparklite/cave-animated-wide.gif');
     background-color: #0C131E;
+  }
+
+  #screenshot-3 {
+    margin-top: 40vh;
+    background-image: url('/assets/sparklite/forest-animated.gif');
+    background-color: #d6951d;
   }
 }
 
@@ -500,6 +507,15 @@ p {
       background-color: lighten(@steam-iframe-bgcolor, 10%);
     }
   }
+}
+
+// Pre-orders
+// --------------------------------------------------
+
+#sig-packshot {
+  margin: 1vw 2vw 2vw 2vw;
+  border-radius: 6px;
+  border: 2px solid @color-dark-brown;
 }
 
 // Mixins
