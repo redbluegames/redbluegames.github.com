@@ -6767,6 +6767,9 @@ p {
 }
 #sig-packshot {
   margin: 1vw 2vw 2vw 2vw;
+  width: 40vw;
+  max-width: 800px;
+  min-width: 400px;
   border-radius: 6px;
   border: 2px solid #1B1B21;
 }
