@@ -36,9 +36,9 @@
 @color-green: #88EC96;
 @color-green-dark: #05D89E;
 @color-green-darker: #1B7879;
-@color-yellow-light: #FAF8F0;
-@color-yellow: #EAE099;
-@color-yellow-dark: #91896E;
+@color-yellow-light: #FFFF42;
+@color-yellow: #E99B28;
+@color-yellow-dark: #AA450D;
 @color-brown: #6C5E52;
 @color-dark-brown: #1B1B21;
 @color-pink-transparent: rgba(194, 7, 7, 0.15);
@@ -65,7 +65,8 @@ h1 {
 
 h2 {
   font-size: @font-size-large;
-  color: @color-green;
+  color: @color-yellow;
+  .yellow3d;
   @media (max-width: @screen-lg) {
     font-size: @font-size-large * 0.7;
   }
@@ -144,6 +145,11 @@ p {
   .text3d(@color-yellow-dark);
 }
 
+.orange3d {
+  color: @color-yellow;
+  .text3d(@color-yellow-dark);
+}
+
 .box-shadow {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.40);
 }
@@ -151,11 +157,6 @@ p {
 .white-header {
   color: @color-clouds;
   text-shadow: 2px 3px darken(@color-clouds-dark, 30%);
-}
-
-.green-stroke {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: @color-green-darker;
 }
 
 .title-subtitle {

@@ -6341,7 +6341,7 @@ h3,
 h4,
 h5 {
   font-family: "Blocky", Fallback, "Francois One";
-  color: #EAE099;
+  color: #E99B28;
 }
 h1 {
   font-size: 100px;
@@ -6358,7 +6358,8 @@ h1 {
 }
 h2 {
   font-size: 70px;
-  color: #88EC96;
+  color: #E99B28;
+  text-shadow: 0 0.02em 0 #973d0c, 0 0.04em 0 #84360a, 0 0.06em 0 #712e09, 0 6px 1px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.4), 0 3px 5px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 1200px) {
   h2 {
@@ -6401,7 +6402,7 @@ h2 {
   }
 }
 .navbar-default .navbar-brand:hover {
-  color: #EAE099;
+  color: #E99B28;
 }
 i.fa.fa-lg,
 .fab {
@@ -6416,7 +6417,7 @@ i.fa.fa-lg,
 }
 i.fa.fa-lg:hover,
 .fab:hover {
-  color: #EAE099;
+  color: #E99B28;
 }
 body {
   font-size: 20px;
@@ -6431,8 +6432,12 @@ p {
   text-shadow: 0 0.02em 0 #05c48f, 0 0.04em 0 #04b081, 0 0.06em 0 #049c72, 0 6px 1px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.4), 0 3px 5px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .yellow3d {
-  color: #EAE099;
-  text-shadow: 0 0.02em 0 #857e65, 0 0.04em 0 #7a735c, 0 0.06em 0 #6e6854, 0 6px 1px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.4), 0 3px 5px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
+  color: #E99B28;
+  text-shadow: 0 0.02em 0 #973d0c, 0 0.04em 0 #84360a, 0 0.06em 0 #712e09, 0 6px 1px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.4), 0 3px 5px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.orange3d {
+  color: #E99B28;
+  text-shadow: 0 0.02em 0 #973d0c, 0 0.04em 0 #84360a, 0 0.06em 0 #712e09, 0 6px 1px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.4), 0 3px 5px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .box-shadow {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
@@ -6440,10 +6445,6 @@ p {
 .white-header {
   color: #F2F4DC;
   text-shadow: 2px 3px #4d715d;
-}
-.green-stroke {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #1B7879;
 }
 .title-subtitle {
   position: absolute;
@@ -6611,7 +6612,7 @@ p {
 .newsletter-form label {
   font-size: 20px;
   cursor: pointer;
-  color: #EAE099;
+  color: #E99B28;
 }
 @media (max-width: 768px) {
   .newsletter-form label {
@@ -6684,25 +6685,25 @@ p {
   text-align: center;
 }
 .button {
-  background-color: #EAE099;
+  background-color: #E99B28;
   color: rgba(0, 0, 0, 0.8);
   font-family: "Blocky";
   font-size: 26px;
   vertical-align: middle;
   border: none;
-  box-shadow: 0px 6px #91896E;
+  box-shadow: 0px 6px #AA450D;
   width: 70%;
 }
 .button:hover {
   outline: none;
-  background-color: #f3edc3;
+  background-color: #eeb156;
 }
 .button:active {
   outline: none;
   position: relative;
   top: 6px;
-  background-color: #91896E;
-  box-shadow: 0px 0px #91896E;
+  background-color: #AA450D;
+  box-shadow: 0px 0px #AA450D;
 }
 .screenshot-container {
   height: 100vh;
