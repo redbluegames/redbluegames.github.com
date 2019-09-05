@@ -83,13 +83,13 @@
       <hr>
 
       <h2 id="trailers">Videos</h2>
-      <p>
-        <strong>Gameplay Trailer </strong>
-        <a href="{{ page.presskit.trailer }}">YouTube</a>
-      </p>
+      {% for video in page.presskit.videos %}
+      <h3>{{ video.name }}</h3>
       <div class="uk-responsive-width iframe-container">
-        {{ page.presskit.trailer-embed }}
+        {{ video.video-embed }}
       </div>
+      <br/>
+      {% endfor %}
 
       <hr>
 
