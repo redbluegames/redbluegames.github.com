@@ -2,55 +2,55 @@
   font-family: 'Francois One';
   font-style: normal;
   font-weight: 400;
-  src: local('Francois One Regular'), local('FrancoisOne-Regular'), url(https://fonts.gstatic.com/s/francoisone/v13/_Xmr-H4zszafZw3A-KPSZut9wQiU.ttf) format('truetype');
+  src: local('Francois One Regular'), local('FrancoisOne-Regular'), url(https://fonts.gstatic.com/s/francoisone/v14/_Xmr-H4zszafZw3A-KPSZut9wQiU.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Londrina Solid';
   font-style: normal;
   font-weight: 400;
-  src: local('Londrina Solid Regular'), local('LondrinaSolid-Regular'), url(http://fonts.gstatic.com/s/londrinasolid/v8/flUhRq6sw40kQEJxWNgkLuudGfNeKBY.ttf) format('truetype');
+  src: local('Londrina Solid Regular'), local('LondrinaSolid-Regular'), url(http://fonts.gstatic.com/s/londrinasolid/v9/flUhRq6sw40kQEJxWNgkLuudGfNeKBY.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v16/mem6YaGs126MiZpBA-UFUK0Zdcg.ttf) format('truetype');
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v17/mem6YaGs126MiZpBA-UFUK0Zdcg.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 700;
-  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v16/memnYaGs126MiZpBA-UFUKWiUNhrIqY.ttf) format('truetype');
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v17/memnYaGs126MiZpBA-UFUKWiUNhrIqY.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(http://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(http://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
 }
 @font-face {
   font-family: 'News Cycle';
   font-style: normal;
   font-weight: 400;
-  src: local('News Cycle'), local('NewsCycle'), url(http://fonts.gstatic.com/s/newscycle/v15/CSR64z1Qlv-GDxkbKVQ_fOAKSA.ttf) format('truetype');
+  src: local('News Cycle'), local('NewsCycle'), url(http://fonts.gstatic.com/s/newscycle/v16/CSR64z1Qlv-GDxkbKVQ_fOAKSA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'News Cycle';
   font-style: normal;
   font-weight: 700;
-  src: local('News Cycle Bold'), local('NewsCycle-Bold'), url(http://fonts.gstatic.com/s/newscycle/v15/CSR54z1Qlv-GDxkbKVQ_dFsvWNRevA.ttf) format('truetype');
+  src: local('News Cycle Bold'), local('NewsCycle-Bold'), url(http://fonts.gstatic.com/s/newscycle/v16/CSR54z1Qlv-GDxkbKVQ_dFsvWNRevA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Anton';
   font-style: normal;
   font-weight: 400;
-  src: local('Anton Regular'), local('Anton-Regular'), url(http://fonts.gstatic.com/s/anton/v10/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+  src: local('Anton Regular'), local('Anton-Regular'), url(http://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
 }
 /*!
  * Bootstrap v3.0.0
@@ -1698,15 +1698,15 @@ textarea.input-sm {
   height: auto;
 }
 .input-lg {
-  height: 147px;
+  height: 130px;
   padding: 14px 16px;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 1.33;
   border-radius: 6px;
 }
 select.input-lg {
-  height: 147px;
-  line-height: 147px;
+  height: 130px;
+  line-height: 130px;
 }
 textarea.input-lg {
   height: auto;
@@ -2141,7 +2141,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-lg {
   padding: 14px 16px;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 1.33;
   border-radius: 6px;
 }
@@ -3061,7 +3061,7 @@ input[type="button"].btn-block {
 }
 .btn-group-lg > .btn {
   padding: 14px 16px;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 1.33;
   border-radius: 6px;
 }
@@ -3181,17 +3181,17 @@ input[type="button"].btn-block {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 147px;
+  height: 130px;
   padding: 14px 16px;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 1.33;
   border-radius: 6px;
 }
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 147px;
-  line-height: 147px;
+  height: 130px;
+  line-height: 130px;
 }
 textarea.input-group-lg > .form-control,
 textarea.input-group-lg > .input-group-addon,
@@ -3251,7 +3251,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .input-group-addon.input-lg {
   padding: 14px 16px;
-  font-size: 70px;
+  font-size: 60px;
   border-radius: 6px;
 }
 .input-group-addon input[type="radio"],
@@ -3652,7 +3652,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   padding: 6px 15px;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 33px;
 }
 .navbar-brand:hover,
@@ -4096,7 +4096,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination-lg > li > a,
 .pagination-lg > li > span {
   padding: 14px 16px;
-  font-size: 70px;
+  font-size: 60px;
 }
 .pagination-lg > li:first-child > a,
 .pagination-lg > li:first-child > span {
@@ -5910,7 +5910,7 @@ td.visible-print {
   background-color: white;
 }
 .navbar-brand {
-  font-size: 70px;
+  font-size: 60px;
   font-family: "Londrina Solid", "Open Sans", "Arial Narrow Bold", sans-serif;
   font-weight: 100;
 }
@@ -6025,7 +6025,7 @@ h6 {
   font-family: "Londrina Solid", "PT Sans", "Arial Narrow Bold", sans-serif;
 }
 .lead {
-  font-size: 70px;
+  font-size: 60px;
 }
 strong {
   color: #333333;
@@ -6357,23 +6357,23 @@ h1 {
   }
 }
 h2 {
-  font-size: 70px;
+  font-size: 60px;
   color: #E99B28;
   text-shadow: 0 0.02em 0 #973d0c, 0 0.04em 0 #84360a, 0 0.06em 0 #712e09, 0 6px 1px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.4), 0 3px 5px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 1200px) {
   h2 {
-    font-size: 49px;
+    font-size: 42px;
   }
 }
 @media (max-width: 768px) {
   h2 {
-    font-size: 45.5px;
+    font-size: 39px;
   }
 }
 @media (max-width: 480px) {
   h2 {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
 .navbar {
@@ -6488,7 +6488,7 @@ p {
 }
 #sparklite-subtitle {
   -webkit-animation-duration: 0.5s;
-  -webkit-animation-delay: 1.5s;
+  -webkit-animation-delay: 0.75s;
 }
 #animated-scroll {
   width: 100vw;
@@ -6501,6 +6501,12 @@ p {
 #scroll-text {
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 4s;
+}
+.laurels img {
+  min-width: 100px;
+  max-width: 16vw;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .cloud-block {
   position: absolute;
