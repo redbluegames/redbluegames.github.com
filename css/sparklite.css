@@ -6453,6 +6453,7 @@ p {
   width: 100vw;
 }
 .title-subtitle h2 {
+  margin-top: 0px;
   padding-left: 20px;
 }
 .sparklite-logo {
@@ -6461,7 +6462,7 @@ p {
 @media (max-width: 2200px) {
   .sparklite-logo {
     margin: -50px auto;
-    max-width: 60vw;
+    max-width: 50vw;
   }
 }
 @media (max-width: 1200px) {
@@ -6502,9 +6503,12 @@ p {
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 4s;
 }
+.laurels {
+  margin-top: 7vh;
+}
 .laurels img {
   min-width: 100px;
-  max-width: 16vw;
+  max-width: 15vw;
   padding-left: 10px;
   padding-right: 10px;
 }
