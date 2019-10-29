@@ -221,6 +221,7 @@ p {
 
 // Laurels
 // --------------------------------------------------
+
 .laurels {
   margin-top: 7vh;
   img {
@@ -323,6 +324,16 @@ p {
 
   @media (max-width: @screen-sm){
     display: none;
+  }
+}
+
+// Screenshots and Video
+
+.gameplay-trailer {
+  iframe {
+    margin-top: -2.5vh;
+    margin-bottom: 5vh;
+    .rounded-border();
   }
 }
 
@@ -467,13 +478,13 @@ p {
   }
 
   #screenshot-2 {
-    margin-top: 20vh;
+    margin-top: 40vh;
     background-image: url('/assets/sparklite/cave-animated-wide.gif');
     background-color: #0C131E;
   }
 
   #screenshot-3 {
-    margin-top: 40vh;
+    margin-top: 45vh;
     background-image: url('/assets/sparklite/forest-animated.gif');
     background-color: #d6951d;
   }
@@ -530,8 +541,7 @@ p {
   margin: 1vw 2vw 2vw 2vw;
   width: 80%;
   max-width: 800px;
-  border-radius: 6px;
-  border: 2px solid @color-dark-brown;
+  .rounded-border();
 }
 
 // Mixins
@@ -547,4 +557,9 @@ p {
     0 1px 3px rgba(0,0,0,.4),
     0 3px 5px rgba(0,0,0,.3),
     0 5px 10px rgba(0,0,0,.5),
+}
+
+.rounded-border() {
+    border: 2px solid @color-dirt-background;
+    border-radius: 8px;
 }
