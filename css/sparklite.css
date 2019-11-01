@@ -6604,6 +6604,10 @@ p {
 .gameplay-trailer iframe {
   margin-top: -2.5vh;
   margin-bottom: 5vh;
+  width: 800px;
+  height: 458px;
+  max-width: 55vw;
+  max-height: 31.5vw;
   border: 2px solid #0c131e;
   border-radius: 8px;
 }
@@ -6739,8 +6743,13 @@ p {
   background-image: url('/assets/sparklite/cave-animated-wide.gif');
   background-color: #0C131E;
 }
+@media (min-width: 1200px) {
+  .screenshot-container #screenshot-2 {
+    margin-top: 60vh;
+  }
+}
 .screenshot-container #screenshot-3 {
-  margin-top: 45vh;
+  margin-top: 40vh;
   background-image: url('/assets/sparklite/forest-animated.gif');
   background-color: #d6951d;
 }

@@ -333,6 +333,10 @@ p {
   iframe {
     margin-top: -2.5vh;
     margin-bottom: 5vh;
+    width: 800px;
+    height: 458px;
+    max-width: 55vw;
+    max-height: 31.5vw;
     .rounded-border();
   }
 }
@@ -481,10 +485,14 @@ p {
     margin-top: 40vh;
     background-image: url('/assets/sparklite/cave-animated-wide.gif');
     background-color: #0C131E;
+
+    @media (min-width: @screen-lg) {
+      margin-top: 60vh;
+    }
   }
 
   #screenshot-3 {
-    margin-top: 45vh;
+    margin-top: 40vh;
     background-image: url('/assets/sparklite/forest-animated.gif');
     background-color: #d6951d;
   }
