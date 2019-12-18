@@ -6389,8 +6389,40 @@ h2 {
   margin-left: 0px;
 }
 .navbar .horizontal-icon-list {
-  right: 20px;
+  right: 80px;
   position: absolute;
+}
+/* Make the container relative */
+.swap-on-hover {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+}
+/* Select the image and make it absolute to the container */
+.swap-on-hover img {
+  margin-top: -6px;
+  object-fit: scale-down;
+  position: absolute;
+  top: 0;
+  left: 3px;
+  overflow: hidden;
+  width: 25px;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .swap-on-hover img {
+    margin-top: 2px;
+    width: 17.5px;
+  }
+}
+.swap-on-hover .swap-on-hover-front {
+  /* We set z-index to be higher than the back image, so it's alwyas on the front. */
+  z-index: 9999;
+  cursor: pointer;
+}
+/* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
+.swap-on-hover:hover > .swap-on-hover-front {
+  opacity: 0;
 }
 .navbar-default .navbar-brand {
   font-size: 30px;
@@ -6726,6 +6758,7 @@ p {
   box-shadow: 0px 0px #AA450D;
 }
 .screenshot-container {
+  z-index: -10;
   height: 100vh;
 }
 .screenshot-container .full-screen-screenshot {
