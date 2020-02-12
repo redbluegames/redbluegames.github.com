@@ -6410,39 +6410,9 @@ h2 {
   height: auto;
   left: 3px;
 }
-/* Make the container relative */
-.swap-on-hover {
-  position: relative;
-  margin: 0 auto;
-  max-width: 100%;
-}
 /* Select the image and make it absolute to the container */
-.swap-on-hover img {
-  margin-top: -6px;
-  position: absolute;
-  top: 0;
-  overflow: hidden;
-}
-@media (max-width: 768px) {
-  .swap-on-hover img {
-    margin-top: 2px;
-    width: 17.5px;
-  }
-}
-.swap-on-hover .swap-on-hover-front {
-  /* We set z-index to be higher than the back image, so it's alwyas on the front. */
-  z-index: 9999;
-  cursor: pointer;
-}
-/* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
-.swap-on-hover:hover > .swap-on-hover-front {
-  opacity: 0;
-}
-.swap-on-hover .swap-on-hover-back {
-  opacity: 0;
-}
-.swap-on-hover:hover > .swap-on-hover-back {
-  opacity: 1;
+.gamepedia-icon {
+  margin-top: -8px;
 }
 .orange-on-hover:hover {
   filter: brightness(0.5) sepia(1) saturate(7);
