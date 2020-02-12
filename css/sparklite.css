@@ -6392,6 +6392,24 @@ h2 {
   right: 80px;
   position: absolute;
 }
+.navbar-default .navbar-brand {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.75);
+}
+@media (max-width: 768px) {
+  .navbar-default .navbar-brand {
+    font-size: 21px;
+  }
+}
+.navbar-default .navbar-brand:hover {
+  color: #E99B28;
+}
+.navbar-icon {
+  width: 25px;
+  object-fit: fill;
+  height: auto;
+  left: 3px;
+}
 /* Make the container relative */
 .swap-on-hover {
   position: relative;
@@ -6401,13 +6419,9 @@ h2 {
 /* Select the image and make it absolute to the container */
 .swap-on-hover img {
   margin-top: -6px;
-  object-fit: scale-down;
   position: absolute;
   top: 0;
-  left: 3px;
   overflow: hidden;
-  width: 25px;
-  height: auto;
 }
 @media (max-width: 768px) {
   .swap-on-hover img {
@@ -6424,17 +6438,15 @@ h2 {
 .swap-on-hover:hover > .swap-on-hover-front {
   opacity: 0;
 }
-.navbar-default .navbar-brand {
-  font-size: 30px;
-  color: rgba(255, 255, 255, 0.75);
+.swap-on-hover .swap-on-hover-back {
+  opacity: 0;
 }
-@media (max-width: 768px) {
-  .navbar-default .navbar-brand {
-    font-size: 21px;
-  }
+.swap-on-hover:hover > .swap-on-hover-back {
+  opacity: 1;
 }
-.navbar-default .navbar-brand:hover {
-  color: #E99B28;
+.orange-on-hover:hover {
+  filter: brightness(0.5) sepia(1) saturate(7);
+  -webkit-filter: brightness(0.5) sepia(1) saturate(7);
 }
 i.fa.fa-lg,
 .fab {
@@ -6537,12 +6549,26 @@ p {
 }
 .laurels {
   margin-top: 7vh;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
 }
 .laurels img {
   min-width: 100px;
   max-width: 15vw;
   padding-left: 10px;
   padding-right: 10px;
+}
+.buy-it-links {
+  margin-top: 7vh;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.8));
+}
+.buy-it-links img {
+  width: 15vw;
+  padding: 2.5vw;
+}
+@media (max-width: 768px) {
+  .buy-it-links img {
+    width: 25vw;
+  }
 }
 .cloud-block {
   position: absolute;
@@ -6627,6 +6653,7 @@ p {
 }
 .cloud-puff {
   position: absolute;
+  pointer-events: none;
 }
 @media (max-width: 768px) {
   .cloud-puff {
@@ -6788,7 +6815,7 @@ p {
 }
 .steam-wishlist {
   position: absolute;
-  margin-top: 65vh;
+  margin-top: 57.5vh;
   text-align: center;
   width: 100vw;
 }
