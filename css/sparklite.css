@@ -6518,13 +6518,13 @@ p {
   -webkit-animation-delay: 4s;
 }
 .laurels {
-  margin-top: 18vh;
+  margin-top: 16vh;
 }
 .laurels img {
   min-width: 100px;
   width: 15vw;
   padding: 10px;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
 }
 @media (max-width: 992px) {
   .laurels img {
