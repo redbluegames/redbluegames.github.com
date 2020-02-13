@@ -6666,9 +6666,6 @@ p {
     padding: 0px 20px 30px 20px;
   }
 }
-.newsletter-form input {
-  color: rgba(255, 255, 255, 0.75);
-}
 .newsletter-form label {
   font-size: 20px;
   cursor: pointer;
