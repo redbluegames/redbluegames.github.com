@@ -43,7 +43,8 @@
 @color-yellow: #E99B28;
 @color-yellow-dark: #AA450D;
 @color-brown: #6C5E52;
-@color-dark-brown: #1B1B21;
+@color-dark-brown: #34392f;
+@color-dark-brownblue: #1b1b22;
 @color-pink-transparent: rgba(194, 7, 7, 0.15);
 @color-clouds: #F2F4DC;
 @color-clouds-dark: #9cbbaa;
@@ -385,17 +386,14 @@ p {
 .newsletter-form {
   z-index: 10;
   text-align: center;
-  background-color: @color-dark-brown;
-  border: 5px solid @color-brown;
-  padding: 0px 50px 40px 50px;
+  padding: 40px 50px 40px 50px;
   min-height: 500px;
+  max-width: 80vw;
 
   @media (max-width: @screen-xs) {
-    max-width: : 80vw;
     padding: 0px 20px 30px 20px;
   }
   input {
-    width: 100%;
     color: @alphad-white;
   }
   label {
@@ -406,22 +404,26 @@ p {
     cursor: pointer;
     color: @color-yellow;
   }
+  .button {
+    width: 50%;
+  }
   .input-box {
     font-size: @font-size-base;
     height: 2.5em;
-    background-color: transparent;
-    border: 1px solid @color-green;
+    background-color: @color-dark-brown;
+    border: 2px solid @color-dark-brownblue;
   }
   .input-box:hover {
-    background-color: rgba(94, 145, 179, 0.2);
+    background-color: lighten(@color-dark-brown, 5%);
   }
   .input-box:focus {
     color: white;
-    background-color: rgba(94, 145, 179, 0.2);
+    background-color: lighten(@color-dark-brown, 15%);
   }
-  .mce_inline_error {
-    background-color: @color-pink-transparent;
+  #mc_embed_signup div.mce_inline_error {
     font-size: @font-size-base;
+    background-color: transparent;
+    color: rgb(224, 64, 0);
   }
 
   // Change color of placeholder text

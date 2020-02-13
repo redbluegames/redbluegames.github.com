@@ -6643,19 +6643,16 @@ p {
 .newsletter-form {
   z-index: 10;
   text-align: center;
-  background-color: #1B1B21;
-  border: 5px solid #6C5E52;
-  padding: 0px 50px 40px 50px;
+  padding: 40px 50px 40px 50px;
   min-height: 500px;
+  max-width: 80vw;
 }
 @media (max-width: 480px) {
   .newsletter-form {
-    max-width: : 80vw;
     padding: 0px 20px 30px 20px;
   }
 }
 .newsletter-form input {
-  width: 100%;
   color: rgba(255, 255, 255, 0.75);
 }
 .newsletter-form label {
@@ -6668,22 +6665,26 @@ p {
     font-size: 15px;
   }
 }
+.newsletter-form .button {
+  width: 50%;
+}
 .newsletter-form .input-box {
   font-size: 20px;
   height: 2.5em;
-  background-color: transparent;
-  border: 1px solid #88EC96;
+  background-color: #34392f;
+  border: 2px solid #1b1b22;
 }
 .newsletter-form .input-box:hover {
-  background-color: rgba(94, 145, 179, 0.2);
+  background-color: #41473b;
 }
 .newsletter-form .input-box:focus {
   color: white;
-  background-color: rgba(94, 145, 179, 0.2);
+  background-color: #5a6352;
 }
-.newsletter-form .mce_inline_error {
-  background-color: rgba(194, 7, 7, 0.15);
+.newsletter-form #mc_embed_signup div.mce_inline_error {
   font-size: 20px;
+  background-color: transparent;
+  color: #e04000;
 }
 .newsletter-form ::-webkit-input-placeholder {
   color: rgba(153, 153, 153, 0.75);
