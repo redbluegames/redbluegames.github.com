@@ -6518,14 +6518,28 @@ p {
   -webkit-animation-delay: 4s;
 }
 .laurels {
-  margin-top: 7vh;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+  margin-top: 18vh;
 }
 .laurels img {
   min-width: 100px;
-  max-width: 15vw;
-  padding-left: 10px;
-  padding-right: 10px;
+  width: 15vw;
+  padding: 10px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+}
+@media (max-width: 992px) {
+  .laurels img {
+    width: 18vw;
+  }
+}
+@media (max-width: 768px) {
+  .laurels img {
+    width: 25vw;
+  }
+}
+@media (max-width: 480px) {
+  .laurels img {
+    width: 30vw;
+  }
 }
 .buy-it-links {
   margin-top: 7vh;

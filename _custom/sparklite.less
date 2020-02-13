@@ -245,15 +245,23 @@ p {
 // --------------------------------------------------
 
 .laurels {
-  margin-top: 7vh;
+  margin-top: 18vh;
   img {
     min-width: 100px;
-    max-width: 15vw;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+    width: 15vw;
+    padding: 10px;
+    @media (max-width: 992px) {
+      width: 18vw;
+    }
+    @media (max-width: 768px) {
+      width: 25vw;
+    }
+    @media (max-width: 480px) {
+      width: 30vw;
+    }
 
-  filter: drop-shadow(2px 2px 4px @alphad-black);
+    filter: drop-shadow(2px 2px 4px @alphad-black);
+  }
 }
 
 .buy-it-links {
