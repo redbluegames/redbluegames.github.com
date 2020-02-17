@@ -6447,35 +6447,29 @@ html {
   }
 }
 .sparklite.btn {
-  background-color: #EAE099;
+  background-color: #eaa530;
   color: rgba(0, 0, 0, 0.8);
   font-family: "Blocky";
-  font-size: 1.2em;
-  vertical-align: middle;
+  font-size: 2em;
   border: none;
-  box-shadow: 0px 6px #91896E;
+  box-shadow: 0px 6px #d46926;
   max-width: 35%;
-  position: absolute;
-  top: 80vh;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
-  right: 0;
 }
-.sparklite .button:hover {
+.sparklite .btn:hover {
   outline: none;
-  background-color: #f3edc3;
+  background-color: #efb95e;
 }
-.sparklite .button:active {
+.sparklite .btn:active {
   outline: none;
   position: relative;
   top: 6px;
-  background-color: #91896E;
-  box-shadow: 0px 0px #91896E;
+  background-color: #d46926;
+  box-shadow: 0px 0px #d46926;
 }
 #sparklite-subtitle {
-  position: absolute;
-  top: 50vh;
   left: 0;
   right: 0;
   padding: 5px;
