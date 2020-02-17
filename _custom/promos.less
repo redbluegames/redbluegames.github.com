@@ -34,8 +34,13 @@
 #wrap {
   &.sparklite {
     background-color: @sparklite-background-color;
-    background-image: url("../assets/sparklite/cave-animated-wide.gif");
+    background-image: url("../assets/images/games-pages/spk_keyArt_nologo_1080p.jpg");
+    @media (min-width: @screen-sm) {
+      background-image: url("../assets/images/games-pages/spk_keyArt_nologo_540p.jpg");
+    }
+    background-size: cover;
     background-repeat: repeat;
+    background-position-x: center;
   }
   &.minifish {
     background-color: @minifish-background-color;
@@ -112,6 +117,8 @@
       max-height: 50vh;
       max-width: 100vw;
       .center-block();
+      // Make sure body of website isn't blocked
+      pointer-events: none;
     }
   }
 }
@@ -122,6 +129,7 @@
   .center-block();
   width: 100%;
   height: auto;
+  z-index: -10;
 
   @media (min-width: @screen-sm) {
     margin-top: -25vh;
@@ -172,8 +180,11 @@
   top: 50vh;
   left: 0;
   right: 0;
+  padding: 5px;
   color: #F2F4DC;
   font-family: "Blocky";
+  font-size: 48px;
+  filter: drop-shadow(2px 4px 6px @alphad-black);
   @media (max-width: @screen-md)
   {
     top: 55vh;
@@ -181,6 +192,7 @@
   @media (max-width: @screen-xs)
   {
     top: 40vh;
+    font-size: 32px;
   }
 }
 
@@ -292,9 +304,13 @@
   @media (min-width: @screen-lg) {
 //    width: @screen-lg;
   }
+
+  // Make sure body of website isn't blocked
+  pointer-events: none;
 }
 
 .minigame-nav {
+  pointer-events: all;
   position: static;
   padding: 100px 2% 100px 2%;
   background: rgba(0, 0, 0, 0.05);
