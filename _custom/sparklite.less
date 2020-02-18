@@ -308,7 +308,7 @@ p {
 .cloud-fill {
   color: @color-brown;
   background-color: @color-clouds;
-  min-height: 15vh;
+  min-height: 20vh;
   padding: 0% 2% 0% 2%;
 
   .cloud-fill-center {
@@ -397,6 +397,7 @@ p {
   padding: 40px 50px 40px 50px;
   min-height: 500px;
   max-width: 80vw;
+  height: 35vh;
 
   @media (max-width: @screen-xs) {
     padding: 0px 20px 30px 20px;
@@ -425,6 +426,11 @@ p {
     color: white;
     background-color: lighten(@color-dark-brown, 15%);
   }
+
+  #mc_embed_signup {
+    .flex-vertical-center();
+  }
+
   #mc_embed_signup div.mce_inline_error {
     font-size: @font-size-base;
     background-color: transparent;
@@ -616,4 +622,12 @@ p {
 .rounded-border() {
     border: 2px solid @color-dirt-background;
     border-radius: 8px;
+}
+
+.flex-vertical-center() {
+  // Center newsletter form https://css-tricks.com/centering-css-complete-guide/
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
 }

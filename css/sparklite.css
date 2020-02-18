@@ -6577,7 +6577,7 @@ p {
 .cloud-fill {
   color: #6C5E52;
   background-color: #F2F4DC;
-  min-height: 15vh;
+  min-height: 20vh;
   padding: 0% 2% 0% 2%;
 }
 .cloud-fill .cloud-fill-center {
@@ -6660,6 +6660,7 @@ p {
   padding: 40px 50px 40px 50px;
   min-height: 500px;
   max-width: 80vw;
+  height: 35vh;
 }
 @media (max-width: 480px) {
   .newsletter-form {
@@ -6691,6 +6692,12 @@ p {
 .newsletter-form .input-box:focus {
   color: white;
   background-color: #5a6352;
+}
+.newsletter-form #mc_embed_signup {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
 }
 .newsletter-form #mc_embed_signup div.mce_inline_error {
   font-size: 20px;
